@@ -1,0 +1,1 @@
+Sitemap: https://labodedatos-2023.netlify.app/sitemap.xml

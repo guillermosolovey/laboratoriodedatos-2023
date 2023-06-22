@@ -1,0 +1,226 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Laboratorio de Datos",
+    "section": "",
+    "text": "Profesor: Guillermo Solovey.\nAyudantes: Dario Elías, Yamila Alen y Roberto Duarte.\nHorario: Viernes de 10 a 13 y de 14 a 17.\nClases: desde el 18 de Agosto al 1 de Diciembre.\nAula/Laboratorio: a confirmar.\nCódigo SIU para inscripción: LCDA210004.\n\n\n\n Exactas-UBA\n\n\n Licenciatura en Ciencia de Datos"
+  },
+  {
+    "objectID": "cronograma.html",
+    "href": "cronograma.html",
+    "title": "Cronograma",
+    "section": "",
+    "text": "En construcción\n\n\n\n\n\n\n\n\n\n  \n    \n    \n    \n    \n    \n    \n  \n  \n    \n    \n      fecha\n      tema\n      lectura\n      slides\n      notas\n      tp\n    \n  \n  \n    18/8\nTema1\nlectura1\n\n\n\n    25/8\nTema2\nlectura2\n\n\n\n    1/9\nTema3\nlectura3\n\n\n\n    8/9\nTema4\nlectura4\n\n\n\n    15/9\nTema5\nlectura5\n\n\n\n    22/9\nTema6\nlectura6\n\n\n\n    29/9\nTema7\nlectura7\n\n\n\n    6/10\nTema8\nlectura8\n\n\n\n    13/10\nTema9\nlectura9\n\n\n\n    20/10\nTema10\nlectura10\n\n\n\n    27/10\nTema11\nlectura11\n\n\n\n    3/11\nTema12\nlectura12\n\n\n\n    10/11\nTema13\nlectura13\n\n\n\n    17/11\nTema14\nlectura14\n\n\n\n    24/11\nTema15\nlectura15\n\n\n\n    1/12\nTema16\nlectura16"
+  },
+  {
+    "objectID": "index.html#course-materials",
+    "href": "index.html#course-materials",
+    "title": "Estimación Bayesiana",
+    "section": "Course materials",
+    "text": "Course materials\n\nBooks\nWe’ll be working through two textbooks throughout the semester:\n\nRichard McElreath, Statistical Rethinking: A Bayesian Course with Examples in R and Stan\n\n\n\n\nAlicia A. Johnson, Miles Q. Ott, and Mine Dogucu, Bayes Rules! An Introduction to Applied Bayesian Modeling\n\n\n\nBayes Rules! is available online for free. The book for Statistical Rethinking is not free ($70 on Amazon), but Richard McElreath has provided 20 video lectures with accompanying slides and homework assignments and answer keys.\nWe’ll read all of Bayes Rules!, all of Statistical Rethinking, watch all of McElreath’s Statistical Rethinking lectures, and complete a bunch of the assignments and homework questions from both books.\n\nDocente\n\nDocente: Dr. Guillermo Solovey\nOficina: 2605, Edificio Cero+Infinito, Exactas-UBA\n\n\n\nFechas\n\nInscripción: Primer cuatrimestre 2023. Inicio de clases: semana del 20 de Marzo.\nDictado: Primer cuatrimestre 2023. Inicio de clases: semana del 20 de Marzo.\nHorarios: 4 horas semanales en días y horario a definir.\n\n\n\nCorrelativas\n\nIntroducción a la Estadística y la Ciencia de Datos.\n\n\n\nCódigo de inscripción en el SIU\n\nGrado: a definir\nDoctorado: a definir\n\n\n\nBibliografía\n\nVamos a usar principalmente Bayes Rules! y Statistical Rethinking.\n\n\n\n Instituto de Cálculo\n\n\n Facultad de Ciencias Exactas y Naturales, UBA"
+  },
+  {
+    "objectID": "programa.html",
+    "href": "programa.html",
+    "title": "Programa",
+    "section": "",
+    "text": "próximamente…"
+  },
+  {
+    "objectID": "programa.html#bibliografía",
+    "href": "programa.html#bibliografía",
+    "title": "Programa",
+    "section": "Bibliografía",
+    "text": "Bibliografía\nprincipal:\n\nAlicia A. Johnson, Miles Q. Ott, and Mine Dogucu, Bayes Rules! An Introduction to Applied Bayesian Modeling\nRichard McElreath, Statistical Rethinking: A Bayesian Course with Examples in R and Stan, 2nd edition.\n\n\ncomplementaria:\n\nBen Lambert, A Student’s Guide to Bayesian Statistics.\nOsvaldo A. Martin, Ravin Kumar y Junpeng Lao, Bayesian Modeling and Computation in Python.\nPeter D. Hoff, A first course in Bayesian statistical methods.\nCameron Davidson-Pilon, Bayesian methods for hackers: probabilistic programming and Bayesian inference.\nDavid Robinson, Introduction to empirical bayes: examples from baseball statistics.\nAndrew Gelman, Jennifer Hill, and Aki Vehtari, Regression and other stories."
+  },
+  {
+    "objectID": "programa.html#programa",
+    "href": "programa.html#programa",
+    "title": "Programa",
+    "section": "Programa",
+    "text": "Programa\n\nUnidad 1\nFundamentos bayesianos: Aprender cómo pensar bayesianamente y cómo crear modelos bayesianos básicos.\nIntroducción a la estadística bayesiana. Diferencias entre estadística bayesiana y frecuentista. Pensar bayesianamente. Modelo beta-binomial. Equilibrio entre el prior y los datos. Análisis bayesiano secuencial. Familias conjugadas.\n\n\nUnidad 2\nSimulación y análisis de la distribución posterior: Herramientas computacionales para simular la distribución posterior en modelos bayesianos complejos.\nAnalizar modelos simulados y exactos para hacer inferencia y sacar conclusiones. Aproximar la distribución posterior. Método de grilla, Metrópolis-Hastings y Markov Chain Monte Carlo (MCMC). Implementación y diagnóstico en R. Estimación de parámetros Testeo de hipótesis. Predicción.\n\n\nUnidad 3\nModelos bayesianos de regresión y clasificación: Extender los modelos bayesianos a casos en los que la variable respuesta es contínua (regresión) y categórica (clasificación).\nRegresión Normal. Regresión múltiple. Variables de control y confusoras. Evaluación, diagnóstico y comparación de modelos de regresión. Regresión de Poisson. Naive-Bayes. Regresión logística.\n\n\nUnidad 4\nModelos bayesianos jerárquicos: Modelos bayesianos para datos multi-nivel, como datos longitudinales y de medidas repetidas.\nModelo complete-pool y no-pool. Modelos de pooling parcial. Modelo jerárquico normal sin predictores. Modelos de regresión y clasificación jerárquicos."
+  },
+  {
+    "objectID": "index.html#docente",
+    "href": "index.html#docente",
+    "title": "Estimación Bayesiana",
+    "section": "Docente",
+    "text": "Docente\n\nDocente: Dr. Guillermo Solovey\nOficina: 2605, Edificio Cero+Infinito, Exactas-UBA"
+  },
+  {
+    "objectID": "index.html#fechas",
+    "href": "index.html#fechas",
+    "title": "Estimación Bayesiana",
+    "section": "Fechas",
+    "text": "Fechas\n\nInscripción: desde el 22 de Febrero al 5 de Marzo de 2023.\nDictado: Primer cuatrimestre 2023. Inicio de clases: semana del 20 de Marzo.\nHorarios: 4 horas semanales en días y horario a definir."
+  },
+  {
+    "objectID": "index.html#correlativas",
+    "href": "index.html#correlativas",
+    "title": "Estimación Bayesiana",
+    "section": "Correlativas",
+    "text": "Correlativas\n\nIntroducción a la Estadística y la Ciencia de Datos.\n\n\n\n Instituto de Cálculo\n\n\n Facultad de Ciencias Exactas y Naturales, UBA"
+  },
+  {
+    "objectID": "index.html#código-de-inscripción-en-el-siu",
+    "href": "index.html#código-de-inscripción-en-el-siu",
+    "title": "Estimación Bayesiana",
+    "section": "Código de inscripción en el SIU",
+    "text": "Código de inscripción en el SIU\n\nGrado: a definir\nDoctorado: a definir"
+  },
+  {
+    "objectID": "index.html#bibliografía",
+    "href": "index.html#bibliografía",
+    "title": "Estimación Bayesiana",
+    "section": "Bibliografía",
+    "text": "Bibliografía\n\n?var:course.text\n\n\n\n Instituto de Cálculo\n\n\n Facultad de Ciencias Exactas y Naturales, UBA"
+  },
+  {
+    "objectID": "programa.html#régimen-de-aprobación",
+    "href": "programa.html#régimen-de-aprobación",
+    "title": "Programa",
+    "section": "Régimen de aprobación",
+    "text": "Régimen de aprobación\nLa materia tiene 4 entregas. La nota final de la materia se compone así - 1a entrega: 20% - 2a entrega: 20% - 3a entrega: 20% - 4a entrega: 40%"
+  },
+  {
+    "objectID": "programa.html#entregas",
+    "href": "programa.html#entregas",
+    "title": "Programa",
+    "section": "Entregas",
+    "text": "Entregas\nCada entrega tiene una fecha límite que es dos semanas después de la clase (ver cronograma). No aceptamos entregas sin aviso después de ese día. Antes de la fecha límite se puede pedir una prórroga de 1 semana, pero eso sólo se puede hacer 1 vez en todo el curso. Las entregas: sin código y cómo enviar entregas: G1-E1-APELLIDO-NOMBRE.PDF"
+  },
+  {
+    "objectID": "programa.html#trabajo-final",
+    "href": "programa.html#trabajo-final",
+    "title": "Programa",
+    "section": "Trabajo final",
+    "text": "Trabajo final\nLa última entrega consiste de un trabajo final…"
+  },
+  {
+    "objectID": "pautas.html",
+    "href": "pautas.html",
+    "title": "Pautas",
+    "section": "",
+    "text": "El trabajo a lo largo de este curso consiste en elegir un conjunto de datos, realizar un análisis adecuado del mismo utilizando al menos dos técnicas aprendidas durante la carrera de especialización y redactar un informe final."
+  },
+  {
+    "objectID": "pautas.html#organización",
+    "href": "pautas.html#organización",
+    "title": "Pautas",
+    "section": "Organización",
+    "text": "Organización\nEl curso está dividido en 4 grupos. Cada grupo asiste a una clase presencial por mes los días martes a las 19.30 horas. Durante las clases presenciales Guillermo Solovey y Gustavo Juantorena explicarán las pautas de los trabajos prácticos a entregar durante el curso y ayudarán a cada uno a conseguir el objetivo. El resto de la semana y para aquellos que no asistan presencial ese día, Jazmín Vidal responderá consultas de forma asincrónica. La presencialidad NO es opcional.\nLas consultas se realizan escribiendo a tallerdetesis1-2023@googlegroups.com. Pueden consultar el cronograma de asistencia por grupo acá."
+  },
+  {
+    "objectID": "pautas.html#régimen-de-aprobación",
+    "href": "pautas.html#régimen-de-aprobación",
+    "title": "Pautas",
+    "section": "Régimen de aprobación",
+    "text": "Régimen de aprobación\nLa materia tiene 4 entregas (3 entregas parciales y un trabajo final) y se aprueba con 65 puntos. La nota final de la materia se compone así:\n\nEntrega 1: 20 puntos\nEntrega 2: 20 puntos\nEntrega 3: 20 puntos\nTrabajo final: 40 puntos\n\nLas consignas para las entregas y del trabajo final se explican los días martes en la clase presencial de cada grupo. Cada entrega tiene una fecha límite que es dos semanas después de la clase. Tener en cuenta que las entregas son incrementales, esto es, que cada una depende de la anterior y culmina en el trabajo final.\nEn caso de entregar con retraso, el trabajo tendrá una puntuación menor. Los trabajos entregados hasta una semana después de la fecha límite tendrán 5 puntos menos de puntaje máximo. Los trabajos entregados con más de una semana de atraso tendrán 10 puntos menos de nota máxima.\nLas entregas se cargan en una carpeta de google drive. Hay una carpeta para cada entrega y para cada grupo. Las entregas deben enviarse en PDF, sin código adjunto y con el nombre: G1-E1-APELLIDO-NOMBRE.PDF\nPueden consultar el cronograma de entregas acá."
+  },
+  {
+    "objectID": "pautas.html#uso-de-datos",
+    "href": "pautas.html#uso-de-datos",
+    "title": "Pautas",
+    "section": "Uso de datos",
+    "text": "Uso de datos\nPueden encontrar pautas generales para la elección del dataset en este documento. En general, pueden utilizar:\n\nDatos públicos: sugerimos la utilización de uno de los datasets provistos en la siguiente lista. Si el dataset es muy popular y ya hay en internet muchos trabajos hechos, se deberá reportar cómo el trabajo a realizar difiere de ellos.\nDatos propios: si se deseara realizar las entregas y el informe final utilizando un conjunto de datos propio, se deberá contar -ANTES DE LA PRIMERA ENTREGA- con autorización para hacerlo. De lo contrario tendrán que utilizar un conjunto de datos públicos como los sugeridos en el ítem anterior.\nDatos scrapeados: datos visibles en una web no necesariamente significa que los podemos scrapear para los fines de este trabajo. Cada página tiene sus condiciones de uso de datos. Sólo se pueden scrapear los datos si está permitido hacerlo."
+  },
+  {
+    "objectID": "pautas.html#otros-recursos",
+    "href": "pautas.html#otros-recursos",
+    "title": "Pautas",
+    "section": "Otros recursos",
+    "text": "Otros recursos\nEjemplos de trabajos de años anteriores\n\nDetección de cataratas y glaucoma en imágenes de fondo de ojo. Hernán Estrin\nPatrones de uso del servicio de datos en la red de telefonía móvil de la ciudad de Milán. Horacio Gastón Arrigo"
+  },
+  {
+    "objectID": "pautas.html#preguntas-frecuentes",
+    "href": "pautas.html#preguntas-frecuentes",
+    "title": "Pautas",
+    "section": "Preguntas frecuentes",
+    "text": "Preguntas frecuentes\n\n¿Qué diferencia hay entre el trabajo de especialización y el trabajo final de esta materia?\nPoco. Si cumplen con los objetivos de esta materia y hacen todas las entregas de forma completa, van a estar a un paso del trabajo de especialización. Podrían quedar algunas cositas por pulir, pero nada que les impide entregarlo pocas semanas después de finalizada la materia.\n¿Quién evalúa el trabajo de especialización?\nEn esta materia, los docentes no evaluamos los trabajos finales de especialización pero los preparamos para entregarlo. El trabajo de especialización lo evalúan docentes del posgrado.\n¿Qué diferencia hay entre el trabajo de especialización y la tesis de maestría?\nEl trabajo de tesis de maestría requiere director/a, se espera que sea más extenso que el de especialización.\n¿Es requisito hacer el trabajo de especialización si quiero seguir con la maestría?\nNo. Se puede aprobar esta materia con todos sus requisitos y continuar hacia la maestría.\n¿Necesito tutor/director para hacer el trabajo de especialización?\nNo.\n¿En qué formato hay que escribir el trabajo final?\nEl que les resulte más cómodo. Puede ser overleaf, Rmd, google docs, Word, … pero el entregable tiene que estar en pdf."
+  },
+  {
+    "objectID": "pautas.html#chat-gpt",
+    "href": "pautas.html#chat-gpt",
+    "title": "Pautas",
+    "section": "Chat GPT",
+    "text": "Chat GPT\nLe preguntamos a Chat GPT como realizar un uso creativo del mismo a lo largo del curso y, entre otras cosas, lo que nos dijo fue:\n\n\n\n\n\n\nImportante!\n\n\n\nRecuerda que, aunque Chat GPT puede ser una herramienta útil para ayudarte en tu trabajo final de ciencia de datos, es importante que tú mismo/a te asegures de la calidad de la información y de los resultados obtenidos. ¡Buena suerte en tu proyecto!"
+  },
+  {
+    "objectID": "datasets.html",
+    "href": "datasets.html",
+    "title": "Datasets",
+    "section": "",
+    "text": "Como sugerencia general, elijan un dataset sobre un tema que les interese o sobre el que están trabajando actualmente. Como algunos conjuntos de datos se han usado en exceso para estos objetivos particulares, tenga en cuenta que los siguientes están prohibidos en este trabajo (se pueden agregar más a esta lista, así que asegúrense de revisarla regularmente):\n\ntitanic\nmtcars\niris\nMNIST\nCIFAR-10\n\nLo mejor es usar un conjunto de datos para el cual no haya un análisis listo en Internet, pero si eligen un conjunto de datos que ya se usó en algún estudio de caso disponible online, proporcionen el enlace a estudios anteriores e informen cómo sus análisis difieren de esos (por ejemplo, si alguien ha realizado un análisis no bayesiano y ustedes realizan el análisis bayesiano completo).\nSegún el modelo y la estructura de los datos, un buen dataset tendría más de 100 observaciones pero menos de 1 millón. Si conocen un dataset interesante pero muy pesado, pueden usar un subconjunto más pequeño de los datos para mantener factibles los tiempos de cálculo."
+  },
+  {
+    "objectID": "datasets.html#inspiración",
+    "href": "datasets.html#inspiración",
+    "title": "Datasets",
+    "section": "Inspiración",
+    "text": "Inspiración\nSi están buscando inspiración o no están seguros de por dónde empezar, pueden mirar las siguientes páginas:\n\nhttps://datasetsearch.research.google.com/\nhttps://www.kaggle.com/datasets\nhttps://github.com/rfordatascience/tidytuesday\nhttps://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research\nhttps://paperswithcode.com/datasets\nhttps://www.openml.org/search?type=data&sort=runs&status=active"
+  },
+  {
+    "objectID": "datasets.html#dónde-encontrar-papers",
+    "href": "datasets.html#dónde-encontrar-papers",
+    "title": "Datasets",
+    "section": "¿Dónde encontrar papers?",
+    "text": "¿Dónde encontrar papers?\n\nhttps://scholar.google.com/\nhttps://pubmed.ncbi.nlm.nih.gov/\nhttps://ieeexplore.ieee.org/Xplore/home.jsp"
+  },
+  {
+    "objectID": "datasets.html#ejemplos-de-datasets",
+    "href": "datasets.html#ejemplos-de-datasets",
+    "title": "Datasets",
+    "section": "Ejemplos de datasets",
+    "text": "Ejemplos de datasets\nAlgunos ejemplos específicos que pueden usar según la técnica de análisis están en el siguiente documento."
+  },
+  {
+    "objectID": "consignas.html",
+    "href": "consignas.html",
+    "title": "Consignas",
+    "section": "",
+    "text": "Para ver el cronograma de entregas, ver acá."
+  },
+  {
+    "objectID": "consignas.html#entrega-1-dataset-pregunta-y-objetivo",
+    "href": "consignas.html#entrega-1-dataset-pregunta-y-objetivo",
+    "title": "Consignas",
+    "section": "Entrega 1: Dataset, pregunta y objetivo",
+    "text": "Entrega 1: Dataset, pregunta y objetivo\nConsigna para la entrega 1."
+  },
+  {
+    "objectID": "consignas.html#entrega-2-metodología-y-análisis-exploratorio-de-datos",
+    "href": "consignas.html#entrega-2-metodología-y-análisis-exploratorio-de-datos",
+    "title": "Consignas",
+    "section": "Entrega 2: Metodología y análisis exploratorio de datos",
+    "text": "Entrega 2: Metodología y análisis exploratorio de datos\nConsigna para la entrega 2."
+  },
+  {
+    "objectID": "consignas.html#entrega-3-introducción-y-resultados",
+    "href": "consignas.html#entrega-3-introducción-y-resultados",
+    "title": "Consignas",
+    "section": "Entrega 3: Introducción y resultados",
+    "text": "Entrega 3: Introducción y resultados\nConsigna para la entrega 3."
+  },
+  {
+    "objectID": "consignas.html#trabajo-final",
+    "href": "consignas.html#trabajo-final",
+    "title": "Consignas",
+    "section": "Trabajo final",
+    "text": "Trabajo final\nLa última entrega consiste en sumarle “Discusión y conclusiones” a lo hecho en las entregas anteriores, lo que constituye el trabajo final de la materia.\nConsigna para el trabajo final."
+  },
+  {
+    "objectID": "tps.html",
+    "href": "tps.html",
+    "title": "Trabajos Prácticos",
+    "section": "",
+    "text": "Próximamente…"
+  },
+  {
+    "objectID": "slides.html",
+    "href": "slides.html",
+    "title": "Slides/Apuntes",
+    "section": "",
+    "text": "Próximamente…"
+  }
+]

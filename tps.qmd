@@ -1,0 +1,13 @@
+---
+title: "Trabajos Prácticos"
+toc: true
+editor: source
+---
+
+Próximamente...
+<!-- ::: callout-important -->
+<!-- ## Próximamente -->
+<!-- Recuerda que, aunque Chat GPT puede ser una herramienta útil para ayudarte en tu trabajo final de ciencia de datos, es importante que tú mismo/a te asegures de la calidad de la información y de los resultados obtenidos. -->
+<!-- ¡Buena suerte en tu proyecto! -->
+<!-- ::: -->
+

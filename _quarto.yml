@@ -1,0 +1,33 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+
+website:
+  title: "laboratorio de datos"
+  site-url: "https://labodedatos-2023.netlify.app/"
+  navbar:
+    pinned: true
+    background: "#F0DC14"
+    right:
+      - href: index.qmd
+        text: "{{< fa home >}} Home"
+      - href: cronograma.qmd
+        text: "{{< fa calendar >}} Cronograma"
+      - href: tps.qmd
+        text: "{{< fa dumbbell >}} TPs"
+      - href: slides.qmd
+        text: "{{< fa laptop >}} Slides/Apuntes"
+        
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
+execute:
+  freeze: auto
+
