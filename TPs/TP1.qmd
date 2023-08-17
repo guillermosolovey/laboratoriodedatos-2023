@@ -76,18 +76,7 @@ También familiarizarse con la consola de R, con matrices y con operaciones lóg
 -  `1:10`
 -  `21:30`
 
-1.7. ¿Por qué da error esta operación?
-
-```{r}
-#| error: true
-#| echo: true
-#| eval: false
-
-datos <- c("banana", 2, "pera", 5, "durazno", 0)
-```
-
-
-1.8. Explorar estas distintas formas de extraer información del vector `c("banana", "pera", "durazno", "anana")`. Primero crear el vector en la consola y asignarlo al vector `frutas`. Luego correr cada caso en la consola y explicar en pocas palabras qué es lo que sucede.
+1.7. Explorar estas distintas formas de extraer información del vector `c("banana", "pera", "durazno", "anana")`. Primero crear el vector en la consola y asignarlo al vector `frutas`. Luego correr cada caso en la consola y explicar en pocas palabras qué es lo que sucede.
 
 -  `frutas[2]`
 -  `frutas[c(1,4)]`
@@ -95,7 +84,22 @@ datos <- c("banana", 2, "pera", 5, "durazno", 0)
 -  `frutas %in% c("ciruela", "frutilla", "pera", "mandarina")`
 -  `frutas[ frutas %in% c("ciruela", "frutilla", "pera", "mandarina") ]`
 
-1.9. Explorar distintas formas de extraer información del vector `alturas_cm` definido en el ejercicio 1.6. Escribir una frase explicando qué hace cada una. ¿Por qué da error la última?
+
+1.8. ¿Por qué da error la línea 4 de esta secuencia?
+
+```{r}
+#| error: true
+#| echo: true
+#| eval: false
+
+datos <- c("banana", 2, "pera", 5, "durazno", 0)
+datos[2] 
+datos[4]
+datos[2] + datos[4]
+```
+
+
+1.9. Explorar distintas formas de extraer información del vector `alturas_cm` definido en el ejercicio 1.6. Escribir una frase explicando qué hace cada una. ¿Por qué la última retorna `numeric(0)`?
 
 -  `alturas_cm[c(TRUE, FALSE, TRUE, TRUE)]`
 -  `alturas_cm[alturas_cm >= 180]`
@@ -162,7 +166,7 @@ Las funciones son scripts de R "enlatados" que hacen una operación con un input
 -  `mean(n)`
 -  `max(n)`
 -  `mean(n, na.rm = TRUE)`
--  `max(heights, na.rm = TRUE)`
+-  `max(n, na.rm = TRUE)`
 
 2.9 A partir de este vector de pesos en Kg de distintas personas:
 

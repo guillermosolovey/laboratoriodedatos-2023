@@ -263,11 +263,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><code>1:10</code></li>
 <li><code>21:30</code></li>
 </ul>
-<p>1.7. ¿Por qué da error esta operación?</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>datos <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"banana"</span>, <span class="dv">2</span>, <span class="st">"pera"</span>, <span class="dv">5</span>, <span class="st">"durazno"</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>1.8. Explorar estas distintas formas de extraer información del vector <code>c("banana", "pera", "durazno", "anana")</code>. Primero crear el vector en la consola y asignarlo al vector <code>frutas</code>. Luego correr cada caso en la consola y explicar en pocas palabras qué es lo que sucede.</p>
+<p>1.7. Explorar estas distintas formas de extraer información del vector <code>c("banana", "pera", "durazno", "anana")</code>. Primero crear el vector en la consola y asignarlo al vector <code>frutas</code>. Luego correr cada caso en la consola y explicar en pocas palabras qué es lo que sucede.</p>
 <ul>
 <li><code>frutas[2]</code></li>
 <li><code>frutas[c(1,4)]</code></li>
@@ -275,7 +271,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><code>frutas %in% c("ciruela", "frutilla", "pera", "mandarina")</code></li>
 <li><code>frutas[ frutas %in% c("ciruela", "frutilla", "pera", "mandarina") ]</code></li>
 </ul>
-<p>1.9. Explorar distintas formas de extraer información del vector <code>alturas_cm</code> definido en el ejercicio 1.6. Escribir una frase explicando qué hace cada una. ¿Por qué da error la última?</p>
+<p>1.8. ¿Por qué da error la línea 4 de esta secuencia?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>datos <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"banana"</span>, <span class="dv">2</span>, <span class="st">"pera"</span>, <span class="dv">5</span>, <span class="st">"durazno"</span>, <span class="dv">0</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>datos[<span class="dv">2</span>] </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>datos[<span class="dv">4</span>]</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>datos[<span class="dv">2</span>] <span class="sc">+</span> datos[<span class="dv">4</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>1.9. Explorar distintas formas de extraer información del vector <code>alturas_cm</code> definido en el ejercicio 1.6. Escribir una frase explicando qué hace cada una. ¿Por qué la última retorna <code>numeric(0)</code>?</p>
 <ul>
 <li><code>alturas_cm[c(TRUE, FALSE, TRUE, TRUE)]</code></li>
 <li><code>alturas_cm[alturas_cm &gt;= 180]</code></li>
@@ -330,7 +333,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><code>mean(n)</code></li>
 <li><code>max(n)</code></li>
 <li><code>mean(n, na.rm = TRUE)</code></li>
-<li><code>max(heights, na.rm = TRUE)</code></li>
+<li><code>max(n, na.rm = TRUE)</code></li>
 </ul>
 <p>2.9 A partir de este vector de pesos en Kg de distintas personas:</p>
 <div class="cell">
