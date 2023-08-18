@@ -96,6 +96,9 @@ Tarea para el 25/8: leer el capítulo 1 de [Telling Stories with data](https://t
 - Se define por las preguntas que se hace: es la ciencia que usa datos para describir, explicar y predecir. 
 - No se define por las técnicas: no es la ciencia que usa deep learning.
 
+
+## ¿Qué es la ciencia de datos?
+
 Taxonomía de preguntas:
 
 ::: incremental
@@ -105,9 +108,9 @@ Taxonomía de preguntas:
 -   **predictivas**: adivinar qué va a suceder, sin importar la causa (LdD,...).
 -   **causales**: ¿cambiar una variable, cambia el valor de otra variable? ej.: test A/B
 -   **mecanisticas**: ¿cómo ocurre?
+- Tarea para el 25/8: leer el capítulo 1-3 de [The art of data science](https://bookdown.org/rdpeng/artofdatascience/)
 :::
 
-Tarea para el 25/8: leer el capítulo 1-3 de [The art of data science](https://bookdown.org/rdpeng/artofdatascience/)
 
 # R / RStudio!
 

@@ -431,6 +431,13 @@
     "href": "slides/clase1.html#qué-es-la-ciencia-de-datos-1",
     "title": "Laboratorio de datos",
     "section": "¿Qué es la ciencia de datos?",
-    "text": "¿Qué es la ciencia de datos?\n\nSe define por las preguntas que se hace: es la ciencia que usa datos para describir, explicar y predecir.\nNo se define por las técnicas: no es la ciencia que usa deep learning.\n\nTaxonomía de preguntas:\n\n\ndescriptiva: resumir caracteristicas de un data set. sin interpretación, como atributos de los datos (LdD + IECS).\nexploratorias: buscar patrones, tendencias, relaciones entre variables. sirve para generar hipótesis (LdD)\ninferenciales: evaluar hipotesis, respecto a un patron encontrado en un análisis exploratorio (lo van a ver en IECS).\npredictivas: adivinar qué va a suceder, sin importar la causa (LdD,…).\ncausales: ¿cambiar una variable, cambia el valor de otra variable? ej.: test A/B\nmecanisticas: ¿cómo ocurre?\n\n\nTarea para el 25/8: leer el capítulo 1-3 de The art of data science"
+    "text": "¿Qué es la ciencia de datos?\n\nSe define por las preguntas que se hace: es la ciencia que usa datos para describir, explicar y predecir.\nNo se define por las técnicas: no es la ciencia que usa deep learning."
+  },
+  {
+    "objectID": "slides/clase1.html#qué-es-la-ciencia-de-datos-2",
+    "href": "slides/clase1.html#qué-es-la-ciencia-de-datos-2",
+    "title": "Laboratorio de datos",
+    "section": "¿Qué es la ciencia de datos?",
+    "text": "¿Qué es la ciencia de datos?\nTaxonomía de preguntas:\n\n\ndescriptiva: resumir caracteristicas de un data set. sin interpretación, como atributos de los datos (LdD + IECS).\nexploratorias: buscar patrones, tendencias, relaciones entre variables. sirve para generar hipótesis (LdD)\ninferenciales: evaluar hipotesis, respecto a un patron encontrado en un análisis exploratorio (lo van a ver en IECS).\npredictivas: adivinar qué va a suceder, sin importar la causa (LdD,…).\ncausales: ¿cambiar una variable, cambia el valor de otra variable? ej.: test A/B\nmecanisticas: ¿cómo ocurre?\nTarea para el 25/8: leer el capítulo 1-3 de The art of data science"
   }
 ]
