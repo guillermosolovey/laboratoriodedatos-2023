@@ -83,29 +83,32 @@ En líneas generales:
 
 # ¡Empezamos!
 
-## Ciencia de datos
-- dfdf
+## ¿Qué es la ciencia de datos?
+- "...allows you to turn raw data into understanding, insight, and knowledge" (Wickham, Çetinkaya-Rundel, and Grolemund). [https://r4ds.hadley.nz/](https://r4ds.hadley.nz/)
+- "...the process of formulating a quantitative question that can be answered with data, collecting and cleaning the data, analyzing the data, and communicating the answer to the question to a relevant audience" (Leek and Peng). [http://jtleek.com/ads2020/](http://jtleek.com/ads2020/)
+- "...the process of generating insight from data through reproducible and auditable processes" (Timbers, Campbell, and Lee). [https://datasciencebook.ca/](https://datasciencebook.ca/)
+
+::: footer
+[Telling Stories with data](https://tellingstorieswithdata.com/01-introduction.html#what-is-data-science-and-how-should-we-use-it-to-learn-about-the-world)
+:::
 
 ## Tipo de preguntas
 
 ::: incremental
--   **descriptiva**: resumir caracteristicas de un data set. sin interpretación, como atributos de los datos.
--   **exploratorio**: buscar patrones, tendencias, relaciones entre variables. genera hipotesis
--   **inferencial**: evaluar una hipotesis, respecto a un patron encontrado en un EDA. de la muestra a la poblacion.
--   **predictiva**: adivinar que va a suceder, sin importar la causa.
--   **causal**: cambiar una variable cambia el valor de otra? intervenciones.
--   **mecanistica**: como ocurre?
+-   **descriptiva**: resumir caracteristicas de un data set. sin interpretación, como atributos de los datos (LdD + IECS).
+-   **exploratorias**: buscar patrones, tendencias, relaciones entre variables. sirve para generar hipótesis (LdD)
+-   **inferenciales**: evaluar hipotesis, respecto a un patron encontrado en un análisis exploratorio (lo van a ver en IECS).
+-   **predictivas**: adivinar qué va a suceder, sin importar la causa (LdD,...).
+-   **causales**: ¿cambiar una variable, cambia el valor de otra variable?
+-   **mecanisticas**: ¿cómo ocurre?
 :::
 
 
-## Referencias
-- [The art of data science](https://bookdown.org/rdpeng/artofdatascience/types-of-questions.html)
+::: footer
+[The art of data science](https://bookdown.org/rdpeng/artofdatascience/types-of-questions.html)
+:::
 
-
-## R / RStudio
-
--   vamos a usar mucho R.
--   la clase de hoy es una introducción para que se familiaricen.
+# R / RStudio!
 
 ## RStudio
 

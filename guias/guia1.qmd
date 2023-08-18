@@ -292,3 +292,12 @@ ggplot(data = gm.sur,
 
 4.13. Cambien más cosas del código anterior y prueben el resultado. De hecho, **cambiar cosas y ver qué pasa** es una gran forma de aprender. 
 
+
+## Referencias
+
+- [R Programming for Data Science](https://leanpub.com/rprogramming). Roger D. Peng. 
+- [R for Data Science (2e)](https://r4ds.hadley.nz/). Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.
+- [R para Ciencia de Datos](https://es.r4ds.hadley.nz/). Hadley Wickham y Garrett Grolemund.
+- [Learning statistics with R](https://learningstatisticswithr.com/book/). Danielle Navarro.
+- [R para profesionales de los datos: una introducción](https://www.datanalytics.com/libro_r/). Carlos J. Gil Bellosta.
+- [Data Science. A First Introduction](https://datasciencebook.ca/). Tiffany Timbers, Trevor Campbell, and Melissa Lee.

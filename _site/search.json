@@ -221,7 +221,7 @@
     "href": "slides.html",
     "title": "Slides",
     "section": "",
-    "text": "clase 1 - 18/8"
+    "text": "clase 1 - 18/8\nclase 2 - 25/8"
   },
   {
     "objectID": "TPs/TP1.html",
@@ -389,14 +389,14 @@
     "href": "slides/clase1.html#ciencia-de-datos",
     "title": "Laboratorio de datos",
     "section": "Ciencia de datos",
-    "text": "Ciencia de datos\n\ndfdf"
+    "text": "Ciencia de datos\n\n“…allows you to turn raw data into understanding, insight, and knowledge” (Wickham, Çetinkaya-Rundel, and Grolemund). https://r4ds.hadley.nz/\n“…the process of formulating a quantitative question that can be answered with data, collecting and cleaning the data, analyzing the data, and communicating the answer to the question to a relevant audience” (Leek and Peng). http://jtleek.com/ads2020/\n“…the process of generating insight from data through reproducible and auditable processes” (Timbers, Campbell, and Lee). https://datasciencebook.ca/"
   },
   {
     "objectID": "slides/clase1.html#tipo-de-preguntas",
     "href": "slides/clase1.html#tipo-de-preguntas",
     "title": "Laboratorio de datos",
     "section": "Tipo de preguntas",
-    "text": "Tipo de preguntas\n\n\ndescriptiva: resumir caracteristicas de un data set. sin interpretación, como atributos de los datos.\nexploratorio: buscar patrones, tendencias, relaciones entre variables. genera hipotesis\ninferencial: evaluar una hipotesis, respecto a un patron encontrado en un EDA. de la muestra a la poblacion.\npredictiva: adivinar que va a suceder, sin importar la causa.\ncausal: cambiar una variable cambia el valor de otra? intervenciones.\nmecanistica: como ocurre?"
+    "text": "Tipo de preguntas\n\n\ndescriptiva: resumir caracteristicas de un data set. sin interpretación, como atributos de los datos (LdD + IECS).\nexploratorias: buscar patrones, tendencias, relaciones entre variables. sirve para generar hipótesis (LdD)\ninferenciales: evaluar hipotesis, respecto a un patron encontrado en un análisis exploratorio (lo van a ver en IECS).\npredictivas: adivinar qué va a suceder, sin importar la causa (LdD,…).\ncausales: ¿cambiar una variable, cambia el valor de otra variable?\nmecanisticas: ¿cómo ocurre?\n\n\n\nThe art of data science"
   },
   {
     "objectID": "slides/clase1.html#referencias",
@@ -404,5 +404,19 @@
     "title": "Laboratorio de datos",
     "section": "Referencias",
     "text": "Referencias\n\nThe art of data science"
+  },
+  {
+    "objectID": "guias/guia1.html#referencias",
+    "href": "guias/guia1.html#referencias",
+    "title": "Guía 1",
+    "section": "Referencias",
+    "text": "Referencias\n\nR Programming for Data Science. Roger D. Peng.\nR for Data Science (2e). Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.\nR para Ciencia de Datos. Hadley Wickham y Garrett Grolemund.\nLearning statistics with R. Danielle Navarro.\nR para profesionales de los datos: una introducción. Carlos J. Gil Bellosta.\nData Science. A First Introduction. Tiffany Timbers, Trevor Campbell, and Melissa Lee."
+  },
+  {
+    "objectID": "slides/clase1.html#qué-es-la-ciencia-de-datos",
+    "href": "slides/clase1.html#qué-es-la-ciencia-de-datos",
+    "title": "Laboratorio de datos",
+    "section": "¿Qué es la ciencia de datos?",
+    "text": "¿Qué es la ciencia de datos?\n\n“…allows you to turn raw data into understanding, insight, and knowledge” (Wickham, Çetinkaya-Rundel, and Grolemund). https://r4ds.hadley.nz/\n“…the process of formulating a quantitative question that can be answered with data, collecting and cleaning the data, analyzing the data, and communicating the answer to the question to a relevant audience” (Leek and Peng). http://jtleek.com/ads2020/\n“…the process of generating insight from data through reproducible and auditable processes” (Timbers, Campbell, and Lee). https://datasciencebook.ca/\n\n\nTelling Stories with data"
   }
 ]
