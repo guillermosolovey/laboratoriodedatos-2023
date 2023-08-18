@@ -11,7 +11,7 @@
     "href": "cronograma.html",
     "title": "Cronograma",
     "section": "",
-    "text": "fecha\n      tema\n      slides\n      tp\n    \n  \n  \n    18/8\nIntroducción a la materia. Introducción a R y RStudio. Charla Dátame (16hs).\n\n\n    25/8\nEstadística descriptiva. Visualización. Gramática de gráficos.\n\n\n    1/9\nAnálisis exploratorio de datos y comunicación.\n\n\n    8/9\nTransformación de datos: datos ordenados, vectores, data frames. Unión de data frames.\n\n\n    15/9\nProgramación en R: funciones, iteraciones.\n\n\n    22/9\nReproducibilidad computacional. Comunicación e informes con RMarkdown/Quarto. Charla Dátame (16hs).\n\nPresentación TP1\n    29/9\nIntroducción al modelado. Modelos supervisados y no supervisados. Regresión vs. clasificación. Trade-off sesgo-varianza. Modelo de regresión lineal simple.\n\nConsultas TP1\n    6/10\nRegresión: regresión lineal múltiple y K-nearest neighbors.\n\nEntrega TP1 (límite: 5 de Oct, 23:59)\n    13/10\nFeriado\n\n\n    20/10\nClasificación: Árboles de decisión y K-nearest neighbors. Charla Dátame (16hs).\n\nDevolución TP1\n    27/10\nHerramientas de validación de un\nmodelo. Métodos de resampleo. Muestras de testeo y entrenamiento.Métricas\n\nPresentación TP2\n    3/11\nAprendizaje no supervisado. Métodos de clustering: K-means y clustering jerárquico.\n\nConsultas TP2\n    10/11\nConsultas.\n\nEntrega TP2 (límite: 9 de Nov, 23:59)\n    17/11\nParcial de 10 a 13hs en aula a confirmar. Charla Dátame (16hs).\n\n\n    24/11\nEntrega de notas del parcial y TP2. Cierre\n\n\n    1/12\nRecuperatorio del parcial, de 10 a 13hs en aula a confirmar.\n\nRe-entrega de los TP1 y TP2.\n    8/12\nEntrega de notas del recuperatorio y de los TPs. Cierre."
+    "text": "fecha\n      tema\n      slides\n      tp\n    \n  \n  \n    18/8\nIntroducción a la materia. Ciencia de datos. Tipos de preguntas. Introducción a R y RStudio | Charla Dátame.\n\n\n    25/8\nEstadística descriptiva. Visualización. Gramática de gráficos.\n\n\n    1/9\nAnálisis exploratorio de datos y comunicación.\n\n\n    8/9\nTransformación de datos: datos ordenados, vectores, data frames. Unión de data frames.\n\n\n    15/9\nProgramación en R: funciones, iteraciones | Charla Dátame.\n\n\n    22/9\nReproducibilidad computacional. Comunicación e informes con RMarkdown/Quarto.\n\nPresentación TP1\n    29/9\nIntroducción al modelado. Modelos supervisados y no supervisados. Regresión vs. clasificación. Trade-off sesgo-varianza. Modelo de regresión lineal simple.\n\nConsultas TP1\n    6/10\nRegresión: regresión lineal múltiple y K-nearest neighbors.\n\nEnvío TP1 (límite: 5 de Oct, 23:59)\n    13/10\nFeriado\n\n\n    20/10\nClasificación: Árboles de decisión y K-nearest neighbors | Charla Dátame.\n\nDevolución TP1\n    27/10\nHerramientas de validación de un\nmodelo. Métodos de resampleo. Muestras de testeo y entrenamiento.Métricas\n\nPresentación TP2\n    3/11\nAprendizaje no supervisado. Métodos de clustering: K-means y clustering jerárquico.\n\nConsultas TP2\n    10/11\nConsultas.\n\nEnvío TP2 (límite: 9 de Nov, 23:59)\n    17/11\nParcial de 10 a 13hs en aula a confirmar | Charla Dátame.\n\n\n    24/11\nEntrega de notas del parcial y TP2. Cierre\n\n\n    1/12\nRecuperatorio del parcial, de 10 a 13hs en aula a confirmar.\n\nRe-entrega de TPs.\n    8/12\nEntrega de notas del recuperatorio y de los TPs. Cierre."
   },
   {
     "objectID": "index.html#course-materials",
@@ -291,21 +291,21 @@
     "href": "slides/clase1.html#vacantes",
     "title": "Laboratorio de datos",
     "section": "Vacantes",
-    "text": "Vacantes\n¿A todos los presentes les llegó el mail confirmándoles su vacante?\nSi no pueden cursar, avisen a la brevedad porque hay inscriptos en lista de espera."
+    "text": "Vacantes\n\n¿A todos los presentes les llegó un mail confirmando la vacante?\nSi no pueden cursar, avisen a la brevedad porque hay inscriptos en lista de espera."
   },
   {
     "objectID": "slides/clase1.html#estructura-de-la-materia",
     "href": "slides/clase1.html#estructura-de-la-materia",
     "title": "Laboratorio de datos",
     "section": "Estructura de la materia",
-    "text": "Estructura de la materia\n\nModalidad: Teórico-práctica\nR\nPara aprobar la materia es necesario:\n\nAsistir al ~80% de las clases (11 clases).\nTrabajar en clase.\nAprobar 2 TPs grupales (nota mayor o igual a 4).\nAprobar el parcial individual (nota mayor a 6).\n\nNota final = \\(0.6 \\times \\text{nota parcial} + 0.2 \\times \\text{nota TP1} + 0.2 \\times \\text{nota TP2} + x\\)\n\n\\[\nx = \\left\\{\\begin{aligned}\n          1 & \\text{ si el promedio de los TPs es mayor o igual a 8}\\\\\n          0 & \\text{ si el promedio de los TPs es menor a 8}\n        \\end{aligned}\\right.\n\\]"
+    "text": "Estructura de la materia\n\nTeórico-práctica\nLaboratorio 1103!\nR\nPara aprobar la materia es necesario:\n\nAsistir al ~80% de las clases (11 clases).\nTrabajar en clase.\nAprobar 2 TPs grupales (nota mayor o igual a 4).\nAprobar el parcial individual (nota mayor a 6).\n\nNota final = \\(0.6 \\times \\text{nota parcial} + 0.2 \\times \\text{nota TP1} + 0.2 \\times \\text{nota TP2} + x\\)\n\n\\[\nx = \\left\\{\\begin{aligned}\n          1 & \\text{ si el promedio de los TPs es mayor o igual a 8}\\\\\n          0 & \\text{ si el promedio de los TPs es menor a 8}\n        \\end{aligned}\\right.\n\\]"
   },
   {
     "objectID": "slides/clase1.html#docentes",
     "href": "slides/clase1.html#docentes",
     "title": "Laboratorio de datos",
     "section": "Docentes",
-    "text": "Docentes\n\nDario Elías (ayudante de primera)\nRoberto Duarte (ayudante de primera)\nYamila Alen (ayudante de primera)\nGuillermo Solovey (profesor)"
+    "text": "Docentes\n\nDario Elías (ayudante de primera)\nYamila Alen (ayudante de primera)\nGuillermo Solovey (profesor)"
   },
   {
     "objectID": "slides/clase1.html#comunicación",
@@ -319,21 +319,21 @@
     "href": "slides/clase1.html#fecha-de-parcial",
     "title": "Laboratorio de datos",
     "section": "Fecha de parcial",
-    "text": "Fecha de parcial\n\nParcial. Viernes 17 de noviembre.\nRecuperatorio. Viernes 1 de diciembre.\nPor inconvenientes con las fechas completar a la brevedad el siguiente formulario y vemos de adelantarles la fecha"
+    "text": "Fecha de parcial\n\nParcial. Viernes 17 de noviembre.\nRecuperatorio. Viernes 1 de diciembre.\nPor inconvenientes con las fechas completar a la brevedad este formulario y vemos de adelantarles la fecha."
   },
   {
     "objectID": "slides/clase1.html#programa-de-la-materia",
     "href": "slides/clase1.html#programa-de-la-materia",
     "title": "Laboratorio de datos",
     "section": "Programa de la materia",
-    "text": "Programa de la materia\n\nAnálisis y exploración de datos.\nModelado de datos."
+    "text": "Programa de la materia\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfecha\n      tema\n      slides\n      tp\n    \n\n\n18/8\nIntroducción a la materia. Ciencia de datos. Tipos de preguntas. Introducción a R y RStudio | Charla Dátame.\n\n\n\n\n25/8\nEstadística descriptiva. Visualización. Gramática de gráficos.\n\n\n\n\n1/9\nAnálisis exploratorio de datos y comunicación.\n\n\n\n\n8/9\nTransformación de datos: datos ordenados, vectores, data frames. Unión de data frames.\n\n\n\n\n15/9\nProgramación en R: funciones, iteraciones | Charla Dátame.\n\n\n\n\n22/9\nReproducibilidad computacional. Comunicación e informes con RMarkdown/Quarto.\n\nPresentación TP1\n\n\n29/9\nIntroducción al modelado. Modelos supervisados y no supervisados. Regresión vs. clasificación. Trade-off sesgo-varianza. Modelo de regresión lineal simple.\n\nConsultas TP1\n\n\n6/10\nRegresión: regresión lineal múltiple y K-nearest neighbors.\n\nEnvío TP1 (límite: 5 de Oct, 23:59)\n\n\n13/10\nFeriado\n\n\n\n\n20/10\nClasificación: Árboles de decisión y K-nearest neighbors | Charla Dátame.\n\nDevolución TP1\n\n\n27/10\nHerramientas de validación de un\nmodelo. Métodos de resampleo. Muestras de testeo y entrenamiento.Métricas\n\nPresentación TP2\n\n\n3/11\nAprendizaje no supervisado. Métodos de clustering: K-means y clustering jerárquico.\n\nConsultas TP2\n\n\n10/11\nConsultas.\n\nEnvío TP2 (límite: 9 de Nov, 23:59)\n\n\n17/11\nParcial de 10 a 13hs en aula a confirmar | Charla Dátame.\n\n\n\n\n24/11\nEntrega de notas del parcial y TP2. Cierre\n\n\n\n\n1/12\nRecuperatorio del parcial, de 10 a 13hs en aula a confirmar.\n\nRe-entrega de TPs.\n\n\n8/12\nEntrega de notas del recuperatorio y de los TPs. Cierre."
   },
   {
     "objectID": "slides/clase1.html#material-de-estudio",
     "href": "slides/clase1.html#material-de-estudio",
     "title": "Laboratorio de datos",
     "section": "Material de estudio",
-    "text": "Material de estudio\n\nlos slides de las clases son material didáctico.\nla bibliografía está en la página de la materia y como referencia en los slides de cada clase.\ntraer cuaderno (no cuenten sólo con la computadora).\nno se queden únicamente con lo que hacen en clase. aprender requiere mucha práctica."
+    "text": "Material de estudio\n\nlos slides de las clases son material didáctico.\nla bibliografía de referencia va a estar en las slides de cada clase.\ntraer cuaderno (no cuenten sólo con la computadora).\nno se queden únicamente con lo que hacen en clase. se requiere mucha práctica."
   },
   {
     "objectID": "slides/clase1.html#r-rstudio",
@@ -376,5 +376,33 @@
     "title": "Laboratorio de datos",
     "section": "RStudio",
     "text": "RStudio"
+  },
+  {
+    "objectID": "slides/clase1.html#programa",
+    "href": "slides/clase1.html#programa",
+    "title": "Laboratorio de datos",
+    "section": "Programa",
+    "text": "Programa\nEn líneas generales:\n\nOrganización de datos.\nVisualización, descripción y análisis exploratorio de datos.\nModelado de datos (modelos explicativos y predictivos).\n Cronograma"
+  },
+  {
+    "objectID": "slides/clase1.html#ciencia-de-datos",
+    "href": "slides/clase1.html#ciencia-de-datos",
+    "title": "Laboratorio de datos",
+    "section": "Ciencia de datos",
+    "text": "Ciencia de datos\n\ndfdf"
+  },
+  {
+    "objectID": "slides/clase1.html#tipo-de-preguntas",
+    "href": "slides/clase1.html#tipo-de-preguntas",
+    "title": "Laboratorio de datos",
+    "section": "Tipo de preguntas",
+    "text": "Tipo de preguntas\n\n\ndescriptiva: resumir caracteristicas de un data set. sin interpretación, como atributos de los datos.\nexploratorio: buscar patrones, tendencias, relaciones entre variables. genera hipotesis\ninferencial: evaluar una hipotesis, respecto a un patron encontrado en un EDA. de la muestra a la poblacion.\npredictiva: adivinar que va a suceder, sin importar la causa.\ncausal: cambiar una variable cambia el valor de otra? intervenciones.\nmecanistica: como ocurre?"
+  },
+  {
+    "objectID": "slides/clase1.html#referencias",
+    "href": "slides/clase1.html#referencias",
+    "title": "Laboratorio de datos",
+    "section": "Referencias",
+    "text": "Referencias\n\nThe art of data science"
   }
 ]

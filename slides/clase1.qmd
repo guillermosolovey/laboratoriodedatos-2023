@@ -16,15 +16,22 @@ execute:
 editor: source
 ---
 
+## Docentes
+
+-   Dario Elías (ayudante de primera)
+-   Yamila Alen (ayudante de primera)
+-   Guillermo Solovey (profesor)
+
 ## Vacantes
 
-¿A todos los presentes les llegó el mail confirmándoles su vacante?
+-   ¿A todos los presentes les llegó un mail confirmando la vacante?
 
-Si no pueden cursar, avisen a la brevedad porque hay inscriptos en lista de espera.
+-   Si no pueden cursar, avisen a la brevedad porque hay inscriptos en lista de espera.
 
 ## Estructura de la materia
 
--   Modalidad: Teórico-práctica
+-   Teórico-práctica
+-   Laboratorio 1103!
 -   R
 -   Para aprobar la materia es necesario:
     -   Asistir al \~80% de las clases (11 clases).
@@ -40,13 +47,6 @@ x = \left\{\begin{aligned}
         \end{aligned}\right.
 $$
 
-## Docentes
-
--   Dario Elías (ayudante de primera)
--   Roberto Duarte (ayudante de primera)
--   Yamila Alen (ayudante de primera)
--   Guillermo Solovey (profesor)
-
 ## Comunicación
 
 -   Página de la materia: [ldd2023.netlify.app](https://ldd2023.netlify.app/)
@@ -60,19 +60,47 @@ $$
 
 -   Recuperatorio. Viernes 1 de diciembre.
 
--   Por inconvenientes con las fechas completar a la brevedad el siguiente formulario y vemos de adelantarles la fecha
+-   Por inconvenientes con las fechas completar a la brevedad [este formulario](https://forms.gle/GAYh2gWBPBkieLXh6) y vemos de adelantarles la fecha.
 
-## Programa de la materia
+## Programa
 
--   Análisis y exploración de datos.
--   Modelado de datos.
+En líneas generales:
+
+-   Organización de datos.
+
+-   Visualización, descripción y análisis exploratorio de datos.
+
+-   Modelado de datos (modelos explicativos y predictivos).
+
+-   <a href="https://ldd2023.netlify.app/cronograma.html" target="_blank"> Cronograma</a>
 
 ## Material de estudio
 
 -   los slides de las clases son material didáctico.
--   la bibliografía está en la página de la materia y como referencia en los slides de cada clase.
+-   la bibliografía de referencia va a estar en las slides de cada clase.
 -   traer cuaderno (no cuenten sólo con la computadora).
--   no se queden únicamente con lo que hacen en clase. aprender requiere mucha práctica.
+-   no se queden únicamente con lo que hacen en clase. se requiere mucha práctica.
+
+# ¡Empezamos!
+
+## Ciencia de datos
+- dfdf
+
+## Tipo de preguntas
+
+::: incremental
+-   **descriptiva**: resumir caracteristicas de un data set. sin interpretación, como atributos de los datos.
+-   **exploratorio**: buscar patrones, tendencias, relaciones entre variables. genera hipotesis
+-   **inferencial**: evaluar una hipotesis, respecto a un patron encontrado en un EDA. de la muestra a la poblacion.
+-   **predictiva**: adivinar que va a suceder, sin importar la causa.
+-   **causal**: cambiar una variable cambia el valor de otra? intervenciones.
+-   **mecanistica**: como ocurre?
+:::
+
+
+## Referencias
+- [The art of data science](https://bookdown.org/rdpeng/artofdatascience/types-of-questions.html)
+
 
 ## R / RStudio
 

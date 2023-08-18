@@ -4,5 +4,4 @@ toc: false
 editor: source
 ---
   
-- clase 1 - 18/8
-<!-- - <a href="https://ldd2023.netlify.app/slides/clase1.html" target="_blank"> clase 1 - 18/8</a> -->
+- <a href="https://ldd2023.netlify.app/slides/clase1.html" target="_blank"> clase 1 - 18/8</a> 

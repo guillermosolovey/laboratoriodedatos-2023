@@ -21,7 +21,6 @@ d %>%
     fecha = as.Date(fecha),
     semana = ifelse(is.na(semana), "", semana),
     tema = ifelse(is.na(tema), "", tema), 
-    bibliografia = ifelse(is.na(bibliografia), "", bibliografia), 
     tp = ifelse(is.na(tp), "", tp)) %>%
   select(fecha, tema, slides, tp) %>% 
   gt() %>%
