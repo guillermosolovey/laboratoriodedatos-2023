@@ -14,10 +14,10 @@ website:
         text: "{{< fa home >}} Home"
       - href: cronograma.qmd
         text: "{{< fa calendar >}} Cronograma"
-      - href: tps.qmd
-        text: "{{< fa dumbbell >}} TPs"
+      - href: guias.qmd
+        text: "{{< fa dumbbell >}} Guías"
       - href: slides.qmd
-        text: "{{< fa laptop >}} Slides/Apuntes"
+        text: "{{< fa laptop >}} Slides"
         
 
 format:
@@ -25,6 +25,10 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    grid:
+      body-width: 1600px
+      sidebar-width: 50px
+      margin-width: 50px
 
 editor: visual
 

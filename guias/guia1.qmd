@@ -1,5 +1,5 @@
 ---
-title: "Trabajo Práctico 1"
+title: "Guía 1"
 subtitle: "Laboratorio de datos 2023 (comisión: G. Solovey)"
 format:
   html: 
