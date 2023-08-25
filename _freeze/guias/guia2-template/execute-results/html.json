@@ -1,0 +1,14 @@
+{
+  "hash": "6cd8cc6d92677d1f2d0dd4c02dedd905",
+  "result": {
+    "markdown": "---\ntitle: \"Guía 2 - Template para estadística descriptiva\"\nsubtitle: \"Laboratorio de datos 2023\"\nauthor: \"Nombre Apellido\"\nformat:\n  html: \n    theme: cosmo\n    fontsize: 1em\n    linestretch: 1.15\neditor: source\n---\n\n\n## Medidas de centralidad\n\n- media: esta es mi definición de media con palabras. también lo puedo escribir en Latex:\n\n$$ \\text{media}(x) = \\frac{1}{N} \\sum_{i=1}^N  x_i$$\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# así es como lo puedo calcular en R\nx <- c(3,4,2,5,6)\nm1 <- mean(x)\n# lo calculo de otra forma para comprobar\nm2 <- sum(x)/length(x)\nprint(c(m1, m2))\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 4 4\n```\n:::\n:::\n\n\n\n- mediana: mi definición de mediana\n\nEn R:\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# así es como lo puedo calcular en R\nx <- c(3,4,2,5,6)\nprint(median(x))\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 4\n```\n:::\n:::\n\n\n- moda: mi definición de moda\n\n::: {.cell}\n\n```{.r .cell-code}\nx <- c(\"mandarina\", \"mandarina\", \"pera\", \"pera\", \"pera\", \"tomate\")\nt <- table(x)\nnames(___) \n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

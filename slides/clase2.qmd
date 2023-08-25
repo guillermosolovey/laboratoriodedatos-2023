@@ -1,0 +1,128 @@
+---
+title: "Laboratorio de datos"
+subtitle: "[Licenciatura en Ciencia de Datos](https://lcd.exactas.uba.ar/)"
+author: "Guillermo Solovey"
+institute: "Instituto de Cálculo, UBA-CONICET"
+format:
+  revealjs:
+    theme: custom.scss
+    transition: fade
+    background-transition: fade
+    highlight-style: ayu-mirage
+code-link: true
+execute:
+  echo: true
+  freeze: auto
+editor: source
+---
+
+## Datos: 
+
+![](./figs/clase2-numeros.png){fig-align="center"}
+
+## Estadística descriptiva
+
+
+::: {.callout-note appearance="simple"}
+Resumir 
+:::
+
+## Tres ideas
+
+- distribución
+- medidas de centralidad
+- medidas de variabilidad
+
+
+## Medidas de centralidad
+
+- resumir en un único número!
+- Moda
+  - ` 1 1 1 2 3 4 5 6 ` 
+  - ` 1 1 1 2 2 2 5 6 ` 
+  - ¿es buena la moda? ` 1 1 2 3 4 6 7 9 ` 
+- Mediana
+  - ` 1 3 4 5 6 7 9 ` 
+  - ` 1 5 4 3 6 7 9 ` 
+  - ` 1 2 3 4 5 6 ` 
+  - ¿es buena la mediana? ` 1 2 3 4 4 4 5 6 6 6 7 7 1000 `
+- Media (promedio)
+  - $\frac{1}{n}\sum_i^n x_i$
+  - `3 7 9 2 6`
+  
+  
+## Medidas de centralidad
+
+- ejemplo de histograma con media, mediana y moda.
+- la mediana y la moda son insensibles a valores atípicos (por ejemplo valores extremos que son poco frecuentes0).
+
+
+## Medidas de variabilidad
+
+- mostrar que el promedio de distancias abs no sirve
+- varianza: sum de sq diff / n
+- The mean is the balancing point in the data
+- sd = sqrt(varianza)
+
+## Cuarteto de Anscombe
+
+::: {.panel-tabset}
+
+## Plot
+```{r}
+#| echo: false
+require(tidyverse)
+
+data(anscombe)
+ac = anscombe
+ac_long<-data.frame(x=c(ac[,1],
+                        ac[,2],
+                        ac[,3],
+                        ac[,4]),
+                    y=c(ac[,5],
+                        ac[,6],
+                        ac[,7],
+                        ac[,8]),
+                    quartet = as.factor(rep(1:4,each=11))
+)
+
+ggplot(ac_long, aes(x=x, y=y, color=quartet)) +
+  geom_point(size = 5) +
+  ylim(0, 15) +
+  theme_classic(base_size = 24) +
+  facet_wrap(~quartet)
+
+```
+
+
+## Resumen
+
+
+```{r}
+#| echo: false
+library(kableExtra)
+ac_long_summary <- ac_long %>%
+                    dplyr::group_by(quartet) %>%
+                    dplyr::summarise(mean_x = mean(x),
+                              var_x = var(x),
+                              mean_y = mean(y),
+                              var_y = var(y))
+
+# knitr::kable(ac_long_summary)
+kableExtra::kbl(ac_long_summary,
+                escape = F, 
+                align = "c", 
+                digits = 2) %>%
+  kableExtra::column_spec(1, bold = T) %>%
+  kableExtra::kable_classic("striped", full_width = F)
+
+
+
+```
+::: 
+
+## Cuarteto de Anscombe
+
+::: {.callout-important}
+This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
+:::

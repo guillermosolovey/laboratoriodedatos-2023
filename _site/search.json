@@ -439,5 +439,159 @@
     "title": "Laboratorio de datos",
     "section": "¿Qué es la ciencia de datos?",
     "text": "¿Qué es la ciencia de datos?\nTaxonomía de preguntas:\n\n\ndescriptiva: resumir caracteristicas de un data set. sin interpretación, como atributos de los datos (LdD + IECS).\nexploratorias: buscar patrones, tendencias, relaciones entre variables. sirve para generar hipótesis (LdD)\ninferenciales: evaluar hipotesis, respecto a un patron encontrado en un análisis exploratorio (lo van a ver en IECS).\npredictivas: adivinar qué va a suceder, sin importar la causa (LdD,…).\ncausales: ¿cambiar una variable, cambia el valor de otra variable? ej.: test A/B\nmecanisticas: ¿cómo ocurre?\nTarea para el 25/8: leer el capítulo 1-3 de The art of data science"
+  },
+  {
+    "objectID": "slides/clase2.html#docentes",
+    "href": "slides/clase2.html#docentes",
+    "title": "Laboratorio de datos",
+    "section": "Docentes",
+    "text": "Docentes\n\n\n\n\n\n\nPay Attention\n\n\nUsing callouts is an effective way to highlight content that your reader give special consideration or attention."
+  },
+  {
+    "objectID": "slides/clase2.html#estadística-descriptiva",
+    "href": "slides/clase2.html#estadística-descriptiva",
+    "title": "Laboratorio de datos",
+    "section": "Estadística descriptiva",
+    "text": "Estadística descriptiva\n\n\n\n\n\n\nResumir"
+  },
+  {
+    "objectID": "slides/clase2.html#datos",
+    "href": "slides/clase2.html#datos",
+    "title": "Laboratorio de datos",
+    "section": "Datos:",
+    "text": "Datos:"
+  },
+  {
+    "objectID": "slides/clase2.html#tres-ideas",
+    "href": "slides/clase2.html#tres-ideas",
+    "title": "Laboratorio de datos",
+    "section": "Tres ideas",
+    "text": "Tres ideas\n\ndistribución\nmedidas de centralidad\nmedidas de variabilidad"
+  },
+  {
+    "objectID": "slides/clase2.html#medidas-de-centralidad",
+    "href": "slides/clase2.html#medidas-de-centralidad",
+    "title": "Laboratorio de datos",
+    "section": "Medidas de centralidad",
+    "text": "Medidas de centralidad\n\nresumir en un único número!\nModa\n\n1 1 1 2 3 4 5 6\n1 1 1 2 2 2 5 6\n¿es buena la moda? 1 1 2 3 4 6 7 9\n\n\n\nMediana\n\n1 3 4 5 6 7 9\n1 5 4 3 6 7 9\n1 2 3 4 5 6\n¿es buena la mediana? 1 2 3 4 4 4 5 6 6 6 7 7 1000\n\n\n\nMedia (promedio)\n\n\\(\\frac{1}{n}\\sum_i^n x_i\\)\n3 7 9 2 6"
+  },
+  {
+    "objectID": "slides/clase2.html#medidas-de-centralidad-1",
+    "href": "slides/clase2.html#medidas-de-centralidad-1",
+    "title": "Laboratorio de datos",
+    "section": "Medidas de centralidad",
+    "text": "Medidas de centralidad\n\nejemplo de histograma con media, mediana y moda.\nla mediana y la moda son insensibles a valores atípicos (por ejemplo valores extremos que son poco frecuentes0)."
+  },
+  {
+    "objectID": "slides/clase2.html#medidas-de-variabilidad",
+    "href": "slides/clase2.html#medidas-de-variabilidad",
+    "title": "Laboratorio de datos",
+    "section": "Medidas de variabilidad",
+    "text": "Medidas de variabilidad\n\nmostrar que el promedio de distancias abs no sirve\nvarianza: sum de sq diff / n\nThe mean is the balancing point in the data\nsd = sqrt(varianza)"
+  },
+  {
+    "objectID": "slides/clase2.html#anscombe",
+    "href": "slides/clase2.html#anscombe",
+    "title": "Laboratorio de datos",
+    "section": "Anscombe",
+    "text": "Anscombe"
+  },
+  {
+    "objectID": "slides/clase2.html#cuarteto-de-anscombe",
+    "href": "slides/clase2.html#cuarteto-de-anscombe",
+    "title": "Laboratorio de datos",
+    "section": "Cuarteto de Anscombe",
+    "text": "Cuarteto de Anscombe\n\n\nPlot\nResumen\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n quartet \n    mean_x \n    var_x \n    mean_y \n    var_y \n  \n\n\n 1 \n    9 \n    11 \n    7.5 \n    4.13 \n  \n\n 2 \n    9 \n    11 \n    7.5 \n    4.13 \n  \n\n 3 \n    9 \n    11 \n    7.5 \n    4.12 \n  \n\n 4 \n    9 \n    11 \n    7.5 \n    4.12"
+  },
+  {
+    "objectID": "slides/clase2.html#cuarteto-de-anscombe-1",
+    "href": "slides/clase2.html#cuarteto-de-anscombe-1",
+    "title": "Laboratorio de datos",
+    "section": "Cuarteto de Anscombe",
+    "text": "Cuarteto de Anscombe\n\n\n\n\n\n\nImportant\n\n\nThis is an example of a ‘folded’ caution callout that can be expanded by the user. You can use collapse=\"true\" to collapse it by default or collapse=\"false\" to make a collapsible callout that is expanded by default."
+  },
+  {
+    "objectID": "guias/guia2.html#medidas-de-centralidad-y-variabilidad",
+    "href": "guias/guia2.html#medidas-de-centralidad-y-variabilidad",
+    "title": "Guía 2",
+    "section": "1. Medidas de centralidad y variabilidad",
+    "text": "1. Medidas de centralidad y variabilidad\n1.0 Definir media, mediana y moda. ¿Qué tiene que pasar para que un conjunto de números tenga dos modas?\n1.1 Definir desvío estándar. ¿Por qué es una medida de variabilidad y por qué la diferencia en el numerador está elevada al cuadraro?\n1.1 Cargar, como en la guía 1, el dataset gapminder del paquete homónimo y calcular la media y mediana de la expectativa de vida en 1952 (lifeExp).\n1.2 Paréntesis: R no tiene una función para calcular la moda. En este ejercicio vamos a crear esa función (de paso aprenden cómo crear funciones en R). - Escriban la definición de la moda. - Si yo les paso un vector, qué pasos necesitaría hacer para calcular la moda. -\n1.3. Generar datos con rnorm(100), guardarlos en un vector y calular la media, mediana y moda\n1.4 Calcular el rango, varianza y el desvío estandar de la expectativa de vida (lifeExp) tomando el dataset gapminder para el año 1952.\n1.5 Calcular la media, varianza y desvío estándar de la expectativa de vida para cada uno de los años reportados en el dataset. Para esto se puede hacer una función. Dar un ejemplo para completar.\n1.6 Calcular la media, la mínima, la máxima y el desvío estándar de la expectativa de vida en cada continente en 1952 y en 2007.\n1.7 Crear un Rmd"
+  },
+  {
+    "objectID": "guias/guia2.html#correlaciones",
+    "href": "guias/guia2.html#correlaciones",
+    "title": "Guía 2",
+    "section": "3. Correlaciones",
+    "text": "3. Correlaciones\n3.1 Ejercicios básicos de correlación.\n3.2 Para qué sirve? Dar datos y descripciones posibles para elegir.\n3.3 Jugar a guess the correlation.\n3.4 Generar los datos de McElreath y estimar."
+  },
+  {
+    "objectID": "guias/guia2.html#tipos-de-gráficos",
+    "href": "guias/guia2.html#tipos-de-gráficos",
+    "title": "Guía 2",
+    "section": "1. Tipos de gráficos",
+    "text": "1. Tipos de gráficos\npara que sirve cada uno\nTengo datos de una encuesta realizada en distintas provincias de Argentina y quiero saber cuántas personas respondieron a la encuesta en cada provincia. ¿Hago un gráfico de líneas, de dispersión (scatter), histograma o un gráfico de barras (bar plot)? Realizar a mano en tu cuaderno cómo esperás que se vea el gráfico.\nEstás estudiando la relación entre altura y peso de las personas. Tenés un data-set que tiene como variables la edad, sexo y peso de cada persona. Si querés describir estas variables por separado, ¿qué gráfico harías para cada una? ¿y si querés visualizar la relación entre peso y altura? Realizar a mano en tu cuaderno cómo esperás que se vea el gráfico.\nRealizar un gráfico de barras que muestre la cantidad de países hay en cada continente según los datos de gapminder."
+  },
+  {
+    "objectID": "guias/guia2.html#corregir-un-grafico-ya-hecho",
+    "href": "guias/guia2.html#corregir-un-grafico-ya-hecho",
+    "title": "Guía 2",
+    "section": "2. Corregir un grafico ya hecho",
+    "text": "2. Corregir un grafico ya hecho\nDar un ggplot y la tarea es imitarlo\nQueremos investigar cómo varía la expectativa de vida entre los continentes. Para eso queremos un gráfico como el siguiente\n\n#! echo: true\nplot_q2 <- ggplot(<arguments>) +\n  geom_<type>(<arguments>) +\n  ...\n\nplot_q2\n\nLooking at the previous plot, which continent has the highest median life expectancy? Which part of the boxplot can we determine this from?\n\n#! echo: false\nggplot(data = gapminder, aes(x = year, y = lifeExp)) +\n         geom_line(aes(group = country), color = \"gray70\") +\n  geom_smooth(aes(group = continent), method = \"lm\") +\n  facet_wrap(~ continent)\n\n`geom_smooth()` using formula = 'y ~ x'"
+  },
+  {
+    "objectID": "guias/guia2.html#anscombe",
+    "href": "guias/guia2.html#anscombe",
+    "title": "Guía 2",
+    "section": "3. Anscombe",
+    "text": "3. Anscombe"
+  },
+  {
+    "objectID": "guias/guia2-template.html",
+    "href": "guias/guia2-template.html",
+    "title": "Guía 2 - Template para estadística descriptiva",
+    "section": "",
+    "text": "media: esta es mi definición de media con palabras. también lo puedo escribir en Latex:\n\n\\[ \\text{media}(x) = \\frac{1}{N} \\sum_{i=1}^N  x_i\\]\n\n# así es como lo puedo calcular en R\nx <- c(3,4,2,5,6)\nm1 <- mean(x)\n# lo calculo de otra forma para comprobar\nm2 <- sum(x)/length(x)\nprint(c(m1, m2))\n\n[1] 4 4\n\n\n\nmediana: mi definición de mediana\n\nEn R:\n\n# así es como lo puedo calcular en R\nx <- c(3,4,2,5,6)\nprint(median(x))\n\n[1] 4\n\n\n\nmoda: mi definición de moda\n\n\nx <- c(\"mandarina\", \"mandarina\", \"pera\", \"pera\", \"pera\", \"tomate\")\nt <- table(x)\nnames(___)"
+  },
+  {
+    "objectID": "guias/guia2.html#variables-categóricas-y-numérica",
+    "href": "guias/guia2.html#variables-categóricas-y-numérica",
+    "title": "Guía 2",
+    "section": "1. Variables categóricas y numérica",
+    "text": "1. Variables categóricas y numérica\n1.1 Dar tres ejemplos de variables categóricas y numéricas.\n1.2 En el dataset gapminder del paquete homónimo (que ya trabajaron en la guía 1), una de las variables es el producto bruto per capita (gdpPercap). ¿Es una variable categórica (nominal u ordinal) o numérica (discreta o contínua)?\n1.3 Supongamos que definimos una nueva variable que puede tomar los siguientes tres valores:\n\\[\n\\begin{equation}\n  f(x)=\\begin{cases}\n    1, & \\text{if $x<0$}.\\\\\n    0, & \\text{otherwise}.\n  \\end{cases}\n\\end{equation}\n\\]"
+  },
+  {
+    "objectID": "guias/guia2.html#medidas-de-posición-y-dispersión",
+    "href": "guias/guia2.html#medidas-de-posición-y-dispersión",
+    "title": "Guía 2",
+    "section": "2. Medidas de posición y dispersión",
+    "text": "2. Medidas de posición y dispersión\n2.1 Definir media, mediana y moda. ¿Qué tiene que pasar para que existan dos modas?\n2.2 R no tiene una función para calcular la moda. Escribir una función de R que calcule la moda de una muestra de datos de variable categórica y probarla con el vector colores y con el variable continent del dataset gapminder. Ayuda: Usar las funciones table y which.max().\n\nmi.moda <- function(x){\n  __ COMPLETAR ACÁ __\n  return(output)\n}\n\n# verifico que funciona\ncolores <- c('blue', 'red', 'green', 'red', 'black', 'yellow','blue','blue')\nmi.moda(colores)\n\n2.3 Calcular la media y mediana de la expectativa de vida entre países en 1952 usando los datos de gapminder (variable: lifeExp).\n2.4 Definir desvío estándar. ¿Por qué la diferencia en el numerador está elevada al cuadrado? Escribir una función de R que calcule el desvío estándar.\n2.5 Calcular el rango, varianza y el desvío estandar de la expectativa de vida (lifeExp) entre países tomando sólo el dataset gapminder para el año 1952. Comparar el resultado de usar la función creada en 2.4 con sd()de R-base.\n2.6 Extra: Guardar este archivo Quarto (.qmd) y abrirlo en RStudio. Completar lo que falta. AGREGAR LINK A GITHUB"
+  },
+  {
+    "objectID": "guias/guia2.html#variables-categóricas-y-numéricas",
+    "href": "guias/guia2.html#variables-categóricas-y-numéricas",
+    "title": "Guía 2",
+    "section": "1. Variables categóricas y numéricas",
+    "text": "1. Variables categóricas y numéricas\n1.1 Dar tres ejemplos de variables categóricas y numéricas.\n1.2 En el dataset gapminder del paquete homónimo (que ya trabajaron en la guía 1), una de las variables es el producto bruto per capita de los países (gdpPercap). ¿Es una variable categórica (nominal u ordinal) o numérica (discreta o contínua)?\n1.3 Supongamos que definimos una nueva variable que puede tomar los siguientes valores:\n\\[\n\\begin{equation}\n  I.gdp = \\begin{cases}\n    0, & \\text{si gdpPercap $< 1600$}.\\\\\n    1, & \\text{si $1600 \\le $ gdpPercap $ < 6600$}.\\\\\n    2, & \\text{en otro caso}.\n  \\end{cases}\n\\end{equation}\n\\]\n¿La nueva variable \\(I.gdp\\) es categórica (nominal u ordinal) o numérica (discreta o contínua)? ¿Cambia la respuesta si la variable \\(I.gdp\\) toma valores “bajo”, “medio” y “alto” en lugar de 0, 1, 2?\n1.4 Calcular la proporción de países en cada continente usando la función prop.table() y la función table(). Buscar en la ayuda de RStudio cuál es el argumento de la función prop.table().\n1.5 Crear una variable \\(I\\) que valga 1 si gdpPercap es mayor que 2000 dólares y 0 si no lo es. Luego crear una tabla de 2 filas y 5 columnas que calcule la cantidad de países donde \\(I=\\{0,1\\}\\) en cada continente. Usar la función table() apropiadamente.\n1.6 Convertir el vector colores a factor y comprobar que funcionó usando la función class(). Verificar las categorías creadas usando la función levels().\n\ncolores <- c('blue', 'red', 'green', 'red', 'black', 'yellow','blue','blue')"
+  },
+  {
+    "objectID": "guias/guia2.html#referencias",
+    "href": "guias/guia2.html#referencias",
+    "title": "Guía 2",
+    "section": "Referencias",
+    "text": "Referencias\n\nEstadística descriptiva:\n\nCap. 2 de Answering questions with data. Matthew J. C. Crump, Danielle J. Navarro, and Jeffrey Suzuki.\n\n\n\nVisualización de datos:\n\nCap. 2 de R for Data Science (2e). Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.\nCap. 4 de Data Science. A First Introduction. Tiffany Timbers, Trevor Campbell, and Melissa Lee."
+  },
+  {
+    "objectID": "guias/guia2.html#estadística-descriptiva",
+    "href": "guias/guia2.html#estadística-descriptiva",
+    "title": "Guía 2",
+    "section": "Estadística descriptiva:",
+    "text": "Estadística descriptiva:\n\nCap. 2 de Answering questions with data. Matthew J. C. Crump, Danielle J. Navarro, and Jeffrey Suzuki."
+  },
+  {
+    "objectID": "guias/guia2.html#visualización-de-datos-1",
+    "href": "guias/guia2.html#visualización-de-datos-1",
+    "title": "Guía 2",
+    "section": "Visualización de datos:",
+    "text": "Visualización de datos:\n\nCap. 2 de R for Data Science (2e). Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.\nCap. 4 de Data Science. A First Introduction. Tiffany Timbers, Trevor Campbell, and Melissa Lee."
   }
 ]
