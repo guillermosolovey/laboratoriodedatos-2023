@@ -41,9 +41,9 @@ $$
 
 ¿La nueva variable $I.gdp$ es categórica (nominal u ordinal) o numérica (discreta o contínua)? ¿Cambia la respuesta si la variable $I.gdp$ toma valores "bajo", "medio" y "alto" en lugar de 0, 1, 2?
 
-1.4 Calcular la proporción de países en cada continente usando la función `prop.table()` y la función `table()`. Buscar en la ayuda de RStudio cuál es el argumento de la función `prop.table()`.
+1.4 Filtrar el dataset de `gapminder` para el año 2002. Luego, para ese año, calcular la proporción de países en cada continente usando la función `prop.table()` y la función `table()`. Buscar en la ayuda de RStudio cuál es el argumento de la función `prop.table()`.
 
-1.5  Crear una variable $I$ que valga 1 si `gdpPercap` es mayor que 2000 dólares y 0 si no lo es. Luego crear una tabla de 2 filas y 5 columnas que calcule la cantidad de países donde $I=\{0,1\}$ en cada continente. Usar la función `table()` apropiadamente.
+1.5 Con el mismo filtro que el 1.4 (es decir, sólo para el año 2002), crear una variable $I$ que valga 1 si `gdpPercap` es mayor que 2000 dólares y 0 si no lo es. Luego crear una tabla de 2 filas y 5 columnas que calcule la cantidad de países donde $I=\{0,1\}$ en cada continente. Usar la función `table()` apropiadamente.
 
 1.6 Convertir el vector `colores` a `factor` y comprobar que funcionó usando la función `class()`. Verificar las categorías creadas usando la función `levels()`.
 
@@ -75,6 +75,8 @@ mi.moda <- function(x){
 colores <- c('blue', 'red', 'green', 'red', 'black', 'yellow','blue','blue')
 mi.moda(colores)
 ```
+
+¿Qué pasa si hay 2 modas?
 
 1.9 Calcular la media y mediana de la expectativa de vida entre países en 1952 usando los datos de `gapminder` (variable: `lifeExp`). 
 
