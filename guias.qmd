@@ -5,3 +5,4 @@ editor: source
 ---
 
 - [Guía 1](./guias/guia1.html)
+- [Guía 2](./guias/guia2.html)
