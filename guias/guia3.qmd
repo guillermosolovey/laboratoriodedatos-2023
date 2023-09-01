@@ -196,9 +196,9 @@ ggplot(millas, aes(x = cilindrada)) +
 2.1 Usando distintas estrategia de visualización, usar el dataset de `pinguinos` para explorar cuáles parecen ser las variables más importantes para predecir la masa corporal de los pinguinos. Reportar los gráficos que lo guian hacia esa conclusión.
 
 
-
 # Referencias
 
+- Recomendamos [esta clase](https://youtube.com/playlist?list=PLYqQ3ecJzraFraZdrOi05kx76aH7Cbz5H&si=SQMcZ5GlD-iUgubX) de visualización de datos con `ggplot2` de la Dra. Lucía Babino del Instituto de Cálculo.
 - Cap. 10-11 de [R for Data Science (2e)](https://r4ds.hadley.nz/). Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.
 - Cap. 4 de [Data Science. A First Introduction](https://datasciencebook.ca/). Tiffany Timbers, Trevor Campbell, and Melissa Lee.
 
