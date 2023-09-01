@@ -199,7 +199,7 @@ ggplot(millas, aes(x = cilindrada)) +
 
 # Referencias
 
-- [R for Data Science (2e)](https://r4ds.hadley.nz/). Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.
-- [Data Science. A First Introduction](https://datasciencebook.ca/). Tiffany Timbers, Trevor Campbell, and Melissa Lee.
+- Cap. 10-11 de [R for Data Science (2e)](https://r4ds.hadley.nz/). Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.
+- Cap. 4 de [Data Science. A First Introduction](https://datasciencebook.ca/). Tiffany Timbers, Trevor Campbell, and Melissa Lee.
 
 
