@@ -1,0 +1,95 @@
+---
+title: "Laboratorio de datos"
+subtitle: "[Licenciatura en Ciencia de Datos](https://lcd.exactas.uba.ar/)"
+author: "Guillermo Solovey"
+institute: "Instituto de Cálculo, UBA-CONICET"
+format:
+  revealjs:
+    theme: custom.scss
+    transition: fade
+    background-transition: fade
+    highlight-style: ayu-mirage
+code-link: true
+execute:
+  echo: true
+  freeze: auto
+editor: source
+---
+
+## Tipos de variables 
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+require(googlesheets4)
+require(gt)
+require(gtExtras)
+require(tidyverse)
+require(palmerpenguins)
+require(gapminder)
+gs4_deauth()
+d <- read_sheet("18J1bkmN3UosFHQ5naGwYkJODJxevaFv9RkREhu_3kFY")
+```
+
+
+```{r}
+#| echo: false
+d %>% 
+  mutate(
+    nota = ifelse(is.na(nota), "", nota)) %>%
+  select(2:5) %>%
+  gt()  %>%
+  gt::as_raw_html() 
+```
+
+## `geom_point()`
+
+
+::: columns
+
+::: {.column  width="50%"}
+```{r}
+#| eval: false
+#| warning: false
+ggplot(data = penguins, 
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) + 
+  geom_point() + 
+  theme_classic()
+```
+:::
+
+::: {.column  width="50%"}
+```{r}
+#| echo: false
+#| warning: false
+ggplot(data = penguins, 
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) + 
+  geom_point() + 
+  theme_classic(base_size = 25)
+```
+:::
+
+:::
+
+
+
+
+## `geom_point()`
+
+```{r}
+#| eval: false
+#| warning: false
+ggplot(data = penguins, 
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) + 
+  geom_point() + 
+  theme_classic()
+```
+
+```{r}
+#| echo: false
+#| warning: false
+ggplot(data = penguins, 
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) + 
+  geom_point() + 
+  theme_classic(base_size = 15)
+```
+
+
