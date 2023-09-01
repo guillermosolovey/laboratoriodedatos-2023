@@ -75,15 +75,15 @@ data.cafe <- data.frame(cafe, dormir)
 
 ```
 
-1.3 Instalar el paquete "datos". Abrir el data frame `millas` (`View(millas)`). Averiguar qué significan las variables corriendo `?millas` en la consola. Hacer un gráfico del consumo en autopista en función de la cilindrada de los autos en el que cada observación (auto) está graficada con un triángulo rosa (*Ayuda: buscar [acá](https://ggplot2.tidyverse.org/articles/ggplot2-specs.html) las especificaciones de `ggplot2`*).
+1.3 Cargando el paquete `ggplot2` tienen el data frame `mpg` (`View(mpg)`). Averiguar qué significan las variables corriendo `?mpg` en la consola. Hacer un gráfico del consumo en hwy en función de la displ de los autos en el que cada observación (auto) está graficada con un triángulo rosa (*Ayuda: buscar [acá](https://ggplot2.tidyverse.org/articles/ggplot2-specs.html) las especificaciones de `ggplot2`*).
 
 1.4 ¿Por qué el siguiente código no resulta en un gráfico con puntos azules? Corregirlo para que funcione.
 
 ```{r}
 #| eval: false
 
-ggplot(millas) + 
-  geom_point(aes(x = cilindrada, y = autopista, color = "blue"))
+ggplot(mpg) + 
+  geom_point(aes(x = displ, y = hwy, color = "blue"))
 ```
 
 1.5 ¿Qué pasa si uno mapea una "aesthetic()" a algo que no es una variable? Por ejemplo:
@@ -91,7 +91,7 @@ ggplot(millas) +
 ```{r}
 #| eval: false
 
-ggplot(millas, aes(x=cilindrada, y=autopista, fill = cilindrada < 5)) + 
+ggplot(mpg, aes(x=displ, y=hwy, fill = displ < 5)) + 
   geom_point(shape = 24, size = 4) + theme_classic()
 ```
 
@@ -103,7 +103,7 @@ ggplot(millas, aes(x=cilindrada, y=autopista, fill = cilindrada < 5)) +
 #| echo: false
 #| warning: false
 
-ggplot(millas, aes(x = cilindrada, y = autopista, color = traccion)) +
+ggplot(mpg, aes(x = displ, y = hwy, color = drv)) +
   geom_smooth(show.legend = TRUE,
               method = "lm", 
               se = FALSE ) + 
@@ -112,11 +112,11 @@ ggplot(millas, aes(x = cilindrada, y = autopista, color = traccion)) +
 ```
 
 
-1.7 Hacer un histograma del consumo de los autos en ciudad y otro del consumo en autopista. 
+1.7 Hacer un histograma del consumo de los autos en ciudad y otro del consumo en hwy. 
 
 1.8 Hacer un boxplot del consumo discriminado por tracción. Es decir, 3 boxplots. ¿Cuál es la tracción que menos consume?
 
-1.9 Reproducir los siguientes gráficos (notar que la variable categórica que se usa para graficar es `traccion`). 
+1.9 Reproducir los siguientes gráficos (notar que la variable categórica que se usa para graficar es `drv`). 
 
 ```{r}
 #| echo: false
@@ -125,24 +125,24 @@ ggplot(millas, aes(x = cilindrada, y = autopista, color = traccion)) +
 #| fig-width: 3
 #| fig-height: 3
 
-ggplot(millas, aes(x = cilindrada, y = autopista)) + 
+ggplot(mpg, aes(x = displ, y = hwy)) + 
   geom_point() + 
   geom_smooth(method = "lm", se = FALSE)
-ggplot(millas, aes(x = cilindrada, y = autopista)) + 
-  geom_smooth(aes(group = traccion), method = "lm", se = FALSE) +
+ggplot(mpg, aes(x = displ, y = hwy)) + 
+  geom_smooth(aes(group = drv), method = "lm", se = FALSE) +
   geom_point()
-ggplot(millas, aes(x = cilindrada, y = autopista, color = traccion)) + 
+ggplot(mpg, aes(x = displ, y = hwy, color = drv)) + 
   geom_point() + 
   geom_smooth(method = "lm", se = FALSE)
-ggplot(millas, aes(x = cilindrada, y = autopista)) + 
-  geom_point(aes(color = traccion)) + 
+ggplot(mpg, aes(x = displ, y = hwy)) + 
+  geom_point(aes(color = drv)) + 
   geom_smooth(method = "lm", se = FALSE)
-ggplot(millas, aes(x = cilindrada, y = autopista)) + 
-  geom_point(aes(color = traccion)) +
-  geom_smooth(aes(linetype = traccion), method = "lm", se = FALSE)
-ggplot(millas, aes(x = cilindrada, y = autopista)) + 
+ggplot(mpg, aes(x = displ, y = hwy)) + 
+  geom_point(aes(color = drv)) +
+  geom_smooth(aes(linetype = drv), method = "lm", se = FALSE)
+ggplot(mpg, aes(x = displ, y = hwy)) + 
   geom_point(size = 4, color = "black") + 
-  geom_point(aes(color = traccion))
+  geom_point(aes(color = drv))
 ```
 
 1.10 ¿Por qué aparecen celdas vacías en este gráfico "facetado"?
@@ -150,10 +150,10 @@ ggplot(millas, aes(x = cilindrada, y = autopista)) +
 ```{r}
 #| echo: true
 #| eval: false
-ggplot(millas, aes(x = cilindrada, y = autopista)) + 
+ggplot(mpg, aes(x = displ, y = hwy)) + 
   geom_point() +
   theme_bw() + 
-  facet_grid(traccion~cilindros)
+  facet_grid(drv~cyl)
 ```
 
 1.11 Leer `?facet_wrap`. ¿Qué hacen los argumentos `nrow` y `ncol`? Explorar qué otras opciones existen para el controlar el aspecto del "facetado"? ¿Por qué `facet_grid()` no tiene como argumentos a `nrow` y `ncol`?
@@ -163,30 +163,30 @@ ggplot(millas, aes(x = cilindrada, y = autopista)) +
 ```{r}
 #| echo: true
 #| eval: false
-ggplot(millas, aes(x = cilindrada, y = autopista)) + 
+ggplot(mpg, aes(x = displ, y = hwy)) + 
   geom_point() +
   theme_bw() + 
-  facet_wrap(~clase, nrow = 2)
+  facet_wrap(~class, nrow = 2)
 ```
 
-a) Graficar la misma información pero mapeando la `clase` en el color. 
+a) Graficar la misma información pero mapeando la `class` en el color. 
 
 b) ¿Qué ventajas y desventajas tiene el "faceteado" frente al aesthetic de color? ¿En qué circunstancias usarían una forma o la otra?
 
-1.13 Comparar estas dos formas de entender la relación entre el tamaño del motor (cilindrada) y la tracción del auto. ¿Qué hace el `.` y qué diferencia hay entre `facet_grid(traccion ~ .)` y `facet_grid(. ~ traccion )`? ¿Cuál de las dos formas facilita la comparación? ¿Qué les dice esto respecto de cuándo usar un faceteado sobre filas y sobre columnas?
+1.13 Comparar estas dos formas de entender la relación entre el tamaño del motor (displ) y la tracción del auto. ¿Qué hace el `.` y qué diferencia hay entre `facet_grid(drv ~ .)` y `facet_grid(. ~ drv )`? ¿Cuál de las dos formas facilita la comparación? ¿Qué les dice esto respecto de cuándo usar un faceteado sobre filas y sobre columnas?
 
 ```{r}
 #| echo: true
 #| eval: false
 
-ggplot(millas, aes(x = cilindrada)) + 
+ggplot(mpg, aes(x = displ)) + 
   geom_histogram() + 
-  facet_grid(traccion ~ .) +
+  facet_grid(drv ~ .) +
   theme_bw()
 
-ggplot(millas, aes(x = cilindrada)) + 
+ggplot(mpg, aes(x = displ)) + 
   geom_histogram() + 
-  facet_grid(. ~ traccion) +
+  facet_grid(. ~ drv) +
   theme_bw()
 ```
 
@@ -198,7 +198,7 @@ ggplot(millas, aes(x = cilindrada)) +
 
 # Referencias
 
-- Recomendamos [esta clase](https://youtube.com/playlist?list=PLYqQ3ecJzraFraZdrOi05kx76aH7Cbz5H&si=SQMcZ5GlD-iUgubX) de visualización de datos con `ggplot2` de la Dra. Lucía Babino del Instituto de Cálculo.
+- Recomendamos [esta class](https://youtube.com/playlist?list=PLYqQ3ecJzraFraZdrOi05kx76aH7Cbz5H&si=SQMcZ5GlD-iUgubX) de visualización de datos con `ggplot2` de la Dra. Lucía Babino del Instituto de Cálculo.
 - Cap. 10-11 de [R for Data Science (2e)](https://r4ds.hadley.nz/). Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.
 - Cap. 4 de [Data Science. A First Introduction](https://datasciencebook.ca/). Tiffany Timbers, Trevor Campbell, and Melissa Lee.
 

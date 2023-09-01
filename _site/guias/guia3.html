@@ -241,15 +241,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>dormir <span class="ot">=</span> <span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">8</span>) <span class="sc">-</span> cafe</span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>data.cafe <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(cafe, dormir) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>1.3 Instalar el paquete “datos”. Abrir el data frame <code>millas</code> (<code>View(millas)</code>). Averiguar qué significan las variables corriendo <code>?millas</code> en la consola. Hacer un gráfico del consumo en autopista en función de la cilindrada de los autos en el que cada observación (auto) está graficada con un triángulo rosa (<em>Ayuda: buscar <a href="https://ggplot2.tidyverse.org/articles/ggplot2-specs.html">acá</a> las especificaciones de <code>ggplot2</code></em>).</p>
+<p>1.3 Cargando el paquete <code>ggplot2</code> tienen el data frame <code>mpg</code> (<code>View(mpg)</code>). Averiguar qué significan las variables corriendo <code>?mpg</code> en la consola. Hacer un gráfico del consumo en hwy en función de la displ de los autos en el que cada observación (auto) está graficada con un triángulo rosa (<em>Ayuda: buscar <a href="https://ggplot2.tidyverse.org/articles/ggplot2-specs.html">acá</a> las especificaciones de <code>ggplot2</code></em>).</p>
 <p>1.4 ¿Por qué el siguiente código no resulta en un gráfico con puntos azules? Corregirlo para que funcione.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(millas) <span class="sc">+</span> </span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> cilindrada, <span class="at">y =</span> autopista, <span class="at">color =</span> <span class="st">"blue"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mpg) <span class="sc">+</span> </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> displ, <span class="at">y =</span> hwy, <span class="at">color =</span> <span class="st">"blue"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>1.5 ¿Qué pasa si uno mapea una “aesthetic()” a algo que no es una variable? Por ejemplo:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(millas, <span class="fu">aes</span>(<span class="at">x=</span>cilindrada, <span class="at">y=</span>autopista, <span class="at">fill =</span> cilindrada <span class="sc">&lt;</span> <span class="dv">5</span>)) <span class="sc">+</span> </span>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(<span class="at">x=</span>displ, <span class="at">y=</span>hwy, <span class="at">fill =</span> displ <span class="sc">&lt;</span> <span class="dv">5</span>)) <span class="sc">+</span> </span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape =</span> <span class="dv">24</span>, <span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span> <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>1.6 Reproducir el siguiente grafico y agregarle título, subtítulo, caption. Cambiarle el label del eje x y del eje y.</p>
@@ -258,9 +258,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="guia3_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>1.7 Hacer un histograma del consumo de los autos en ciudad y otro del consumo en autopista.</p>
+<p>1.7 Hacer un histograma del consumo de los autos en ciudad y otro del consumo en hwy.</p>
 <p>1.8 Hacer un boxplot del consumo discriminado por tracción. Es decir, 3 boxplots. ¿Cuál es la tracción que menos consume?</p>
-<p>1.9 Reproducir los siguientes gráficos (notar que la variable categórica que se usa para graficar es <code>traccion</code>).</p>
+<p>1.9 Reproducir los siguientes gráficos (notar que la variable categórica que se usa para graficar es <code>drv</code>).</p>
 <div class="cell quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
@@ -289,33 +289,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <p>1.10 ¿Por qué aparecen celdas vacías en este gráfico “facetado”?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(millas, <span class="fu">aes</span>(<span class="at">x =</span> cilindrada, <span class="at">y =</span> autopista)) <span class="sc">+</span> </span>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(<span class="at">x =</span> displ, <span class="at">y =</span> hwy)) <span class="sc">+</span> </span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span> </span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(traccion<span class="sc">~</span>cilindros)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(drv<span class="sc">~</span>cyl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>1.11 Leer <code>?facet_wrap</code>. ¿Qué hacen los argumentos <code>nrow</code> y <code>ncol</code>? Explorar qué otras opciones existen para el controlar el aspecto del “facetado”? ¿Por qué <code>facet_grid()</code> no tiene como argumentos a <code>nrow</code> y <code>ncol</code>?</p>
 <p>1.12 Considerar el siguiente código para generar un gráfico “faceteado”:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(millas, <span class="fu">aes</span>(<span class="at">x =</span> cilindrada, <span class="at">y =</span> autopista)) <span class="sc">+</span> </span>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(<span class="at">x =</span> displ, <span class="at">y =</span> hwy)) <span class="sc">+</span> </span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span> </span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>clase, <span class="at">nrow =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>class, <span class="at">nrow =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol type="a">
-<li><p>Graficar la misma información pero mapeando la <code>clase</code> en el color.</p></li>
+<li><p>Graficar la misma información pero mapeando la <code>class</code> en el color.</p></li>
 <li><p>¿Qué ventajas y desventajas tiene el “faceteado” frente al aesthetic de color? ¿En qué circunstancias usarían una forma o la otra?</p></li>
 </ol>
-<p>1.13 Comparar estas dos formas de entender la relación entre el tamaño del motor (cilindrada) y la tracción del auto. ¿Qué hace el <code>.</code> y qué diferencia hay entre <code>facet_grid(traccion ~ .)</code> y <code>facet_grid(. ~ traccion )</code>? ¿Cuál de las dos formas facilita la comparación? ¿Qué les dice esto respecto de cuándo usar un faceteado sobre filas y sobre columnas?</p>
+<p>1.13 Comparar estas dos formas de entender la relación entre el tamaño del motor (displ) y la tracción del auto. ¿Qué hace el <code>.</code> y qué diferencia hay entre <code>facet_grid(drv ~ .)</code> y <code>facet_grid(. ~ drv )</code>? ¿Cuál de las dos formas facilita la comparación? ¿Qué les dice esto respecto de cuándo usar un faceteado sobre filas y sobre columnas?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(millas, <span class="fu">aes</span>(<span class="at">x =</span> cilindrada)) <span class="sc">+</span> </span>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(<span class="at">x =</span> displ)) <span class="sc">+</span> </span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span> </span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(traccion <span class="sc">~</span> .) <span class="sc">+</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(drv <span class="sc">~</span> .) <span class="sc">+</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(millas, <span class="fu">aes</span>(<span class="at">x =</span> cilindrada)) <span class="sc">+</span> </span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(<span class="at">x =</span> displ)) <span class="sc">+</span> </span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span> </span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(. <span class="sc">~</span> traccion) <span class="sc">+</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(. <span class="sc">~</span> drv) <span class="sc">+</span></span>
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -326,7 +326,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="referencias" class="level1">
 <h1>Referencias</h1>
 <ul>
-<li>Recomendamos <a href="https://youtube.com/playlist?list=PLYqQ3ecJzraFraZdrOi05kx76aH7Cbz5H&amp;si=SQMcZ5GlD-iUgubX">esta clase</a> de visualización de datos con <code>ggplot2</code> de la Dra. Lucía Babino del Instituto de Cálculo.</li>
+<li>Recomendamos <a href="https://youtube.com/playlist?list=PLYqQ3ecJzraFraZdrOi05kx76aH7Cbz5H&amp;si=SQMcZ5GlD-iUgubX">esta class</a> de visualización de datos con <code>ggplot2</code> de la Dra. Lucía Babino del Instituto de Cálculo.</li>
 <li>Cap. 10-11 de <a href="https://r4ds.hadley.nz/">R for Data Science (2e)</a>. Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.</li>
 <li>Cap. 4 de <a href="https://datasciencebook.ca/">Data Science. A First Introduction</a>. Tiffany Timbers, Trevor Campbell, and Melissa Lee.</li>
 </ul>
