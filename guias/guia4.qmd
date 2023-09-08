@@ -91,7 +91,7 @@ contar cuántos hay por cada especie y sexo.
 Agregar una nueva columna a la base de datos llamada `peso_bin` que contenga:
 
 * “chico” si la masa corporal es menos que 4000 gramos.
-* “grande” si la masa corporal es menos que 4000 gramos.
+* “grande” si la masa corporal es mayor que 4000 gramos.
 
 1.17
 Empezando con `penguins` quedarse sólo con las observaciones correspondientes a pinguinos
