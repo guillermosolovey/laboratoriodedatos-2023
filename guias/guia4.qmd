@@ -33,7 +33,7 @@ Para estos ejercicios, usar el dataset `penguins` del paquete `palmerpenguins`.
 
 1.3 Del dataset `penguins` quedarse con todas las variables excepto `year`, `sex` y `body_mass_g`. 
 
-1.4 Crear un subconjunto de los datos de `penguins` sólo con las obsevaciones de pinguinos machos con picos de más de 200 mm de largo y quedarse con todas las columnas que terminan con "mm". (*Ayuda: explorar cómo se usa la función `ends_with()` y sus parientes [acá](https://tidyselect.r-lib.org/reference/starts_with.html)*).
+1.4 Crear un subconjunto de los datos de `penguins` sólo con las obsevaciones de pinguinos machos con aletas (*flipper*) de más de 200 mm de largo y quedarse con todas las columnas que terminan con "mm". (*Ayuda: explorar cómo se usa la función `ends_with()` y sus parientes [acá](https://tidyselect.r-lib.org/reference/starts_with.html)*).
 
 1.5 Empezando con `penguins`, hacer un `pipe` (`%>%`) que:
 
