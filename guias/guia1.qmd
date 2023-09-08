@@ -9,6 +9,7 @@ format:
     fontsize: 1em
     linestretch: 1.15
 editor: source
+freeze: auto  # re-render only when source changes
 ---
 
 ## 1. Objetos

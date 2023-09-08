@@ -1,0 +1,175 @@
+---
+title: "Clase 4 - Laboratorio de datos 2023"
+subtitle: "[Licenciatura en Ciencia de Datos](https://lcd.exactas.uba.ar/)"
+author: "Guillermo Solovey"
+institute: "Instituto de Cálculo, UBA-CONICET"
+format:
+  html: 
+    theme: cosmo
+    fontsize: 1em
+    linestretch: 1.15
+    df-print: paged
+editor: source
+---
+
+# Transformación de datos
+
+En esta clase vamos a aprender a transformar datos usando funciones que vienen con
+el paquete `dplyr`, parte del `tidyverse`. Especialmente:
+
+* `filter()`: quedarse con las filas que satisfacen ciertas condiciones.
+* `select()`: quedarse o excluir algunas columnas del dataset.
+* `relocate`()`: renombrar columnas. 
+* `rename`()`: mover columnas de lugar.
+* `mutate()`: crear una nueva variable (columna) operando con las demás.
+* `group_by()` + `summarize()`: obtener medidas resumen de los datos por grupos.
+* `across()`: aplicar una función a varias columnas.
+* `count()`: contar rápidamente cuántas observaciones hay por grupo.
+* `case_when()`: una forma de hacer "if-else".
+ 
+También vamos a ver cómo se contatenan estas funciones con el operador pipe `%>%`, del paquete `magrittr` del `tidyverse`. 
+ 
+Para esto vamos a cargar los paquetes de tidyversey los datos de gapminder
+```{r}
+#| message: false
+#| warning: false
+require(tidyverse)
+require(gapminder)
+d <- gapminder
+d
+```
+ 
+
+## 1. filter, select y mutate
+
+### filter
+La función `filter` permite quedarse con un subconjunto de observaciones que cumplen con una o más condiciones. Por ejemplo, si queremos quedarnos con las observaciones de Argentina, podemos hacer lo siguiente
+
+```{r}
+#| eval: false
+filter(d, country == "Argentina")
+filter(d, country == "Argentina" & year > 1980)
+```
+
+### select
+Se usa para seleccionar columnas específicas de un data frame (útil cuando se quiere enfocar sólo en algunas variables). Vamos a seleccionar las variables `country`, `lifeExp` y `gdpPercap` de `gapminder`.
+
+```{r}
+#| eval: false
+select(d, country, lifeExp, gdpPercap)
+```
+
+### mutate
+Se usa para crear nuevas columnas (variables) que pueden ser funciones de las otras. Por ejemplo, agreguemos una columna que se llame `lifeExp_group` a partir de las observaciones anteriores:
+
+```{r}
+#| eval: false
+mutate(d, lifeExp_group = ifelse(lifeExp < 60, 'baja', 'alta'))
+```
+
+
+### Combinar más de una función
+Supongamos que queremos filtrar los datos de América, seleccionar las columnas `country`, `year` y `gdpPercap` y agregar una nueva variable que sea el siglo (`siglo20` y `siglo21`). Hay varias opciones:
+
+```{r}
+# opción 1: pasos intermedios
+# opción 2: concatenar
+# opción 3: usar el operador %>% (pipe)
+```
+
+
+## 2. group_by, count, summarize
+
+### group_by
+Agrupar sirve para obtener información resumida por grupo. Por ejemplo, podemos agrupar los datos por continente:
+
+```{r}
+#| eval: false
+d %>% 
+  group_by(continent)
+
+```
+
+### count
+La función `count` permite contar el número de observaciones en cada grupo después de que ocurrió la 
+
+```{r}
+#| eval: false
+d %>% 
+  group_by(continent) %>% 
+  count()
+```
+
+### summarize
+Summarize data by calculating summary statistics. Here, we find the average age by gender.
+
+```{r}
+#| eval: false
+data %>% 
+  group_by(gender) %>% 
+  summarize(avg_age = mean(age))
+```
+
+## 3. rename, relocate, across, case_when
+
+### rename
+Changing column names can improve readability. We rename the 'gender' column to 'sex' in `data`.
+
+```{r}
+#| eval: false
+data %>% 
+  rename(sex = gender)
+```
+
+### relocate
+Reordering columns can be helpful. Let's move the 'age' column before 'name' in `data`.
+
+```{r}
+#| eval: false
+data %>% 
+  relocate(age, .before = name)
+```
+
+### across
+Performing the same operation on multiple columns can be done with `across`. Let's calculate the mean of numeric columns in `data`.
+
+```{r}
+#| eval: false
+data %>% 
+  summarize(across(where(is.numeric), mean))
+```
+
+### case_when
+Conditional transformations can be achieved using `case_when`. Let's create a new column 'status' based on age.
+
+```{r}
+#| eval: false
+data %>% 
+  mutate(status = case_when(
+    age < 30 ~ 'Young',
+    age >= 30 & age < 60 ~ 'Adult',
+    age >= 60 ~ 'Senior'
+  ))
+```
+
+## 4. pivot_wider and pivot_longer
+
+### pivot_wider
+Pivoting data from long to wide format is useful for reshaping. We pivot `data_long` to a wider format.
+
+```{r}
+#| eval: false
+data_long %>%
+  pivot_wider(names_from = key, values_from = value)
+```
+
+### pivot_longer
+Conversely, pivoting data from wide to long format is done with `pivot_longer`. We pivot `data_wide` to a longer format.
+
+```{r}
+#| eval: false
+data_wide %>%
+  pivot_longer(cols = -id, names_to = "variable", values_to = "value")
+```
+
+These are some of the essential operations in data manipulation using `dplyr` in R. Practice and experimentation are key to mastering these functions. Happy data wrangling!
