@@ -50,7 +50,7 @@ Para estos ejercicios, usar el dataset `penguins` del paquete `palmerpenguins`.
 * Convertir la variable `island` a minúscula.
 
 1.8 Empezando con `penguins` crear una tabla resumen que contenga para el 
-largo mínimo y máximo de las aletas de los pinguinos chinstrap, agrupados
+largo mínimo y máximo de las aletas de los pinguinos Adelie, agrupados
 por isla. 
 
 1.9 Empezando con `penguins`, agrupar los datos por especie y año, luego crear una tabla de resumen que contenga el ancho del pico (llamarla `bill_depth_mean`) y el largo del pico (llamarla `bill_length_mean`) para cada grupo
