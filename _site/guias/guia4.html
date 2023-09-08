@@ -154,26 +154,25 @@ ul.task-list li input[type="checkbox"] {
 <li>se quede sólo con las observaciones de la isla Dream.</li>
 <li>se quede con las variables <code>species</code> y todas las que empiece con <code>bill</code>.</li>
 </ul>
-<p>1.8 Convertir todas las variables que empiezan con <code>bill</code> a mayúsculas. (<em>Ayuda: <code>?rename_with</code> y <code>toupper()</code> </em>)</p>
-<p>1.9 Convertir todas las variables que empiezan con <code>bill</code> a mayúsculas.</p>
-<p>1.10 Empezando con <code>penguins</code> hacer lo siguiente con un único llamado a la función <code>mutate()</code>:</p>
+<p>1.6 Convertir todas las variables que empiezan con <code>bill</code> a mayúsculas. (<em>Ayuda: <code>?rename_with</code> y <code>toupper()</code> </em>)</p>
+<p>1.7 Empezando con <code>penguins</code> hacer lo siguiente con un único llamado a la función <code>mutate()</code>:</p>
 <ul>
 <li>Convertir la variable <code>species</code> a <code>character</code>.</li>
 <li>Crear una nueva variable que tenga el peso en Kg.</li>
 <li>Convertir la variable <code>island</code> a minúscula.</li>
 </ul>
-<p>1.11 Empezando con <code>penguins</code> crear una tabla resumen que contenga para el largo mínimo y máximo de las aletas de los pinguinos chinstrap, agrupados por isla.</p>
-<p>1.12 Empezando con <code>penguins</code>, agrupar los datos por especie y año, luego crear una tabla de resumen que contenga el ancho del pico (llamarla <code>bill_depth_mean</code>) y el largo del pico (llamarla <code>bill_length_mean</code>) para cada grupo</p>
-<p>1.13 Empezando con <code>penguins</code>, hacer una secuencia de operaciones <code>%&gt;%</code> que:</p>
+<p>1.8 Empezando con <code>penguins</code> crear una tabla resumen que contenga para el largo mínimo y máximo de las aletas de los pinguinos chinstrap, agrupados por isla.</p>
+<p>1.9 Empezando con <code>penguins</code>, agrupar los datos por especie y año, luego crear una tabla de resumen que contenga el ancho del pico (llamarla <code>bill_depth_mean</code>) y el largo del pico (llamarla <code>bill_length_mean</code>) para cada grupo</p>
+<p>1.10 Empezando con <code>penguins</code>, hacer una secuencia de operaciones <code>%&gt;%</code> que:</p>
 <ul>
 <li>Agregue una nueva columna llamada <code>bill_ratio</code> que sea el cociente entre el largo y el ancho del pico.</li>
 <li>Quedarse sólo con las columnas <code>species</code> y <code>bill_ratio</code>.</li>
 <li>Agrupar los datos por especie.</li>
 <li>Crear una tabla de resumen que contenga el promedio de la variable <code>bill_ratio</code> por especie y que el nombre de la columna en la tabla sea <code>bill_ratio_mean</code>).</li>
 </ul>
-<p>1.14 Usar <code>rename()</code> para cambiarle el nombre a la variable <code>body_mass_g</code> y llamarla <code>masa_corporal_g</code>.</p>
-<p>1.15 Calcular la mediana de la masa corporal de los pinguinos de cada especie usando <code>group_by</code> y <code>summarise()</code>.</p>
-<p>1.16 Empezando con <code>penguins</code>, escribir una secuencia de operaciones <code>%&gt;%</code> que:</p>
+<p>1.11 Usar <code>rename()</code> para cambiarle el nombre a la variable <code>body_mass_g</code> y llamarla <code>masa_corporal_g</code>.</p>
+<p>1.12 Calcular la mediana de la masa corporal de los pinguinos de cada especie usando <code>group_by</code> y <code>summarise()</code>.</p>
+<p>1.13 Empezando con <code>penguins</code>, escribir una secuencia de operaciones <code>%&gt;%</code> que:</p>
 <ul>
 <li>Excluya a los pinguinos observados en la isla Biscoe.</li>
 <li>Sólo se quede con las variables que están entre <code>species</code> y <code>body_mass_g</code> inclusive.</li>
@@ -181,14 +180,14 @@ ul.task-list li input[type="checkbox"] {
 <li>Agrupar los datos por la variable <code>especie_pinguino</code>.</li>
 <li>Encontrar el valor medio de las variables que contienen el string “length”, separando por la especie del pinguino, y llamando a las columnas como las originales pero agregando “_mean” al final.</li>
 </ul>
-<p>1.17 Empezando con <code>penguins</code>, contar cuántas observaciones hay por especie, isla y año.</p>
-<p>1.18 Empezando con <code>penguins</code>, quedarse sólo con los pinguinos Adelie y gentoo penguins. Luego contar cuántos hay por cada especie y sexo.</p>
-<p>1.19 Agregar una nueva columna a la base de datos llamada <code>peso_bin</code> que contenga:</p>
+<p>1.14 Empezando con <code>penguins</code>, contar cuántas observaciones hay por especie, isla y año.</p>
+<p>1.15 Empezando con <code>penguins</code>, quedarse sólo con los pinguinos Adelie y gentoo penguins. Luego contar cuántos hay por cada especie y sexo.</p>
+<p>1.16 Agregar una nueva columna a la base de datos llamada <code>peso_bin</code> que contenga:</p>
 <ul>
 <li>“chico” si la masa corporal es menos que 4000 gramos.</li>
 <li>“grande” si la masa corporal es menos que 4000 gramos.</li>
 </ul>
-<p>1.20 Empezando con <code>penguins</code> quedarse sólo con las observaciones correspondientes a pinguinos chinstrap. Luego, quedarse sólo con las variables <code>flipper_length_mm</code> y <code>body_mass_g</code>. Agregar una nueva columna llamada <code>fm_ratio</code> que contenga el cociente entre el largo de la aleta y el peso del pinguino. Luego quedarse solo con las observaciones que no tienen <code>NA</code> en ninguna columna (<em>ayuda: <code>?drop_na()</code></em>) y agregar otra columna llamada <code>ratio_bin</code> que contenga la palabra “alto” si <code>fm_ratio</code> es mayor o igual que 0.05 y “bajo” si el cociente es menor que 0.05).</p>
+<p>1.17 Empezando con <code>penguins</code> quedarse sólo con las observaciones correspondientes a pinguinos chinstrap. Luego, quedarse sólo con las variables <code>flipper_length_mm</code> y <code>body_mass_g</code>. Agregar una nueva columna llamada <code>fm_ratio</code> que contenga el cociente entre el largo de la aleta y el peso del pinguino. Luego quedarse solo con las observaciones que no tienen <code>NA</code> en ninguna columna (<em>ayuda: <code>?drop_na()</code></em>) y agregar otra columna llamada <code>ratio_bin</code> que contenga la palabra “alto” si <code>fm_ratio</code> es mayor o igual que 0.05 y “bajo” si el cociente es menor que 0.05).</p>
 </section>
 <section id="exploración-de-datos" class="level1">
 <h1>2. Exploración de datos</h1>

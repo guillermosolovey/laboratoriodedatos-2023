@@ -40,24 +40,22 @@ Para estos ejercicios, usar el dataset `penguins` del paquete `palmerpenguins`.
 * se quede sólo con las observaciones de la isla Dream.
 * se quede con las variables `species` y todas las que empiece con `bill`. 
 
-1.8 Convertir todas las variables que empiezan con `bill` a mayúsculas. (*Ayuda: `?rename_with` y `toupper()` *)
+1.6 Convertir todas las variables que empiezan con `bill` a mayúsculas. (*Ayuda: `?rename_with` y `toupper()` *)
 
-1.9 Convertir todas las variables que empiezan con `bill` a mayúsculas.
-
-1.10 Empezando con `penguins` hacer lo siguiente con un único llamado a la función
+1.7 Empezando con `penguins` hacer lo siguiente con un único llamado a la función
 `mutate()`:
 
 * Convertir la variable `species` a `character`.
 * Crear una nueva variable que tenga el peso en Kg.
 * Convertir la variable `island` a minúscula.
 
-1.11 Empezando con `penguins` crear una tabla resumen que contenga para el 
+1.8 Empezando con `penguins` crear una tabla resumen que contenga para el 
 largo mínimo y máximo de las aletas de los pinguinos chinstrap, agrupados
 por isla. 
 
-1.12 Empezando con `penguins`, agrupar los datos por especie y año, luego crear una tabla de resumen que contenga el ancho del pico (llamarla `bill_depth_mean`) y el largo del pico (llamarla `bill_length_mean`) para cada grupo
+1.9 Empezando con `penguins`, agrupar los datos por especie y año, luego crear una tabla de resumen que contenga el ancho del pico (llamarla `bill_depth_mean`) y el largo del pico (llamarla `bill_length_mean`) para cada grupo
 
-1.13 Empezando con `penguins`, hacer una secuencia de operaciones ` %>%` que:
+1.10 Empezando con `penguins`, hacer una secuencia de operaciones ` %>%` que:
 
 * Agregue una nueva columna llamada `bill_ratio` que sea el cociente entre el largo y el 
 ancho del pico.
@@ -66,12 +64,12 @@ ancho del pico.
 * Crear una tabla de resumen que contenga el promedio de la variable `bill_ratio` por especie
 y que el nombre de la columna en la tabla sea `bill_ratio_mean`).
 
-1.14 Usar `rename()` para cambiarle el nombre a la variable `body_mass_g` y llamarla `masa_corporal_g`.
+1.11 Usar `rename()` para cambiarle el nombre a la variable `body_mass_g` y llamarla `masa_corporal_g`.
 
-1.15 Calcular la mediana de la masa corporal de los pinguinos de cada especie usando `group_by` y
+1.12 Calcular la mediana de la masa corporal de los pinguinos de cada especie usando `group_by` y
 `summarise()`.
 
-1.16 Empezando con `penguins`, escribir una secuencia de operaciones ` %>% ` que:
+1.13 Empezando con `penguins`, escribir una secuencia de operaciones ` %>% ` que:
 
 * Excluya a los pinguinos observados en la isla Biscoe.
 * Sólo se quede con las variables que están entre `species` y `body_mass_g` inclusive.
@@ -82,20 +80,20 @@ separando por la especie del pinguino, y llamando a las columnas como las origin
 pero agregando "_mean" al final.
 
 
-1.17
+1.14
 Empezando con `penguins`, contar cuántas observaciones hay por especie, isla y año.
 
-1.18
+1.15
 Empezando con `penguins`, quedarse sólo con los pinguinos Adelie y gentoo penguins. Luego
 contar cuántos hay por cada especie y sexo.
 
-1.19
+1.16
 Agregar una nueva columna a la base de datos llamada `peso_bin` que contenga:
 
 * “chico” si la masa corporal es menos que 4000 gramos.
 * “grande” si la masa corporal es menos que 4000 gramos.
 
-1.20
+1.17
 Empezando con `penguins` quedarse sólo con las observaciones correspondientes a pinguinos
 chinstrap. Luego, quedarse sólo con las variables `flipper_length_mm` y `body_mass_g`. 
 Agregar una nueva columna llamada `fm_ratio` que contenga el cociente entre el largo de la 
