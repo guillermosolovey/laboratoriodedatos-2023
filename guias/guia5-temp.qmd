@@ -1,0 +1,348 @@
+---
+title: "Guía 5: Programación en R: funciones, iteraciones"
+subtitle: "Laboratorio de datos 2023 (comisión: G. Solovey)"
+format:
+  html: 
+    theme: cosmo
+    toc: true
+    toc-depth: 2
+    fontsize: 1em
+    linestretch: 1.15
+editor: source
+---
+
+# 1. Funciones 
+
+1.1 Escribir una función que calcule el rango de un vector numérico. Comparar con la función `range()` de R.
+
+1.2 Escribir una función que calcule la media de un vector numérico. Comparar con la función `mean()` de R.
+
+1.3 Escribir una función que calcule la proporción de valores faltantes (`NA`) en un vector numérico. 
+
+1.4 Modiicar la función de 1.3 para que reemplace los `NA` con un valor específico numérico (-1 por ejemplo).
+
+1.5 Crear una función que reemplace valores especificados en un vector numérico (por ejemplo los -1) con NA.
+
+1.6 Pensar qué operación realiza el siguiente script y transformarlo en una función. ¿Cuántos argumentos necesitaría? 
+¿Cómo la llamaría a la función?
+
+```{r}
+#| eval: false
+round(x / sum(x, na.rm = TRUE) * 100, 1)
+round(y / sum(y, na.rm = TRUE) * 100, 1)
+round(z / sum(z, na.rm = TRUE) * 100, 1)
+```
+
+1.7 Escribir la función `ambos_na()` que toma dos vectores del mismo tamaño y devuelve los índices correspondientes a posiciones donde los dos vectores tienen `NA`. ¿Qué sucede con esta función si los vectores tienen distinto tamaño? Agregar una verificación y mensaje de texto que advierta que los vectores no tienen el mismo tamaño.
+
+1.8 Escribir una función que devuelva un objeto gráfico de `ggplot2` que realice de forma incremental lo siguiente
+
+- Dibuje un scatterplot de la variable ´x´ e ´y´ de un dataset.
+- Agregar una recta correspondiente al mejor ajuste lineal (sin mostrar el sombreado de margen de error).
+- Agregue un título
+
+1.9 Pensar qué hace esta función y entendiendo su finalidad, sugerir un mejor nombre:
+
+```{r}
+#| eval: false
+f2 <- function(lst, n) {
+  length(lst) >= n
+}
+```
+
+1.10 Si alguna de las funciones que escribiste en los ejercicios anteriores tenían nombres crípticos, cambiarlos
+por nombres más apropiados.
+
+1.11 Escribir una función que filtre un data frame para seleccionar filas donde una columna específica contiene valores faltantes.
+
+1.12 Escribir una función que cuente el número de filas de un data frame donde una columna específica cumple una condición determinada.
+
+1.13 Escribir una función que calcule estadísticas resumidas (media, mediana, mínimo, máximo) para una columna numérica en un data frame.
+
+1.14 Escribir una función que calcule la proporción de filas de un data frame que cumplen una condición específica.
+
+1.15 Escribir una función que genere un gráfico de dos variables numéricas de un data frame usando `geom_hex()`. Comprobar con un ejemplo.
+
+
+# 2. Iteraciones
+
+2.1 Utilice un `while` para encontrar la potencia menor de 2 que sea mayor que 1000.
+
+2.2 Escribe un `while` para calcular la suma de todos los números naturales positivos menores que 100 que sean múltiplos de 7.
+
+2.3 Crea un `while` para simular el crecimiento de una población. Comienza con 100 individuos y, cada año, la población se duplica. Calcula cuántos años se necesitan para que la población alcance los 1000.
+
+2.4 Utilice un bucle mientras para encontrar el número primo más grande menor que 100.
+
+# 3. Desafíos
+
+3.1 Escribir una función que simule N tiradas de un dado y devuelva la suma de los valores obtenidos. Repetir el proceso 10000 veces y hacer un histograma con los resultados obtenidos. Ayuda: cada tirada del dado corresponde a elegir uno de los siguientes números con igual probabilidad: {1, 2, 3, 4, 5, 6}.
+
+A- Usando la función sample() de R simule una tirada de un dado.
+B- Crear una función que realice la suma de los resultados de N dados. Evaluar la función en distintos valores de N.
+
+```{r}
+#| eval: false
+suma_dados <- function(N){
+  todos     <- sample(___, ___, replace = ___)
+  respuesta <- ___
+  return(___)
+}
+
+suma_dados(___)
+```
+
+C- Escribir un loop que repita el proceso anterior 10000 veces, guardando el resultado de cada ‘experimento’ en un vector.
+D- Haga un histograma de los resultados anteriores.
+
+
+3.2 En un grupo de N personas, ¿cuál es la probabilidad de que al menos dos personas cumplan años el mismo día?
+
+A- Simular las fechas de cumpleaños de N=50 personas y guardarlas en un vector.
+
+```{r}
+#| eval: false
+N <- 50
+cumples <- sample(___, N, replace = ___)
+```
+
+
+B- Evaluar si hubo o no una coincidencia. ¿Qué hace la función `unique()`?
+
+C- Repetir el proceso anterior 10000 veces y contar todos los casos en los que hubo al menos 1 coincidencia
+
+```{r}
+#| eval: false
+
+# variable que va a contar las coincidencias
+n_coincidencias <- 0
+
+# simula 10000 grupos de N=50 personas y verifica si hubo coincidencias o no
+Nrep <- 10000
+for(i in 1:Nrep){
+  cumples <- sample(seq(1,365,1), N, replace = TRUE)
+  if(length(unique(cumples)) < N){
+    n_coincidencias <- ___
+  } 
+}
+
+# calcula la probabilidad estimada de coincidencias y la imprime en la consola
+p_coincidencias <- n_coincidencias / Nrep
+print(p_coincidencias)
+```
+
+
+
+D- Crear una función ‘pcumples’ que tenga dos inputs: el número de personas (N) y el número de repeticiones del experimento (Nrep). La salida de la función debe ser la probabilidad de tener al menos una coincidencia.
+
+
+```{r}
+#| eval: false
+
+pcumples <- function(N=50, Nrep=10000){
+  # 50 y 10000 son los valores por defecto de la función
+  ___
+  ___
+  return(___)
+}
+```
+
+E- La función pbirthday() de R calcula la probabilidad de coincidencia en un grupo de N personas. Comparar el resultado anterior con el que se obtiene con la función pcumples que crearon en el ítem anterior.
+
+F- Hacer un gráfico que muestre la probabilidad de coincidencia en función del número de personas en el grupo. Puede usar la función pbirthday() o pcumples().
+
+```{r}
+#| eval: false
+
+# Define el vector con los tamaños de los grupos.
+N_vec <- ___
+
+# ejecuta la función para cada elemento del vector anterior
+for (i in 1:length(Nvec)){
+  p_c[___] <- pbirthday(___)
+}
+
+# una forma equivalente de hacer el loop anterior es usando la función sapply
+p_c[___] <- sapply(___)
+
+# crea el gráfico
+ggplot(____)
+```
+
+
+3.3 Si en una votación entre dos candidatos, n votantes votan por A y m votantes votan por B (con n>m) la probabilidad de A le vaya ganando a b a lo largo de todo el escrutinio es (n−m)/(n+m)
+. Nota: el que me presentó este problema es Pablo Groisman en Twitter. Pueden ver la demostración acá. En este ejercicio tienen que hacer simulaciones de escrutinios, evaluar si A le gana a B a lo largo de todo el escrutinio y comparar el resultado obtenido con el cálculo exacto.
+
+A- Crear un vector que contenga todos los votos, usando la notacion +1 para votos para el candidato A y -1 para el candidato B (¿por qué es conveniente esto?)
+
+```{r}
+#| eval: false
+n <- 500 # numero de votos para A
+m <- 400 # numero de votos para B
+votos <- c( ___, ___ )
+```
+
+B- Un escrutinio es un posible orden en el que van apareciendo las boletas. Crear un escrutinio y evaluar si A se mantuvo siempre al frente.
+
+```{r}
+#| eval: false
+
+# realizar un escrutinio y evaluar si A se mantuvo al frente durante todo el escrutinio.
+# (puede servir usar la funcion cumsum. Que hace?)
+escrutinio <- sample(___, n+m, replace = FALSE)
+resultado  <- cumsum(___)
+# evaluar si A se mantuvo siempre al frente
+A_gana_siempre <- ___ # TRUE si A gana siempre, FALSE si no.
+
+```
+
+C- Repetir el proceso anterior 1000 veces y contar en cuantos escrutinios A se mantuvo al frente en todo el escrutinio
+
+```{r}
+#| eval: false
+
+cuenta <- 0
+Nrep   <- 1000
+for (i in 1:Nrep){
+  
+  escrutinio <- sample(votos, n+m, replace = FALSE)
+  resultado  <- cumsum(escrutinio)
+  if ( ___ ){
+    ___
+  }
+  
+}
+
+p <- ___
+print(p)
+print((n-m)/(n+m))
+
+```
+
+
+D- Suponga ahora que 505 personas votaron por A y 495 personas por B. ¿Cuál es la probabilidad de que en el escrutinio vaya ganando B desde el comienzo hasta que se contaron 800 votos? Compare con el caso en que va ganando A, también hasta contar 800 votos.
+
+
+
+
+```{r}
+#| eval: false
+
+n <- 505 # numero de votos para A
+m <- 495 # numero de votos para B
+votos <- c( rep(1,n), rep(-1,m) )
+
+# cuentaA va a contar cuántas veces ocurre que A va ganando 
+# hasta contar 800 votos
+cuentaA <- 0  
+cuentaB <- 0  # esta hace lo mismo para B
+Nrep   <- 10000
+for (i in 1:Nrep){
+  
+  escrutinio <- sample(votos, n+m, replace = FALSE)
+  resultado  <- cumsum(escrutinio)
+  if ( ___ ){ 
+    cuentaA <- cuentaA + 1
+  }
+  if ( ___ ){  
+    cuentaB <- cuentaB + 1
+  }
+  
+}
+
+pA <- cuentaA / Nrep
+pB <- cuentaB / Nrep
+print(pA)
+print(pB)
+
+```
+
+
+E- En el 2017, en la provincia de Buenos Aires, la elección de senadores se definió por una diferencia pequeña entre los dos candidatos más votados. Sin embargo, durante el escrutinio provisorio, uno de ellos iba siempre al frente. ¿Qué suposición hicimos en las simulaciones que podría no ser cierta en un escrutinio real? 1
+
+
+
+3.4 **Regla de la mayoría**. Un modelo simple de propagación de opiniones supone que hay N personas que mantienen dos estados posibles de opinión: {+1, -1}. Inicialmente el número de personas en el estado +1 es n1<N. Luego, en pasos sucesivos, 3 personas seleccionadas al azar interactúan de forma tal que adoptan la opinión mayoritaria entre los 3. Por ejemplo, si hay dos personas con opinión +1 y una con opinión -1, luego de la interacción, la opinión de los tres será +1.
+
+A- Crear el estado inicial de cada persona, usando un vector ‘Op’
+
+```{r}
+#| eval: false
+
+N  <- 10   # numero total de personas
+n1 <- 4    # numero de personas que inicialmente opinan +1
+Op <- c( rep(1, n1), ___)
+```
+
+
+B- Hacer una ronda de interacción. Esto es, elegir tres personas al azar, buscar la opinión mayoritaria y luego actualizar la opinión de cada uno.
+```{r}
+#| eval: false
+
+n_int     <- sample(1:N, 3, replace = FALSE)
+Op[n_int] <- ifelse( ___, 1, -1 )
+
+
+```
+
+C- Repetir el proceso anterior hasta que se llegue a un consenso.
+```{r}
+#| eval: false
+
+Op       <- ___
+consenso <- 0
+while( consenso != 1 ){
+  
+  n_int     <- sample(1:N, 3, replace = FALSE)
+  Op[n_int] <- ifelse( ___ )
+  
+  if (___ == 1){
+    consenso  <- 1
+    Oconsenso <- ___
+  }
+  
+}
+
+```
+
+
+D- Crear una función que dado el número de personas (N), la fracción inicial que opina +1 (p), calcule la probabilidad de que el consenso se establezca en que todos opinen +1 (P1) realizando 100 experimentos simulados.
+
+```{r}
+#| eval: false
+
+
+p_consenso <- function(N, n1){
+  
+  output   <- 0
+  
+  for (i in 1:100){
+    ___
+    ___
+    ___
+
+    if (Oconsenso == 1){
+      output <- output + 1
+    }
+    
+  }
+  
+  return(output/100)
+}
+```
+
+
+E- Graficar P1 en función de p para los siguientes valores de n1 = {1, 2, 3, …, 10}.
+
+
+
+3.5 **Problema de Monty Hall**. Un participante de un concurso tiene que elegir entre tres puertas. Detrás de una de ellas hay un premio. Al elegir una puerta, el conductor del concurso le señala cuál de las otras dos puertas seguro no tiene el premio. El participante tiene la opción de quedarse con su opción inicial o cambiar a la otra puerta. ¿Qué le conviene? Calcular la probabilidad de éxito, comparando simulaciones en las que el participante elige quedarse y otras en las que decide cambiar.
+
+# Referencias
+
+- Cap. 26-27 de [R for Data Science (2e)](https://r4ds.hadley.nz/), de Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.
+- Cap. 11 de [Hands-On Programming with R](https://rstudio-education.github.io/hopr/), de Garrett Grolemund.
+- Sobre el ejercicio 3.3: Si quieren saber qué pasó ese día: Antenucci, P., Mascioto, J. M., & Page, M. (2017). PASO 2017 en la provincia de Buenos Aires: el recuento provisorio explicado. Revista SAAP. Publicación de Ciencia Política de la Sociedad Argentina de Análisis Político, 11(2), 341-364.↩
+
+
+
