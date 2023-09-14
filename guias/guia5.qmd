@@ -11,19 +11,70 @@ format:
 editor: source
 ---
 
-# 1. Funciones 
+# 1. Unir data frames
+En esta parte de la guía se utilizarán datos ficticios generados aleatoriamente para emular
+parte de la estructura de datos que podría haber en un sistema de información de una
+institución educativa. En dicho sistema hay una tabla (dfEstudiantes) con ciertos datos de
+las/os estudiantes (legajo, edad, carrera) y otra tabla (dfNotas) con las notas de los
+exámenes de Biología y de Matemática (legajo, nota, materia). 
 
-1.1 Escribir una función que calcule el rango de un vector numérico. Comparar con la función `range()` de R.
+El siguiente código permite crear las dos tablas que se usarán en esta guía:
 
-1.2 Escribir una función que calcule la media de un vector numérico. Comparar con la función `mean()` de R.
+```{r}
+#| eval: false
 
-1.3 Escribir una función que calcule la proporción de valores faltantes (`NA`) en un vector numérico. 
+library(dplyr)
 
-1.4 Modiicar la función de 1.3 para que reemplace los `NA` con un valor específico numérico (-1 por ejemplo).
+set.seed(1010)
+aux = rchisq(100, df=2)
 
-1.5 Crear una función que reemplace valores especificados en un vector numérico (por ejemplo los -1) con NA.
+dfEstudiantes = tibble(legajo = paste0("LE_",1:100), 
+                       edad = as.integer((80-18) * aux/max(aux) + 18),
+                       carrera = sample(c("Ciencias Físicas",
+                                          "Ciencias Matemáticas",
+                                          "Ciencias de Datos",
+                                          "Paleontología",
+                                          "Ciencias Biológicas",
+                                          "Ciencias de la Atmósfera",
+                                          "Ciencias de la Computación",
+                                          "Ciencias Geológicas",
+                                          "Ciencias Químicas",
+                                          "Ciencia y Tecnología de Alimentos",
+                                          "Oceanografía"),
+                                        100, replace = T))
 
-1.6 Pensar qué operación realiza el siguiente script y transformarlo en una función. ¿Cuántos argumentos necesitaría? 
+dfNotas = rbind(tibble(legajo = sample(paste0("LE_",1:50),30),
+                       nota = as.integer(runif(30,min=2,max=10)),
+                       materia = "Biología"),
+                tibble(legajo = sample(paste0("LE_",1:100),50),
+                       nota = as.integer(runif(50,min=2,max=10)),
+                       materia = "Matemática"))
+
+
+```
+
+1.1 Cuál es la nota promedio por carrera de la materia Biología?
+
+1.2 Cuál es la cantidad de estudiantes por carrera que no rindió ninguno de los dos exámenes?
+
+1.3 Cuál es la edad promedio de los estudiantes que rindieron al menos uno de los dos exámenes? Tener en cuenta que un/a mismo/a estudiante puede haber rendido más de un examen. Revisar el uso de la función `distinct()`.
+
+1.4 Generar un gráfico que permita visualizar la distribución de notas por grupo etario y materia, considerando los grupos etarios: [18, 21], (21,27] y [27, 80). 
+
+
+# 2. Funciones 
+
+2.1 Escribir una función que calcule el rango de un vector numérico. Comparar con la función `range()` de R.
+
+2.2 Escribir una función que calcule la media de un vector numérico. Comparar con la función `mean()` de R.
+
+2.3 Escribir una función que calcule la proporción de valores faltantes (`NA`) en un vector numérico. 
+
+2.4 Modiicar la función de 2.3 para que reemplace los `NA` con un valor específico numérico (-1 por ejemplo).
+
+2.5 Crear una función que reemplace valores especificados en un vector numérico (por ejemplo los -1) con NA.
+
+2.6 Pensar qué operación realiza el siguiente script y transformarlo en una función. ¿Cuántos argumentos necesitaría? 
 ¿Cómo la llamaría a la función?
 
 ```{r}
@@ -33,15 +84,15 @@ round(y / sum(y, na.rm = TRUE) * 100, 1)
 round(z / sum(z, na.rm = TRUE) * 100, 1)
 ```
 
-1.7 Escribir la función `ambos_na()` que toma dos vectores del mismo tamaño y devuelve los índices correspondientes a posiciones donde los dos vectores tienen `NA`. ¿Qué sucede con esta función si los vectores tienen distinto tamaño? Agregar una verificación y mensaje de texto que advierta que los vectores no tienen el mismo tamaño.
+2.7 Escribir la función `ambos_na()` que toma dos vectores del mismo tamaño y devuelve los índices correspondientes a posiciones donde los dos vectores tienen `NA`. ¿Qué sucede con esta función si los vectores tienen distinto tamaño? Agregar una verificación y mensaje de texto que advierta que los vectores no tienen el mismo tamaño.
 
-1.8 Escribir una función que devuelva un objeto gráfico de `ggplot2` que realice de forma incremental lo siguiente
+2.8 Escribir una función que devuelva un objeto gráfico de `ggplot2` que realice de forma incremental lo siguiente
 
 - Dibuje un scatterplot de la variable ´x´ e ´y´ de un dataset.
 - Agregar una recta correspondiente al mejor ajuste lineal (sin mostrar el sombreado de margen de error).
 - Agregue un título
 
-1.9 Pensar qué hace esta función y entendiendo su finalidad, sugerir un mejor nombre:
+2.9 Pensar qué hace esta función y entendiendo su finalidad, sugerir un mejor nombre:
 
 ```{r}
 #| eval: false
@@ -50,35 +101,36 @@ f2 <- function(lst, n) {
 }
 ```
 
-1.10 Si alguna de las funciones que escribiste en los ejercicios anteriores tenían nombres crípticos, cambiarlos
+2.10 Si alguna de las funciones que escribiste en los ejercicios anteriores tenían nombres crípticos, cambiarlos
 por nombres más apropiados.
 
-1.11 Escribir una función que filtre un data frame para seleccionar filas donde una columna específica contiene valores faltantes.
+2.11 Escribir una función que filtre un data frame para seleccionar filas donde una columna específica contiene valores faltantes.
 
-1.12 Escribir una función que cuente el número de filas de un data frame donde una columna específica cumple una condición determinada.
+2.12 Escribir una función que cuente el número de filas de un data frame donde una columna específica cumple una condición determinada.
 
-1.13 Escribir una función que calcule estadísticas resumidas (media, mediana, mínimo, máximo) para una columna numérica en un data frame.
+2.13 Escribir una función que calcule estadísticas resumidas (media, mediana, mínimo, máximo) para una columna numérica en un data frame.
 
-1.14 Escribir una función que calcule la proporción de filas de un data frame que cumplen una condición específica.
+2.14 Escribir una función que calcule la proporción de filas de un data frame que cumplen una condición específica.
 
-1.15 Escribir una función que genere un gráfico de dos variables numéricas de un data frame usando `geom_hex()`. Comprobar con un ejemplo.
+2.15 Escribir una función que genere un gráfico de dos variables numéricas de un data frame usando `geom_hex()`. Comprobar con un ejemplo.
 
 
-# 2. Iteraciones
+# 3. Iteraciones
 
-2.1 Utilice un `while` para encontrar la potencia menor de 2 que sea mayor que 1000.
+3.1 Utilice un `while` para encontrar la potencia menor de 2 que sea mayor que 1000.
 
-2.2 Escribe un `while` para calcular la suma de todos los números naturales positivos menores que 100 que sean múltiplos de 7.
+3.2 Escribe un `while` para calcular la suma de todos los números naturales positivos menores que 100 que sean múltiplos de 7.
 
-2.3 Crea un `while` para simular el crecimiento de una población. Comienza con 100 individuos y, cada año, la población se duplica. Calcula cuántos años se necesitan para que la población alcance los 1000.
+3.3 Crea un `while` para simular el crecimiento de una población. Comienza con 100 individuos y, cada año, la población se duplica. Calcula cuántos años se necesitan para que la población alcance los 1000.
 
-2.4 Utilice un bucle mientras para encontrar el número primo más grande menor que 100.
+3.4 Utilice un bucle mientras para encontrar el número primo más grande menor que 100.
 
-# 3. Desafíos
+# 4. Desafíos
 
-3.1 Escribir una función que simule N tiradas de un dado y devuelva la suma de los valores obtenidos. Repetir el proceso 10000 veces y hacer un histograma con los resultados obtenidos. Ayuda: cada tirada del dado corresponde a elegir uno de los siguientes números con igual probabilidad: {1, 2, 3, 4, 5, 6}.
+4.1 Escribir una función que simule N tiradas de un dado y devuelva la suma de los valores obtenidos. Repetir el proceso 10000 veces y hacer un histograma con los resultados obtenidos. Ayuda: cada tirada del dado corresponde a elegir uno de los siguientes números con igual probabilidad: {1, 2, 3, 4, 5, 6}.
 
 A- Usando la función sample() de R simule una tirada de un dado.
+
 B- Crear una función que realice la suma de los resultados de N dados. Evaluar la función en distintos valores de N.
 
 ```{r}
@@ -93,10 +145,11 @@ suma_dados(___)
 ```
 
 C- Escribir un loop que repita el proceso anterior 10000 veces, guardando el resultado de cada ‘experimento’ en un vector.
+
 D- Haga un histograma de los resultados anteriores.
 
 
-3.2 En un grupo de N personas, ¿cuál es la probabilidad de que al menos dos personas cumplan años el mismo día?
+4.2 En un grupo de N personas, ¿cuál es la probabilidad de que al menos dos personas cumplan años el mismo día?
 
 A- Simular las fechas de cumpleaños de N=50 personas y guardarlas en un vector.
 
@@ -170,7 +223,7 @@ ggplot(____)
 ```
 
 
-3.3 Si en una votación entre dos candidatos, n votantes votan por A y m votantes votan por B (con n>m) la probabilidad de A le vaya ganando a b a lo largo de todo el escrutinio es (n−m)/(n+m)
+4.3 Si en una votación entre dos candidatos, n votantes votan por A y m votantes votan por B (con n>m) la probabilidad de A le vaya ganando a b a lo largo de todo el escrutinio es (n−m)/(n+m)
 . Nota: el que me presentó este problema es Pablo Groisman en Twitter. Pueden ver la demostración acá. En este ejercicio tienen que hacer simulaciones de escrutinios, evaluar si A le gana a B a lo largo de todo el escrutinio y comparar el resultado obtenido con el cálculo exacto.
 
 A- Crear un vector que contenga todos los votos, usando la notacion +1 para votos para el candidato A y -1 para el candidato B (¿por qué es conveniente esto?)
@@ -262,7 +315,7 @@ E- En el 2017, en la provincia de Buenos Aires, la elección de senadores se def
 
 
 
-3.4 **Regla de la mayoría**. Un modelo simple de propagación de opiniones supone que hay N personas que mantienen dos estados posibles de opinión: {+1, -1}. Inicialmente el número de personas en el estado +1 es n1<N. Luego, en pasos sucesivos, 3 personas seleccionadas al azar interactúan de forma tal que adoptan la opinión mayoritaria entre los 3. Por ejemplo, si hay dos personas con opinión +1 y una con opinión -1, luego de la interacción, la opinión de los tres será +1.
+4.4 **Regla de la mayoría**. Un modelo simple de propagación de opiniones supone que hay N personas que mantienen dos estados posibles de opinión: {+1, -1}. Inicialmente el número de personas en el estado +1 es n1<N. Luego, en pasos sucesivos, 3 personas seleccionadas al azar interactúan de forma tal que adoptan la opinión mayoritaria entre los 3. Por ejemplo, si hay dos personas con opinión +1 y una con opinión -1, luego de la interacción, la opinión de los tres será +1.
 
 A- Crear el estado inicial de cada persona, usando un vector ‘Op’
 
@@ -336,13 +389,19 @@ E- Graficar P1 en función de p para los siguientes valores de n1 = {1, 2, 3, �
 
 
 
-3.5 **Problema de Monty Hall**. Un participante de un concurso tiene que elegir entre tres puertas. Detrás de una de ellas hay un premio. Al elegir una puerta, el conductor del concurso le señala cuál de las otras dos puertas seguro no tiene el premio. El participante tiene la opción de quedarse con su opción inicial o cambiar a la otra puerta. ¿Qué le conviene? Calcular la probabilidad de éxito, comparando simulaciones en las que el participante elige quedarse y otras en las que decide cambiar.
+4.5 **Problema de Monty Hall**. Un participante de un concurso tiene que elegir entre tres puertas. Detrás de una de ellas hay un premio. Al elegir una puerta, el conductor del concurso le señala cuál de las otras dos puertas seguro no tiene el premio. El participante tiene la opción de quedarse con su opción inicial o cambiar a la otra puerta. ¿Qué le conviene? Calcular la probabilidad de éxito, comparando simulaciones en las que el participante elige quedarse y otras en las que decide cambiar.
 
 # Referencias
 
+Para la parte 1: 
+
+- Cap. 20 de [R for Data Science (2e)](https://r4ds.hadley.nz/), de Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.
+
+Para el resto:
+
 - Cap. 26-27 de [R for Data Science (2e)](https://r4ds.hadley.nz/), de Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.
 - Cap. 11 de [Hands-On Programming with R](https://rstudio-education.github.io/hopr/), de Garrett Grolemund.
-- Sobre el ejercicio 3.3: Si quieren saber qué pasó ese día: Antenucci, P., Mascioto, J. M., & Page, M. (2017). PASO 2017 en la provincia de Buenos Aires: el recuento provisorio explicado. Revista SAAP. Publicación de Ciencia Política de la Sociedad Argentina de Análisis Político, 11(2), 341-364.↩
+- Sobre el ejercicio 4.3: Si quieren saber qué pasó ese día: Antenucci, P., Mascioto, J. M., & Page, M. (2017). [PASO 2017 en la provincia de Buenos Aires: el recuento provisorio explicado](https://www.redalyc.org/journal/3871/387154402008/html/). Revista SAAP. Publicación de Ciencia Política de la Sociedad Argentina de Análisis Político, 11(2), 341-364.
 
 
 
