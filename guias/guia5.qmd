@@ -106,13 +106,11 @@ por nombres más apropiados.
 
 2.11 Escribir una función que filtre un data frame para seleccionar filas donde una columna específica contiene valores faltantes.
 
-2.12 Escribir una función que cuente el número de filas de un data frame donde una columna específica cumple una condición determinada.
+2.12 Escribir una función que calcule estadísticas resumidas (media, mediana, mínimo, máximo) para una columna numérica en un data frame.
 
-2.13 Escribir una función que calcule estadísticas resumidas (media, mediana, mínimo, máximo) para una columna numérica en un data frame.
+2.13 Ídem el anterior pero agrupando por grupo (es decir, uno de los argumentos de la función debe ser la variable por la que hay que agrupar).
 
-2.14 Escribir una función que calcule la proporción de filas de un data frame que cumplen una condición específica.
-
-2.15 Escribir una función que genere un gráfico de dos variables numéricas de un data frame usando `geom_hex()`. Comprobar con un ejemplo.
+2.14 Escribir una función que genere un gráfico de dos variables numéricas de un data frame usando `geom_hex()`. Comprobar con un ejemplo.
 
 
 # 3. Iteraciones
