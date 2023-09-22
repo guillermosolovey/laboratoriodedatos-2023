@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.280">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>laboratorio de datos - Trabajo Práctico 1</title>
+<title>laboratorio de datos - TP-1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -17,72 +17,9 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -119,7 +56,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -138,29 +76,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <span class="navbar-title">laboratorio de datos</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text"><i class="fa-solid fa-home" aria-label="home"></i> Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../cronograma.html">
+    <a class="nav-link" href="../cronograma.html" rel="" target="">
  <span class="menu-text"><i class="fa-solid fa-calendar" aria-label="calendar"></i> Cronograma</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../tps.html">
- <span class="menu-text"><i class="fa-solid fa-dumbbell" aria-label="dumbbell"></i> TPs</span></a>
+    <a class="nav-link" href="../guias.html" rel="" target="">
+ <span class="menu-text"><i class="fa-solid fa-dumbbell" aria-label="dumbbell"></i> Guías</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../slides.html">
- <span class="menu-text"><i class="fa-solid fa-laptop" aria-label="laptop"></i> Slides/Apuntes</span></a>
+    <a class="nav-link" href="../slides.html" rel="" target="">
+ <span class="menu-text"><i class="fa-solid fa-laptop" aria-label="laptop"></i> Slides</span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -174,10 +114,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#objetos" id="toc-objetos" class="nav-link active" data-scroll-target="#objetos">1. Objetos</a></li>
-  <li><a href="#funciones" id="toc-funciones" class="nav-link" data-scroll-target="#funciones">2. Funciones</a></li>
-  <li><a href="#scripts" id="toc-scripts" class="nav-link" data-scroll-target="#scripts">3. Scripts</a></li>
-  <li><a href="#data-frames" id="toc-data-frames" class="nav-link" data-scroll-target="#data-frames">4. Data frames</a></li>
+  <li><a href="#objetivo" id="toc-objetivo" class="nav-link active" data-scroll-target="#objetivo">Objetivo</a></li>
+  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets">Datasets</a>
+  <ul class="collapse">
+  <li><a href="#dataset-de-uso-de-ecobici" id="toc-dataset-de-uso-de-ecobici" class="nav-link" data-scroll-target="#dataset-de-uso-de-ecobici">Dataset de uso de EcoBici</a></li>
+  <li><a href="#importación-y-preprocesado-de-datos-en-r" id="toc-importación-y-preprocesado-de-datos-en-r" class="nav-link" data-scroll-target="#importación-y-preprocesado-de-datos-en-r">Importación y preprocesado de datos en R</a></li>
+  <li><a href="#dataset-de-clima" id="toc-dataset-de-clima" class="nav-link" data-scroll-target="#dataset-de-clima">Dataset de clima</a></li>
+  <li><a href="#importación-y-preprocesado-de-datos-en-r-1" id="toc-importación-y-preprocesado-de-datos-en-r-1" class="nav-link" data-scroll-target="#importación-y-preprocesado-de-datos-en-r-1">Importación y preprocesado de datos en R</a></li>
+  </ul></li>
+  <li><a href="#análisis-descriptivo" id="toc-análisis-descriptivo" class="nav-link" data-scroll-target="#análisis-descriptivo">Análisis descriptivo</a></li>
+  <li><a href="#análisis-exploratorio" id="toc-análisis-exploratorio" class="nav-link" data-scroll-target="#análisis-exploratorio">Análisis Exploratorio</a></li>
+  <li><a href="#reporte-para-entregar" id="toc-reporte-para-entregar" class="nav-link" data-scroll-target="#reporte-para-entregar">Reporte para entregar</a></li>
   </ul>
 </nav>
     </div>
@@ -186,7 +133,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Trabajo Práctico 1</h1>
+<h1 class="title">TP-1</h1>
 <p class="subtitle lead">Laboratorio de datos 2023 (comisión: G. Solovey)</p>
 </div>
 
@@ -202,209 +149,53 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="objetos" class="level2">
-<h2 class="anchored" data-anchor-id="objetos">1. Objetos</h2>
-<p>El objetivo de estos ejercicios es reconocer, crear y hacer operaciones simples con los 5 tipos de objetos básicos de R:</p>
-<ul>
-<li>character</li>
-<li>numeric (números <em>reales</em>)</li>
-<li>integer</li>
-<li>complex</li>
-<li>logical (True/False)</li>
-</ul>
-<p>También familiarizarse con la consola de R, con matrices y con operaciones lógicas.</p>
-<p>1.1 Realizar las siguientes operaciones básicas en la consola</p>
-<ul>
-<li><code>2+2</code></li>
-<li><code>a &lt;- 2</code></li>
-<li><code>b &lt;- 5</code></li>
-<li><code>a**3</code></li>
-<li><code>16 %% 5</code> (probar con otros números para entender qué significa)</li>
-<li><code>2*a**2+0.5*b+(a+b)/2</code></li>
-<li>asignar el resultado anterior a la variable <code>c</code></li>
-<li>imprimir el contenido de <code>c</code> en la consola (corriendo <code>c</code> o <code>print(c)</code>). ¿Ven un <code>[1]</code> delante del valor de <code>c</code>? Esto indica que es un vector.</li>
-</ul>
-<p>1.2 Interpretar las siguientes operaciones lógicas y predecir el resultado antes de probar en la consola.</p>
-<ul>
-<li><code>a &lt;- TRUE</code></li>
-<li><code>b &lt;- FALSE</code></li>
-<li><code>a == b</code></li>
-<li><code>a || b</code></li>
-<li><code>a == !b</code></li>
-</ul>
-<p>1.3. Antes de probar en la consola, piense que van a dar estas operaciones:</p>
-<ul>
-<li><code>a &lt;- 3</code></li>
-<li><code>b &lt;- 4</code></li>
-<li><code>a &gt; b</code></li>
-<li><code>a &lt;= b</code></li>
-<li><code>a != b</code></li>
-<li><code>x &lt;- 2</code></li>
-<li><code>(x &gt; a) &amp;&amp; (10*x&gt;b) || !(b/a&gt;x)</code></li>
-</ul>
-<p>1.4 Los vectores en R se crean con la función <code>c()</code>. Por ejemplo <code>c(2,-1)</code> es un vector de clase <code>numeric</code> que tiene dos elementos, el 2 y el -1. Se puede comprobar usando la función <code>class()</code> así: <code>class(c(2,-1))</code>. Crear 5 vectores de 2 componentes de las siguiente clases básicas: character, numeric, integer, complex y logical (True/False).</p>
-<p>1.5. ¿Qué sucede cuando se realizan las siguientes operaciones que mezclan variables de distinta clase? ¿Por qué les parece que pasa? (usar <code>class()</code> para investigar el tipo de dato de los objetos)</p>
-<ul>
-<li><code>num_char &lt;- c(1, 2, 3, "a")</code></li>
-<li><code>num_logical &lt;- c(1, 2, 3, TRUE)</code></li>
-<li><code>char_logical &lt;- c("a", "b", "c", TRUE)</code></li>
-<li><code>tramposo &lt;- c(1, 2, 3, "4")</code></li>
-</ul>
-<p>1.6. Realizar las siguientes operaciones en la consola, ver el output de cada operación y escribir una frase explicando qué hace cada una.</p>
-<ul>
-<li><code>alturas_cm &lt;- c(180, 178, 154, 202)</code></li>
-<li><code>frutas &lt;- c("banana", "pera", "durazno")</code></li>
-<li><code>length(alturas_cm)</code></li>
-<li><code>length(frutas)</code></li>
-<li><code>frutas &lt;- c(frutas, "uva")</code></li>
-<li><code>frutas &lt;- c("naranja", frutas)</code></li>
-<li><code>bajitos &lt;- (alturas_cm &lt; 165)</code></li>
-<li><code>class(bajitos)</code></li>
-<li><code>1:10</code></li>
-<li><code>21:30</code></li>
-</ul>
-<p>1.7. Explorar estas distintas formas de extraer información del vector <code>c("banana", "pera", "durazno", "anana")</code>. Primero crear el vector en la consola y asignarlo al vector <code>frutas</code>. Luego correr cada caso en la consola y explicar en pocas palabras qué es lo que sucede.</p>
-<ul>
-<li><code>frutas[2]</code></li>
-<li><code>frutas[c(1,4)]</code></li>
-<li><code>frutas[c(1,4,1,1,2)]</code></li>
-<li><code>frutas %in% c("ciruela", "frutilla", "pera", "mandarina")</code></li>
-<li><code>frutas[ frutas %in% c("ciruela", "frutilla", "pera", "mandarina") ]</code></li>
-</ul>
-<p>1.8. ¿Por qué da error la línea 4 de esta secuencia?</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>datos <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"banana"</span>, <span class="dv">2</span>, <span class="st">"pera"</span>, <span class="dv">5</span>, <span class="st">"durazno"</span>, <span class="dv">0</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>datos[<span class="dv">2</span>] </span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>datos[<span class="dv">4</span>]</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>datos[<span class="dv">2</span>] <span class="sc">+</span> datos[<span class="dv">4</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>1.9. Explorar distintas formas de extraer información del vector <code>alturas_cm</code> definido en el ejercicio 1.6. Escribir una frase explicando qué hace cada una. ¿Por qué la última retorna <code>numeric(0)</code>?</p>
-<ul>
-<li><code>alturas_cm[c(TRUE, FALSE, TRUE, TRUE)]</code></li>
-<li><code>alturas_cm[alturas_cm &gt;= 180]</code></li>
-<li><code>alturas_cm[alturas_cm &gt;= 180 &amp; alturas_cm &lt; 200]</code></li>
-<li><code>alturas_cm[alturas_cm &gt;= 160 &amp; alturas_cm == 195]</code></li>
-</ul>
-<p>1.10. Las matrices en R son vectores con estructura en 2D. Por ejemplo, se pueden crear de esta forma</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">nrow =</span> <span class="dv">2</span>, <span class="at">ncol =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Usar <code>dim(m)</code> para averiguar el atributo “dimesión” (número de filas y columnas) de la matriz. Obtener el elemento que está en la fila 2 y columna 1 usando corchetes: <code>m[fila,columna]</code>. Obtener la primera fila completa dejando en blanco la columna: <code>m[fila,]</code>.</p>
-<p>1.11 ¿Qué sucede con <code>m</code> si corremos en la consola la operación <code>dim(m) &lt;- c(1, 6)</code>?</p>
-<p>1.12 Construir una matriz de 2 columnas que en cada columna tenga los vectores <code>x</code> e <code>y</code> de abajo usando la función <code>cbind()</code> y otro que haga lo mismo pero con 2 filas usando la función <code>rbind()</code>:</p>
-<ul>
-<li><code>x &lt;- c("fruta", "asado", "bebida")</code></li>
-<li><code>y &lt;- c("si", "no", "si")</code></li>
-</ul>
+<section id="objetivo" class="level1">
+<h1>Objetivo</h1>
+<p>El objetivo de este TP es que apliquen todo lo que aprendieron hasta ahora de decripción, visualización, exploración y manipulación de datos al análisis de dos datasets. Los dos son datasets públicos, uno contiene el registro de usos de bicicletas públicas de CABA y el otro datos climáticos diarios.</p>
 </section>
-<section id="funciones" class="level2">
-<h2 class="anchored" data-anchor-id="funciones">2. Funciones</h2>
-<p>Las funciones son scripts de R “enlatados” que hacen una operación con un input (un número o una variable, por ejemplo) y devuelven un output. Los inputs van entre paréntedis y separados por una coma, si hay más de uno. Muchas funciones están disponibles en <code>R-base</code> cuando abrimos una sesión de <code>R</code>, <code>class()</code>, <code>length()</code> o <code>c()</code> que usamos en los ejercicios anteriores. El objetivo de estos ejercicios es familiarizarse con varias funciones básicas de R.</p>
-<p>2.1. Ejecutar estas operaciones en la consola para entender qué hacen las funciones <code>sqrt()</code>, <code>round()</code>, <code>args()</code>, <code>ceiling()</code> y <code>floor()</code>:</p>
-<ul>
-<li><code>sqrt(81)</code></li>
-<li><code>round(3.14159, digits = 3)</code></li>
-<li><code>round(3.14159)</code></li>
-<li><code>round(digits = 2, 3.14159)</code></li>
-<li><code>args(sample)</code></li>
-<li><code>?ceiling</code> y <code>?floor</code></li>
-</ul>
-<p>2.2 Explorar las funciones <code>max()</code>, <code>min()</code>, <code>mean()</code> y <code>sort()</code> aplicadas al vector <code>alturas_cm</code> del ejercicio 1.6. ¿Qué hace cada una?</p>
-<p>2.3 Usar las funciones <code>which.min()</code> y <code>which.max()</code> con el mismo vector de alturas. Interpretar qué hace cada una.</p>
-<p>2.4. Completar los blancos con distintos números para entender qué hacen las funciones <code>seq()</code> y <code>rep()</code>. Si hay dudas, <code>?rep</code> y <code>?seq</code> en la consola.</p>
-<ul>
-<li><code>seq(from = ___, to = ___, lenght.out = ___)</code></li>
-<li><code>rep(x = ___, times = ___)</code></li>
-</ul>
-<p>2.5 Reproducir estos usos de la función <code>sample()</code> en la consola e interpretar qué hace esta función.</p>
-<ul>
-<li><code>sample(x = c("frambuesa", "frutilla"), size = 7, replace = TRUE )</code></li>
-<li><code>sample(x = c(0,1), size = 7, replace = TRUE )</code></li>
-<li>inventar otros 2 usos de la función <code>sample()</code>.</li>
-</ul>
-<p>2.6 ¿Por qué da error esta operación?</p>
-<ul>
-<li><code>sample(x = c(-1,1), size = 3)</code></li>
-</ul>
-<p>2.7 Usar la función <code>sum()</code> para sumar los números del 1 al 100 inclusive.</p>
-<p>2.8 R está pensado para analizar datos, entonces tiene formas particulares de tratar datos faltantes. Explorar en la consola el output de estas líneas de código. ¿Qué significa <code>na.rm = TRUE</code>?</p>
-<ul>
-<li><code>n &lt;- c(2, 4, 4, NA, 6)</code></li>
-<li><code>mean(n)</code></li>
-<li><code>max(n)</code></li>
-<li><code>mean(n, na.rm = TRUE)</code></li>
-<li><code>max(n, na.rm = TRUE)</code></li>
-</ul>
-<p>2.9 A partir de este vector de pesos en Kg de distintas personas:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>peso_kg <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">63</span>, <span class="dv">69</span>, <span class="dv">60</span>, <span class="dv">65</span>, <span class="cn">NA</span>, <span class="dv">68</span>, <span class="dv">61</span>, <span class="dv">70</span>, <span class="dv">61</span>, <span class="dv">59</span>, <span class="dv">64</span>, <span class="dv">69</span>, <span class="dv">63</span>, <span class="dv">63</span>, <span class="cn">NA</span>, <span class="dv">72</span>, <span class="dv">65</span>, <span class="dv">64</span>, <span class="dv">70</span>, <span class="dv">63</span>, <span class="dv">65</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ul>
-<li>Construir otro vector que descarte los <code>NA</code>.</li>
-<li>Usar la función <code>mean()</code> para calcular el peso promedio.</li>
-<li>Escribir una línea código que calcule cuántas personas pesan más que 65 kg.</li>
-<li>Escribir una línea de código que calcule cuántas personas pesan 63 kg.</li>
-</ul>
-<p>2.10 Usar la función <code>sample()</code> para simular el resultado de tirar un dado.</p>
-<p>2.11 Simular el resultado de tirar 120 veces un dado y contar cuántas veces salió cada resultado. ¿Qué resultado esperás obtener? ¿Coincide el resultado con lo que esperabas? No hay una única forma de resolverlo. <em>Ayuda:</em> <code>sum(___ == x)</code> o averigue cómo se usa la función <code>table()</code>.</p>
-<p>2.12 Usar la función <code>sample()</code> para simular el resultado de tirar una moneda cargada, cuya probabilidad de salir cara es 0.7. <em>Ayuda:</em> ver cómo el argumento <code>prob</code> en <code>?sample</code>.</p>
+<section id="datasets" class="level1">
+<h1>Datasets</h1>
+<section id="dataset-de-uso-de-ecobici" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-de-uso-de-ecobici">Dataset de uso de EcoBici</h2>
+<p>El dataset de uso del sistema Ecobici de la Ciudad de Buenos Aires está disponible <a href="https://data.buenosaires.gob.ar/dataset/bicicletas-publicas">acá</a>. En particular, vamos a trabajar con datos del año 2022. El dataset que está en la página tiene casi 3 millones de registros, pero para este TP preparamos un dataset reducido de 10000 observaciones. Ese dataset reducido se encuentra <a href="../tps/data/trips_2022_reducido.csv">acá</a>.</p>
 </section>
-<section id="scripts" class="level2">
-<h2 class="anchored" data-anchor-id="scripts">3. Scripts</h2>
-<p>Trabajar en la consola no siempre es lo más conveniente. Lo ideal es escribir en el editor de RStudio un archivo .R (o bien un archivo RMarkdown como veremos más adelante).</p>
-<p>3.1 Crear un script de <code>R</code> que haga la siguientes tres operaciones y guardarlo en un archivo llamado <code>TP1-01.R</code>. Correrlo línea por línea.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x1 <span class="ot">&lt;-</span> <span class="dv">2</span>  <span class="co"># defino la variable x1</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>x2 <span class="ot">&lt;-</span> <span class="dv">3</span>  <span class="co"># defino la variable x2</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> x1 <span class="sc">+</span> <span class="dv">2</span><span class="sc">*</span>x2</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>3.2 Crear un script que contenga la resolución completa del ejercicio 2.9. Incluir el enunciado y comentarios en el código. Guardarlo en un archivo “.R”.</p>
+<section id="importación-y-preprocesado-de-datos-en-r" class="level2">
+<h2 class="anchored" data-anchor-id="importación-y-preprocesado-de-datos-en-r">Importación y preprocesado de datos en R</h2>
+<p>En primer lugar seleccionar solo los viajes de entre 5 minutos y 1 hora de duración. Luego reconozcan qué significa cada variable. En la página donde está el dataset original encontrarán parte de esta información. Verifiquen que las variables tienen sentido, que tengan datos para todos los días del 2023, piensen en qué unidades se miden las variables numéricas, etc.</p>
 </section>
-<section id="data-frames" class="level2">
-<h2 class="anchored" data-anchor-id="data-frames">4. Data frames</h2>
-<p>Un data frame es una representación de los datos en formato de tabla en la que cada columna son vectores del mismo tamaño. Como cada columna es un vector, cada columna puede contener datos de un único tipo (ejemplo: numeric, character, factor, logic, etc). Se pueden pensar como variables. Por ejemplo:</p>
-<p><code>d &lt;-  data.frame(x = 1:5, y = letters[1:5], z = c(T,T,F,T,F))</code></p>
-<p>4.1. ¿Cuál es la clase del objeto <code>d</code>? ¿Cuál es la clase de cada uno de los vectores columna?</p>
-<p>4.2. Extraer el vector columna <code>y</code> usando <code>$</code>. Comparar con usar <code>d[,2]</code>.</p>
-<p>4.3. Cargar el paquete de R <a href="https://github.com/jennybc/gapminder">gapminder</a> usando <code>library(gapminder)</code>. Si da error es posible que no esté instalado. En tal caso ejecutan <code>install.packages("gapminder")</code> en la consola y luego si <code>library(gapminder)</code>.</p>
-<p>4.4. ¿Qué variables tiene el dataset gapminder y de qué clase son? <em>Ayuda: usar la función head(gapminder) y/o str(gapminder)</em>. Este dataset tiene formato tibble que a los efectos prácticos en este punto es exactamente igual que un data frame.</p>
-<p>4.5. ¿De cuántos países hay datos? <em>Ayuda: averiguar qué hace la función unique()</em>.</p>
-<p>4.6 Explorar el tamaño del dataset gapminder usando las funciones <code>dim()</code>, <code>nrow()</code> y <code>ncol()</code>.</p>
-<p>4.7 ¿Cuáles son las variables? Usar la función <code>names()</code>.</p>
-<p>4.8 Extraer la información de Argentina, Uruguay y Chile y guardarla en un nuevo data frame <code>gm.sur</code>. ¿Cuántas filas tiene? ¿Cuál es el primero y el último año para el cuál existen datos de Argentina en gapminder?</p>
-<p>4.9 ¿Qué resulta de hacer <code>gm.sur[,"pop"]</code>? ¿Qué resulta de hacer <code>gm.sur[,-(1:3)]</code>? Explorar el contenido de este data frame en el visor de RStudio haciendo <code>View(gm.sur)</code></p>
-<p>4.10 Las variables de clase “factor” (factores, o <em>fct</em>) son una clase especial que tiene R para trabajar con variables categóricas. Una vez que se crean, los factores sólo pueden contener un conjunto pre-definido de valores que se conocen como los niveles del factor. ¿Qué variables del dataset de gapminder son factores?</p>
-<p>4.11 <em>Redefinir niveles</em>. Supongamos que queremos cambiar la denominación del continente de Argentina a “América” (sin la s final). Prueben lo siguiente. ¿Qué pasó? ¿Por qué no funciona?</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(gm.sur<span class="sc">$</span>continent)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>gm.sur<span class="sc">$</span>continent <span class="ot">&lt;-</span> <span class="st">"America"</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(gm.sur<span class="sc">$</span>continent)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Ahora prueben esto. ¿Entienden por qué funciona?</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(gm.sur<span class="sc">$</span>continent) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Africa"</span>, <span class="st">"America"</span>, <span class="st">"Asia"</span>, <span class="st">"Europe"</span>, <span class="st">"Oceania"</span>)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(gm.sur<span class="sc">$</span>continent)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(gm.sur)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>4.12. Vamos a usar mucho “factores” a lo largo del curso, pero para que se den una idea, por ejemplo, los factores son muy útiles para codificar variables categóricas en gráficos. Vamos a ver esto bastante a lo largo de las clases, pero para que vean una aplicación simple, corran estas líneas usando el paquete (que vamos a ver en las próximas clases) <code>ggplot2</code>.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gm.sur, </span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> pop, <span class="at">col =</span> country)) <span class="sc">+</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Ahora corran lo siguiente. ¿En qué difiere del anterior? ¿Pueden intuir por qué tenemos ese resultado?</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gm.sur, </span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> pop, <span class="at">size =</span> country)) <span class="sc">+</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>¿Y si reemplazan <code>size</code> por <code>shape</code> dentro de <code>aes(...)</code>?</p>
-<p>4.13. Cambien más cosas del código anterior y prueben el resultado. De hecho, <strong>cambiar cosas y ver qué pasa</strong> es una gran forma de aprender.</p>
+<section id="dataset-de-clima" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-de-clima">Dataset de clima</h2>
+<p>Importen datos meteorológicos y climáticos de MeteoStat de <a href="https://meteostat.net/es/">esta página</a>. En particular, consideren datos de la estación meteorológica de Aeroparque (ID 87582), desde el 1ro de enero de 2022 hasta el 31 de diciembre de 2022.</p>
+</section>
+<section id="importación-y-preprocesado-de-datos-en-r-1" class="level2">
+<h2 class="anchored" data-anchor-id="importación-y-preprocesado-de-datos-en-r-1">Importación y preprocesado de datos en R</h2>
+<p>Descarguen ese dataset en formato csv e importen los datos en R. Verifiquen que tienen datos de todos los días del 2023. ¿Qué representa cada variable?</p>
+</section>
+</section>
+<section id="análisis-descriptivo" class="level1">
+<h1>Análisis descriptivo</h1>
+<p>En esta etapa tienen que trabajar con cada dataset por separado. Tienen que hacer un análisis descriptivo de las variables para familiarizarse con los datos y reconocer sus características y variabilidad.</p>
+<p>En cuanto al dataset de uso de bicicletas, ¿cómo se codifica el género de los usuaries? ¿lo usa más algún grupo? ¿cuáles son los viajes mas comunes (de dónde salen y dónde llegan?). Describan la variable que indica la duración de viaje (globalmente y por separado para los 5 viajes más frecuentes). En cuanto al dataset de datos climáticos, ¿qué variables tienen? ¿Cómo varía la temperatura a lo largo del año? ¿Tiene sentido? ¿Cómo es la cantidad de lluvias según el mes?</p>
+<p>Estos son sólo algunas ideas, ustedes pueden tener otras. Para cada caso piensen cómo describirían lo que quieren mostrar (si una tabla, un gráfico, qué grafico, etc).</p>
+</section>
+<section id="análisis-exploratorio" class="level1">
+<h1>Análisis Exploratorio</h1>
+<p>Supongan que quieren entender patrones de uso del sistema de Ecobici. Su variable de interés es el número de usos del sistema por día yquieren entender qué factores podrían explicar ese número. Algunas preguntas disparadoras para el análisis exploratorio son:</p>
+<ul>
+<li>¿Cómo varía el uso de la EcoBici a lo largo del año?</li>
+<li>¿El uso es diferente en días de semana vs.&nbsp;fin de semana? (para crear esta variable, investiguen el uso de la función weekdays()).</li>
+<li>¿Hay algún día atípico en el uso de la EcoBici? ¿le pueden encontrar una explicación?</li>
+<li>¿Si hace mucho calor se usa más o se usa menos (o depende)?</li>
+<li>¿Y si llueve?</li>
+</ul>
+<p>Piensen más preguntas. Es libre, pueden explorar por dónde se les ocurra. Realicen visualizaciones pertinentes, muestren datos de resumen cuando les parezca adecuado, etc.</p>
+</section>
+<section id="reporte-para-entregar" class="level1">
+<h1>Reporte para entregar</h1>
+<ul>
+<li>En cada sección (descripción, exploración, etc) escriban texto que acompañe el informe, las figuras y tablas que muestren.</li>
+<li>Deben entregar un archivo con el proyecto de R que contenga un archivo qmd y el html que se genera.</li>
+</ul>
 
 
 </section>
@@ -437,9 +228,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -504,6 +309,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {

@@ -38,11 +38,11 @@
   </url>
   <url>
     <loc>https://labodedatos-2023.netlify.app/cronograma.html</loc>
-    <lastmod>2023-09-14T15:09:21.897Z</lastmod>
+    <lastmod>2023-09-22T17:34:21.897Z</lastmod>
   </url>
   <url>
     <loc>https://labodedatos-2023.netlify.app/index.html</loc>
-    <lastmod>2023-09-14T15:27:19.756Z</lastmod>
+    <lastmod>2023-09-22T17:23:32.178Z</lastmod>
   </url>
   <url>
     <loc>https://labodedatos-2023.netlify.app/tps.html</loc>
@@ -58,7 +58,7 @@
   </url>
   <url>
     <loc>https://labodedatos-2023.netlify.app/guias.html</loc>
-    <lastmod>2023-09-14T15:09:17.940Z</lastmod>
+    <lastmod>2023-09-22T17:23:35.869Z</lastmod>
   </url>
   <url>
     <loc>https://labodedatos-2023.netlify.app/guias/guia1.html</loc>
@@ -103,5 +103,9 @@
   <url>
     <loc>https://labodedatos-2023.netlify.app/guias/guia5-temp.html</loc>
     <lastmod>2023-09-14T15:25:33.043Z</lastmod>
+  </url>
+  <url>
+    <loc>https://labodedatos-2023.netlify.app/tps/TP1.html</loc>
+    <lastmod>2023-09-22T17:32:50.236Z</lastmod>
   </url>
 </urlset>
