@@ -6,3 +6,4 @@ editor: source
   
 - <a href="https://ldd2023.netlify.app/slides/clase1.html" target="_blank"> clase 1 - 18/8</a> 
 - clase 2 - 25/8
+- [clase Regresión](/slides/Clase_Regresion.pdf)
