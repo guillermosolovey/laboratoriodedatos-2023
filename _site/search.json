@@ -11,7 +11,7 @@
     "href": "cronograma.html",
     "title": "Cronograma",
     "section": "",
-    "text": "fecha\n      tema\n      slides\n      guias\n      tp\n    \n  \n  \n    18/8\nIntroducción a la materia. Ciencia de datos. Tipos de preguntas. Introducción a R y RStudio | Charla Dátame.\n\n\n\n    25/8\nEstadística descriptiva. Visualización. Gramática de gráficos.\n\n\n\n    1/9\nAnálisis exploratorio de datos y comunicación.\n\n\n\n    8/9\nTransformación de datos: datos ordenados, vectores, data frames. Unión de data frames.\n\n\n\n    15/9\nProgramación en R: funciones, iteraciones | Charla Dátame.\n\n\n\n    22/9\nReproducibilidad computacional. Comunicación e informes con RMarkdown/Quarto.\n\n\nPresentación TP1\n    29/9\nIntroducción al modelado. Modelos supervisados y no supervisados. Regresión vs. clasificación. Trade-off sesgo-varianza. Modelo de regresión lineal simple.\n\n\nConsultas TP1\n    6/10\nRegresión: regresión lineal múltiple y K-nearest neighbors.\n\n\nEnvío TP1 (límite: 5 de Oct, 23:59)\n    13/10\nFeriado\n\n\n\n    20/10\nClasificación: Árboles de decisión y K-nearest neighbors | Charla Dátame.\n\n\nDevolución TP1\n    27/10\nHerramientas de validación de un\nmodelo. Métodos de resampleo. Muestras de testeo y entrenamiento.Métricas\n\n\nPresentación TP2\n    3/11\nAprendizaje no supervisado. Métodos de clustering: K-means y clustering jerárquico.\n\n\nConsultas TP2\n    10/11\nConsultas.\n\n\nEnvío TP2 (límite: 9 de Nov, 23:59)\n    17/11\nParcial de 10 a 13hs en aula a confirmar | Charla Dátame.\n\n\n\n    24/11\nEntrega de notas del parcial y TP2. Cierre\n\n\n\n    1/12\nRecuperatorio del parcial, de 10 a 13hs en aula a confirmar.\n\n\nRe-entrega de TPs.\n    8/12\nEntrega de notas del recuperatorio y de los TPs. Cierre."
+    "text": "fecha\ntema\nslides\nguias\ntp\n\n\n\n\n18/8\nIntroducción a la materia. Ciencia de datos. Tipos de preguntas. Introducción a R y RStudio | Charla Dátame.\n\n\n\n\n\n25/8\nEstadística descriptiva. Visualización. Gramática de gráficos.\n\n\n\n\n\n1/9\nAnálisis exploratorio de datos y comunicación.\n\n\n\n\n\n8/9\nTransformación de datos: datos ordenados, vectores, data frames. Unión de data frames.\n\n\n\n\n\n15/9\nProgramación en R: funciones, iteraciones | Charla Dátame.\n\n\n\n\n\n22/9\nReproducibilidad computacional. Comunicación e informes con RMarkdown/Quarto.\n\n\nPresentación TP1\n\n\n29/9\nIntroducción al modelado. Modelos supervisados y no supervisados. Regresión vs. clasificación. Trade-off sesgo-varianza. Modelo de regresión lineal simple.\n\n\nConsultas TP1\n\n\n6/10\nRegresión: regresión lineal múltiple y K-nearest neighbors.\n\n\nEnvío TP1 (límite: 5 de Oct, 23:59)\n\n\n13/10\nFeriado\n\n\n\n\n\n20/10\nClasificación: Árboles de decisión y K-nearest neighbors | Charla Dátame.\n\n\nDevolución TP1\n\n\n27/10\nHerramientas de validación de un modelo. Métodos de resampleo. Muestras de testeo y entrenamiento.Métricas\n\n\nPresentación TP2\n\n\n3/11\nAprendizaje no supervisado. Métodos de clustering: K-means y clustering jerárquico.\n\n\nConsultas TP2\n\n\n10/11\nConsultas.\n\n\nEnvío TP2 (límite: 9 de Nov, 23:59)\n\n\n17/11\nParcial de 10 a 13hs en aula a confirmar | Charla Dátame.\n\n\n\n\n\n24/11\nEntrega de notas del parcial y TP2. Cierre\n\n\n\n\n\n1/12\nRecuperatorio del parcial, de 10 a 13hs en aula a confirmar.\n\n\nRe-entrega de TPs.\n\n\n8/12\nEntrega de notas del recuperatorio y de los TPs. Cierre."
   },
   {
     "objectID": "index.html#course-materials",
@@ -256,7 +256,7 @@
     "href": "guias.html",
     "title": "Guías",
     "section": "",
-    "text": "Guía 1\nGuía 2\nGuía 3\nGuía 4\nGuía 5\nTP-1"
+    "text": "Guía 1\nGuía 2\nGuía 3\nGuía 4\nGuía 5\nGuía 6\nTP-1"
   },
   {
     "objectID": "guias/guia1.html",
@@ -705,5 +705,40 @@
     "title": "TP-1",
     "section": "Importación y preprocesado de datos en R",
     "text": "Importación y preprocesado de datos en R\nDescarguen ese dataset en formato csv e importen los datos en R. Verifiquen que tienen datos de todos los días del 2023. ¿Qué representa cada variable?"
+  },
+  {
+    "objectID": "guias/guia6.html",
+    "href": "guias/guia6.html",
+    "title": "Guía 6: Modelo lineal",
+    "section": "",
+    "text": "1.1 Cargar la librería palmerpenguins. Usando el dataset penguins y borrando las observaciones que tengan algún NA responder estas preguntas.\n1.2 Realizar un gráfico de dispersión que muestre la relación entre el ancho y el largo del pico de los pinguinos de la especie Adelie (columnas bill_depth_mm y bill_length_mm).\n1.3 Escribir la ecuación del modelo de regresión lineal simple que tenga como variable respuesta el largo del pico y como explicativa al ancho (usar lm() para calcular los coeficientes del modelo)\n\\[\n\\hat{\\text{largo}} =  \\text{??}  + \\text{??} \\times \\text{ancho}\n\\]\n1.4 ¿Qué unidades tienen la ordenada al origen y la pendiente? ¿Cómo se interpretan los valores estimados de la ordenada al origen y la pendiente?\n1.5 ¿Cuál es el error cuadrático medio del modelo? ¿Cuál es el coeficiente de determinación (\\(R^2\\))? Programar una función que calcule el error cuadrático medio y \\(R^2\\).\n1.6 Suponga que se encuentra un pinguino de la especie Adelie que tiene un pico de 2 cm de ancho. El dato del largo del pico se perdió. Usando el modelo lineal simple, ¿qué valor de largo de pico tendría ese pinguino? Si se encuentra un pinguino bebé con un pico de 5mm de ancho, ¿sería adecuado usar este modelo para conocer el largo del pico dado su ancho?\n1.7 Repetir 1.3 para los pinguinos de las otras 3 especies.\n1.8 Reproducir el gráfico que se muestra abajo usando geom_smooth(method=\"lm\", se = F) y luego, “a mano”, usando los resultados de 1.7 y geom_abline().\n\n\n\n\n\n1.9 Sólo para los pinguinos de la especie Adelie, definir una nueva variable que sea el ancho del pico centrado respecto al ancho promedio. Es decir, para cada pinguino \\(i\\):\n\\[\n\\text{ancho.cen}_i = \\text{ancho}_i - &lt;\\text{ancho}&gt;\n\\]\ndonde \\(&lt;\\text{ancho}&gt;\\) es el ancho promedio del pico.\nLuego repetir 1.3 para este modelo. Es decir, reemplazar los “??” por los estimadores de mínimos cuadrados.\n\\[\n\\hat{\\text{largo}} =  \\text{??}  + \\text{??} \\times \\text{ancho.cen}\n\\]\n1.10 ¿Qué interpretaición tienen ahora la ordenada al origen y la pendiente del modelo? Discutir las ventajas y desventajas de usar \\(\\text{ancho.cen}\\) o \\(\\text{ancho}\\).\n1.11 Calcular el coeficiente de determinación para este nuevo modelo. ¿Es igual o diferente al calculado en 1.5? Explicar."
+  },
+  {
+    "objectID": "guias/guia6.html#ejercicio-1",
+    "href": "guias/guia6.html#ejercicio-1",
+    "title": "Guía 6: Modelo lineal",
+    "section": "",
+    "text": "1.1 Cargar la librería palmerpenguins. Usando el dataset penguins y borrando las observaciones que tengan algún NA responder estas preguntas.\n1.2 Realizar un gráfico de dispersión que muestre la relación entre el ancho y el largo del pico de los pinguinos de la especie Adelie (columnas bill_depth_mm y bill_length_mm).\n1.3 Escribir la ecuación del modelo de regresión lineal simple que tenga como variable respuesta el largo del pico y como explicativa al ancho (usar lm() para calcular los coeficientes del modelo)\n\\[\n\\hat{\\text{largo}} =  \\text{??}  + \\text{??} \\times \\text{ancho}\n\\]\n1.4 ¿Qué unidades tienen la ordenada al origen y la pendiente? ¿Cómo se interpretan los valores estimados de la ordenada al origen y la pendiente?\n1.5 ¿Cuál es el error cuadrático medio del modelo? ¿Cuál es el coeficiente de determinación (\\(R^2\\))? Programar una función que calcule el error cuadrático medio y \\(R^2\\).\n1.6 Suponga que se encuentra un pinguino de la especie Adelie que tiene un pico de 2 cm de ancho. El dato del largo del pico se perdió. Usando el modelo lineal simple, ¿qué valor de largo de pico tendría ese pinguino? Si se encuentra un pinguino bebé con un pico de 5mm de ancho, ¿sería adecuado usar este modelo para conocer el largo del pico dado su ancho?\n1.7 Repetir 1.3 para los pinguinos de las otras 3 especies.\n1.8 Reproducir el gráfico que se muestra abajo usando geom_smooth(method=\"lm\", se = F) y luego, “a mano”, usando los resultados de 1.7 y geom_abline().\n\n\n\n\n\n1.9 Sólo para los pinguinos de la especie Adelie, definir una nueva variable que sea el ancho del pico centrado respecto al ancho promedio. Es decir, para cada pinguino \\(i\\):\n\\[\n\\text{ancho.cen}_i = \\text{ancho}_i - &lt;\\text{ancho}&gt;\n\\]\ndonde \\(&lt;\\text{ancho}&gt;\\) es el ancho promedio del pico.\nLuego repetir 1.3 para este modelo. Es decir, reemplazar los “??” por los estimadores de mínimos cuadrados.\n\\[\n\\hat{\\text{largo}} =  \\text{??}  + \\text{??} \\times \\text{ancho.cen}\n\\]\n1.10 ¿Qué interpretaición tienen ahora la ordenada al origen y la pendiente del modelo? Discutir las ventajas y desventajas de usar \\(\\text{ancho.cen}\\) o \\(\\text{ancho}\\).\n1.11 Calcular el coeficiente de determinación para este nuevo modelo. ¿Es igual o diferente al calculado en 1.5? Explicar."
+  },
+  {
+    "objectID": "guias/guia6.html#ejercicio-2",
+    "href": "guias/guia6.html#ejercicio-2",
+    "title": "Guía 6: Modelo lineal",
+    "section": "Ejercicio 2",
+    "text": "Ejercicio 2\n2.1 Utilizando la librería mtcars incluida en R-base, que contiene datos sobre automóviles, crear un gráfico para visualizar la relación entre la potencia del motor (columna hp) y la eficiencia en millas por galón (columna mpg). ¿Qué patrón se observa?\n2.2 Realiza una regresión lineal simple para predecir la eficiencia en millas por galón en función de la potencia del motor, ¿Cuál es el valor del coeficiente de determinación (\\(R^2\\))?\n2.3 Discutir si parece adecuado un modelo lineal para describir esta relación."
+  },
+  {
+    "objectID": "guias/guia6.html#ejercicio-3",
+    "href": "guias/guia6.html#ejercicio-3",
+    "title": "Guía 6: Modelo lineal",
+    "section": "Ejercicio 3",
+    "text": "Ejercicio 3\n3.1 Cargar el conjunto de datos iris, incluida en R-base, que contiene información sobre especies de flores y sus características. Intenta realizar una regresión lineal simple para predecir la longitud del sépalo (columna Sepal.Length) en función del ancho del sépalo (columna Sepal.Width). ¿Cuál es el valor del coeficiente de determinación (\\(R^2\\))?"
+  },
+  {
+    "objectID": "guias/guia6.html#ejercicio-4",
+    "href": "guias/guia6.html#ejercicio-4",
+    "title": "Guía 6: Modelo lineal",
+    "section": "Ejercicio 4",
+    "text": "Ejercicio 4\n4.1 Cargar la librería gapminder. Seleccionar datos de un año particular y realizar un gráfico de dispersión que muestre la relación entre el PIB per cápita (columna gdpPercap) y la esperanza de vida (columna lifeExp).\n4.2 Realizar una regresión lineal simple para predecir la esperanza de vida en función del PBI per cápita para 1997 en el continente americano.\n4.3 Discutir si el modelo es adecuado para describir esta relación.\n4.4 Calcular el error estándar de la estimación (SEE) para evaluar la precisión del modelo de regresión.\n4.5 Repetir 4.2 para un modelo pero utilizando como variable respuesta el logaritmo de la esperanza de vida y como variable explicativa el logaritmo del PBI per capita. Discutir la conveniencia de usar el logaritmo de las variables."
   }
 ]
