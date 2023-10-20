@@ -9,5 +9,6 @@ editor: source
 - [Guía 3](./guias/guia3.html)
 - [Guía 4](./guias/guia4.html)
 - [Guía 5](./guias/guia5.html)
-- [Guía 6](./guias/guia6.html)
 - [TP-1](./tps/TP1.html)
+- [Guía 6](./guias/guia6.html)
+- [Guía 7](./guias/guia7.html)

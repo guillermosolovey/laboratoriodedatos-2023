@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>laboratorio de datos - Guías</title>
+<title>laboratorio de datos - Guía 7: Modelo lineal múltiple</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,17 +61,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">laboratorio de datos</span>
     </a>
   </div>
@@ -81,19 +81,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">
+    <a class="nav-link" href="../index.html">
  <span class="menu-text"><i class="fa-solid fa-home" aria-label="home"></i> Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cronograma.html">
+    <a class="nav-link" href="../cronograma.html">
  <span class="menu-text"><i class="fa-solid fa-calendar" aria-label="calendar"></i> Cronograma</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./guias.html" aria-current="page">
+    <a class="nav-link" href="../guias.html">
  <span class="menu-text"><i class="fa-solid fa-dumbbell" aria-label="dumbbell"></i> Guías</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./slides.html">
+    <a class="nav-link" href="../slides.html">
  <span class="menu-text"><i class="fa-solid fa-laptop" aria-label="laptop"></i> Slides</span></a>
   </li>  
 </ul>
@@ -106,13 +106,25 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#ejercicio-1" id="toc-ejercicio-1" class="nav-link active" data-scroll-target="#ejercicio-1">Ejercicio 1</a></li>
+  <li><a href="#ejercicio-2" id="toc-ejercicio-2" class="nav-link" data-scroll-target="#ejercicio-2">Ejercicio 2</a></li>
+  <li><a href="#ejercicio-3" id="toc-ejercicio-3" class="nav-link" data-scroll-target="#ejercicio-3">Ejercicio 3</a></li>
+  <li><a href="#ejercicio-4" id="toc-ejercicio-4" class="nav-link" data-scroll-target="#ejercicio-4">Ejercicio 4</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Guías</h1>
+<h1 class="title">Guía 7: Modelo lineal múltiple</h1>
+<p class="subtitle lead">Laboratorio de datos 2023 (comisión: G. Solovey)</p>
 </div>
 
 
@@ -127,18 +139,53 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<ul>
-<li><a href="./guias/guia1.html">Guía 1</a></li>
-<li><a href="./guias/guia2.html">Guía 2</a></li>
-<li><a href="./guias/guia3.html">Guía 3</a></li>
-<li><a href="./guias/guia4.html">Guía 4</a></li>
-<li><a href="./guias/guia5.html">Guía 5</a></li>
-<li><a href="./tps/TP1.html">TP-1</a></li>
-<li><a href="./guias/guia6.html">Guía 6</a></li>
-<li><a href="./guias/guia7.html">Guía 7</a></li>
-</ul>
+<div class="cell">
+
+</div>
+<p>Para resolver estos ejercicios, cargar la librería <code>palmerpenguins</code>, usar el dataset <code>penguins</code>, borrando las observaciones que tengan algún <code>NA</code>.</p>
+<section id="ejercicio-1" class="level2">
+<h2 class="anchored" data-anchor-id="ejercicio-1">Ejercicio 1</h2>
+<p>Se quiere predecir el peso de un pinguino usando como variables predictoras el largo de la aleta y el sexo del pinguino.</p>
+<ol type="a">
+<li>Escribir (en lápiz y papel) la ecuación de un modelo lineal para este caso. ¿Qué unidades tienen las variables y cómo se codifica la variable “sexo del pinguino”?</li>
+<li>Ajustar el modelo usando todos los datos disponibles. Reportar los coeficientes encontrados y calcular el error de predicción.</li>
+<li>Hacer un gráfico de los datos junto con las predicciones del modelo.</li>
+<li>Dos pinguinos que tienen igual largo de aleta, uno macho y otro hembra, ¿qué diferencia de peso predice el modelo que tendrán?</li>
+</ol>
+</section>
+<section id="ejercicio-2" class="level2">
+<h2 class="anchored" data-anchor-id="ejercicio-2">Ejercicio 2</h2>
+<p>Ahora se quiere predecir el peso de un pinguino usando como variables predictoras el largo de la aleta y la especie del pinguino.</p>
+<ol type="a">
+<li>Escribir (en lápiz y papel) la ecuación de un modelo lineal para este caso. ¿Cómo se codifica la variable “especie”?</li>
+<li>Explicar qué diferencia tiene este modelo respecto al propuesto en el ejercicio 1.</li>
+<li>Ajustar el modelo usando todos los datos disponibles. Reportar los coeficientes encontrados y calcular el error de predicción.</li>
+<li>Hacer un gráfico de los datos junto con las predicciones del modelo.</li>
+</ol>
+</section>
+<section id="ejercicio-3" class="level2">
+<h2 class="anchored" data-anchor-id="ejercicio-3">Ejercicio 3</h2>
+<p>Modificar lo hecho en el ejercicio 2 introduciendo una tercera variable predictora que sea la “interacción” entre el la aleta y la especie.</p>
+<ol type="a">
+<li>Escribir (en lápiz y papel) la ecuación de un modelo lineal para este caso.</li>
+<li>Explicar qué diferencia tiene este modelo respecto al propuesto en el ejercicio 2.</li>
+<li>Ajustar el modelo usando todos los datos disponibles. Reportar los coeficientes encontrados y calcular el error de predicción.</li>
+<li>Hacer un gráfico de los datos junto con las predicciones del modelo.</li>
+<li>Dos pinguinos que tienen igual largo de aleta, uno Adelie y otro Gentoo, ¿qué diferencia de peso predice el modelo que tendrán?</li>
+</ol>
+</section>
+<section id="ejercicio-4" class="level2">
+<h2 class="anchored" data-anchor-id="ejercicio-4">Ejercicio 4</h2>
+<p>Crear varios modelos de regresión lineal múltiple para predecir el peso de un pinguino en base a varias variables predictoras.</p>
+<ol type="a">
+<li>Dividir el dataset en un grupo de entrenamiento y uno de test (80% - 20%).</li>
+<li>Crear y ajustar 6 modelos que contengan desde 1 hasta 6 variables predictoras sumando en cada modelo una variable nueva. Las 6 variables son: sexo, especie, año de la expedición, largo de la aleta, largo del pico, ancho del pico.</li>
+<li>Calcular para cada uno el error predicción en el grupo de entrenamiento y en el grupo de test.</li>
+<li>¿Cuál modelo tiene el menor error de ajuste? ¿Cuál el menor error de predicción?</li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
