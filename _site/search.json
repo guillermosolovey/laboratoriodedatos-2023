@@ -11,7 +11,7 @@
     "href": "cronograma.html",
     "title": "Cronograma",
     "section": "",
-    "text": "fecha\ntema\nslides\nguias\ntp\n\n\n\n\n18/8\nIntroducción a la materia. Ciencia de datos. Tipos de preguntas. Introducción a R y RStudio | Charla Dátame.\n\n\n\n\n\n25/8\nEstadística descriptiva. Visualización. Gramática de gráficos.\n\n\n\n\n\n1/9\nAnálisis exploratorio de datos y comunicación.\n\n\n\n\n\n8/9\nTransformación de datos: datos ordenados, vectores, data frames. Unión de data frames.\n\n\n\n\n\n15/9\nProgramación en R: funciones, iteraciones | Charla Dátame.\n\n\n\n\n\n22/9\nReproducibilidad computacional. Comunicación e informes con RMarkdown/Quarto.\n\n\nPresentación TP1\n\n\n29/9\nIntroducción al modelado. Modelos supervisados y no supervisados. Regresión vs. clasificación. Trade-off sesgo-varianza. Modelo de regresión lineal simple.\n\n\nConsultas TP1\n\n\n6/10\nRegresión: regresión lineal múltiple y K-nearest neighbors.\n\n\nEnvío TP1 (límite: 5 de Oct, 23:59)\n\n\n13/10\nFeriado\n\n\n\n\n\n20/10\nClasificación: Árboles de decisión y K-nearest neighbors | Charla Dátame.\n\n\nDevolución TP1\n\n\n27/10\nHerramientas de validación de un modelo. Métodos de resampleo. Muestras de testeo y entrenamiento.Métricas\n\n\nPresentación TP2\n\n\n3/11\nAprendizaje no supervisado. Métodos de clustering: K-means y clustering jerárquico.\n\n\nConsultas TP2\n\n\n10/11\nConsultas.\n\n\nEnvío TP2 (límite: 9 de Nov, 23:59)\n\n\n17/11\nParcial de 10 a 13hs en aula a confirmar | Charla Dátame.\n\n\n\n\n\n24/11\nEntrega de notas del parcial y TP2. Cierre\n\n\n\n\n\n1/12\nRecuperatorio del parcial, de 10 a 13hs en aula a confirmar.\n\n\nRe-entrega de TPs.\n\n\n8/12\nEntrega de notas del recuperatorio y de los TPs. Cierre."
+    "text": "fecha\ntema\nslides\nguias\ntp\n\n\n\n\n18/8\nIntroducción a la materia. Ciencia de datos. Tipos de preguntas. Introducción a R y RStudio | Charla Dátame.\n\n\n\n\n\n25/8\nEstadística descriptiva. Visualización. Gramática de gráficos.\n\n\n\n\n\n1/9\nAnálisis exploratorio de datos y comunicación.\n\n\n\n\n\n8/9\nTransformación de datos: datos ordenados, vectores, data frames. Unión de data frames.\n\n\n\n\n\n15/9\nProgramación en R: funciones, iteraciones | Charla Dátame.\n\n\n\n\n\n22/9\nReproducibilidad computacional. Comunicación e informes con RMarkdown/Quarto.\n\n\nPresentación TP1\n\n\n29/9\nConsultas TP1\n\n\n\n\n\n6/10\nIntroducción al modelado. Modelos supervisados y no supervisados. Regresión vs. clasificación. Modelo de regresión lineal simple.\n\n\nEnvío TP1 (límite: 5 de Oct, 23:59)\n\n\n13/10\nFeriado\n\n\n\n\n\n20/10\nTrade-off sesgo-varianza. Regresión: regresión lineal múltiple y K-nearest neighbors. | Charla Dátame.\n\n\nDevolución TP1\n\n\n27/10\nClasificación: Árboles de decisión y K-nearest neighbors.\n\n\nPresentación TP2\n\n\n3/11\nHerramientas de validación de un modelo. Métodos de resampleo. Muestras de testeo y entrenamiento. Métricas. Consultas TP2.\n\n\n\n\n\n10/11\nAprendizaje no supervisado. Métodos de clustering: K-means y clustering jerárquico. Consultas\n\n\nEnvío TP2 (límite: 9 de Nov, 23:59)\n\n\n17/11\nParcial de 10 a 13hs en aula a confirmar | Charla Dátame.\n\n\n\n\n\n24/11\nEntrega de notas del parcial y TP2. Cierre\n\n\n\n\n\n1/12\nRecuperatorio del parcial, de 10 a 13hs en aula a confirmar.\n\n\nRe-entrega de TPs.\n\n\n8/12\nEntrega de notas del recuperatorio y de los TPs. Cierre."
   },
   {
     "objectID": "index.html#course-materials",
@@ -221,7 +221,7 @@
     "href": "slides.html",
     "title": "Slides",
     "section": "",
-    "text": "clase 1 - 18/8\nclase 2 - 25/8\nclase Regresión"
+    "text": "clase 1 - 18/8\n clase 2 - 25/8\n clase 4 - 8/9\n clase 5 - 15/9\n clase 8 - 6/10\n Script Clasificación"
   },
   {
     "objectID": "TPs/TP1.html",
@@ -256,7 +256,7 @@
     "href": "guias.html",
     "title": "Guías",
     "section": "",
-    "text": "Guía 1\nGuía 2\nGuía 3\nGuía 4\nGuía 5\nGuía 6\nTP-1"
+    "text": "Guía 1\nGuía 2\nGuía 3\nGuía 4\nGuía 5\nTP-1\nGuía 6\nGuía 7\nGuía 8"
   },
   {
     "objectID": "guias/guia1.html",
@@ -501,7 +501,7 @@
     "href": "slides/clase2.html#cuarteto-de-anscombe",
     "title": "Laboratorio de datos",
     "section": "Cuarteto de Anscombe",
-    "text": "Cuarteto de Anscombe\n\n\nPlot\nResumen\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n quartet \n    mean_x \n    var_x \n    mean_y \n    var_y \n  \n\n\n 1 \n    9 \n    11 \n    7.5 \n    4.13 \n  \n\n 2 \n    9 \n    11 \n    7.5 \n    4.13 \n  \n\n 3 \n    9 \n    11 \n    7.5 \n    4.12 \n  \n\n 4 \n    9 \n    11 \n    7.5 \n    4.12"
+    "text": "Cuarteto de Anscombe\n\n\nPlot\nResumen\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nquartet\nmean_x\nvar_x\nmean_y\nvar_y\n\n\n\n1\n9\n11\n7.5\n4.13\n\n\n2\n9\n11\n7.5\n4.13\n\n\n3\n9\n11\n7.5\n4.12\n\n\n4\n9\n11\n7.5\n4.12"
   },
   {
     "objectID": "slides/clase2.html#cuarteto-de-anscombe-1",
@@ -606,7 +606,7 @@
     "href": "slides/clase3.html#tipos-de-variables",
     "title": "Laboratorio de datos",
     "section": "Tipos de variables",
-    "text": "Tipos de variables\n\n\n\n\n\n\n\n  \n  \n\nNombre\n      ¿qué muestra?\n      objeto geométrico\n      nota\n    \n\n\nscatter (dispersión)\nrelación entre dos variables numéricas\ngeom_point()\n\n\n\nlínea\nrelación entre dos variables numéricas\ngeom_line()\nse usa cuando la variable del eje x tiene un orden (por ejemplo, tiempo)\n\n\nhistograma\ndistribución de una variable numérica\ngeom_histogram()\ncombinado con un faceteado muestra la distribución de una variable numérica desagregada por el valor de otra variable\n\n\nboxplot\ndistribución de una variable numérica (puede desagregarse por el valor de otra variable)\ngeom_boxplot()\n\n\n\nbarplot\ndistribución de una variable categórica\ngeom_bar() cuando ya no hecho el conteo, geom_col() cuando el conteo está hecho\nStacked, side-by-side, and faceted barplots show the joint distribution of 2 categorical variables"
+    "text": "Tipos de variables\n\n\n\n  \n  \n\n\nNombre\n¿qué muestra?\nobjeto geométrico\nnota\n\n\n\nscatter (dispersión)\nrelación entre dos variables numéricas\ngeom_point()\n\n\n\nlínea\nrelación entre dos variables numéricas\ngeom_line()\nse usa cuando la variable del eje x tiene un orden (por ejemplo, tiempo)\n\n\nhistograma\ndistribución de una variable numérica\ngeom_histogram()\ncombinado con un faceteado muestra la distribución de una variable numérica desagregada por el valor de otra variable\n\n\nboxplot\ndistribución de una variable numérica (puede desagregarse por el valor de otra variable)\ngeom_boxplot()\n\n\n\nbarplot\ndistribución de una variable categórica\ngeom_bar() cuando ya no hecho el conteo, geom_col() cuando el conteo está hecho\nStacked, side-by-side, and faceted barplots show the joint distribution of 2 categorical variables"
   },
   {
     "objectID": "slides/clase3.html#geom_point",
@@ -740,5 +740,159 @@
     "title": "Guía 6: Modelo lineal",
     "section": "Ejercicio 4",
     "text": "Ejercicio 4\n4.1 Cargar la librería gapminder. Seleccionar datos de un año particular y realizar un gráfico de dispersión que muestre la relación entre el PIB per cápita (columna gdpPercap) y la esperanza de vida (columna lifeExp).\n4.2 Realizar una regresión lineal simple para predecir la esperanza de vida en función del PBI per cápita para 1997 en el continente americano.\n4.3 Discutir si el modelo es adecuado para describir esta relación.\n4.4 Calcular el error estándar de la estimación (SEE) para evaluar la precisión del modelo de regresión.\n4.5 Repetir 4.2 para un modelo pero utilizando como variable respuesta el logaritmo de la esperanza de vida y como variable explicativa el logaritmo del PBI per capita. Discutir la conveniencia de usar el logaritmo de las variables."
+  },
+  {
+    "objectID": "guias/guia7.html",
+    "href": "guias/guia7.html",
+    "title": "Guía 7: Modelo lineal múltiple",
+    "section": "",
+    "text": "Para resolver estos ejercicios, cargar la librería palmerpenguins, usar el dataset penguins, borrando las observaciones que tengan algún NA."
+  },
+  {
+    "objectID": "guias/guia7.html#ejercicio-1",
+    "href": "guias/guia7.html#ejercicio-1",
+    "title": "Guía 7: Modelo lineal múltiple",
+    "section": "Ejercicio 1",
+    "text": "Ejercicio 1\nSe quiere predecir el peso de un pinguino usando como variables predictoras el largo de la aleta y el sexo del pinguino.\n\nEscribir (en lápiz y papel) la ecuación de un modelo lineal para este caso. ¿Qué unidades tienen las variables y cómo se codifica la variable “sexo del pinguino”?\nAjustar el modelo usando todos los datos disponibles. Reportar los coeficientes encontrados y calcular el error de predicción (MSE).\nHacer un gráfico de los datos junto con las predicciones del modelo.\nDos pinguinos que tienen igual largo de aleta, uno macho y otro hembra, ¿qué diferencia de peso predice el modelo que tendrán?"
+  },
+  {
+    "objectID": "guias/guia7.html#ejercicio-2",
+    "href": "guias/guia7.html#ejercicio-2",
+    "title": "Guía 7: Modelo lineal múltiple",
+    "section": "Ejercicio 2",
+    "text": "Ejercicio 2\nAhora se quiere predecir el peso de un pinguino usando como variables predictoras el largo de la aleta y la especie del pinguino.\n\nEscribir (en lápiz y papel) la ecuación de un modelo lineal para este caso. ¿Cómo se codifica la variable “especie”?\nExplicar qué diferencia tiene este modelo respecto al propuesto en el ejercicio 1.\nAjustar el modelo usando todos los datos disponibles. Reportar los coeficientes encontrados y calcular el error de predicción.\nHacer un gráfico de los datos junto con las predicciones del modelo."
+  },
+  {
+    "objectID": "guias/guia7.html#ejercicio-3",
+    "href": "guias/guia7.html#ejercicio-3",
+    "title": "Guía 7: Modelo lineal múltiple",
+    "section": "Ejercicio 3",
+    "text": "Ejercicio 3\nModificar lo hecho en el ejercicio 2 introduciendo una tercera variable predictora que sea la “interacción” entre el la aleta y la especie.\n\nEscribir (en lápiz y papel) la ecuación de un modelo lineal para este caso.\nExplicar qué diferencia tiene este modelo respecto al propuesto en el ejercicio 2.\nAjustar el modelo usando todos los datos disponibles. Reportar los coeficientes encontrados y calcular el error de predicción.\nHacer un gráfico de los datos junto con las predicciones del modelo.\nDos pinguinos que tienen igual largo de aleta, uno Adelie y otro Gentoo, ¿qué diferencia de peso predice el modelo que tendrán?"
+  },
+  {
+    "objectID": "guias/guia7.html#ejercicio-4",
+    "href": "guias/guia7.html#ejercicio-4",
+    "title": "Guía 7: Modelo lineal múltiple",
+    "section": "Ejercicio 4",
+    "text": "Ejercicio 4\nCrear varios modelos de regresión lineal múltiple para predecir el peso de un pinguino en base a varias variables predictoras.\n\nDividir el dataset en un grupo de entrenamiento y uno de test (80% - 20%).\nCrear y ajustar 6 modelos que contengan desde 1 hasta 6 variables predictoras sumando en cada modelo una variable nueva. Las 6 variables son: sexo, especie, año de la expedición, largo de la aleta, largo del pico, ancho del pico.\nCalcular para cada uno el error predicción en el grupo de entrenamiento y en el grupo de test.\n¿Cuál modelo tiene el menor error de ajuste? ¿Cuál el menor error de predicción?"
+  },
+  {
+    "objectID": "guias/guia8.html",
+    "href": "guias/guia8.html",
+    "title": "Guía 8: Clasificación",
+    "section": "",
+    "text": "Para resolver estos ejercicios, cargar la librería palmerpenguins, usar el dataset penguins, borrando las observaciones que tengan algún NA. En cierto punto van a necesitar estos paquetes de R:\nrequire(palmerpenguins)\nrequire(patchwork)\nrequire(tidyverse)\nrequire(rpart)     \nrequire(rpart.plot)   \nrequire(parttree) \nrequire(class)"
+  },
+  {
+    "objectID": "guias/guia8.html#ejercicio-1",
+    "href": "guias/guia8.html#ejercicio-1",
+    "title": "Guía 8: Clasificación",
+    "section": "Ejercicio 1",
+    "text": "Ejercicio 1\nDividir el dataset en un conjunto de entrenamiento y uno de test (80%-20%) en forma aleatoria utilizando una semilla fija. Utilizar, para este ejercicio, la variable largo del pico del pinguino para predecir el sexo de los pinguinos.\n\nEscribir el modelo de clasificación. Es decir, cómo se decide si un nuevo pinguino, del que se conoce su largo del pico, es macho o hembra. ¿Cuál es el “accuracy” mínimo esperable para un modelo de clasificación con estos datos?\nUsando el conjunto de entrenamiento, encontrar el clasificador que minimiza el error. Para hacerlo, tomar una grilla de valores posibles de la “masa crítica” y calcular el error de clasificación para cada uno de estos valores. Hacer un gráfico del error de clasificación en función de la “masa crítica”.\nProbar la capacidad predictiva de este clasificador en el conjunto de test. ¿Cuál es la matriz de confusión y la “accuracy” del modelo?"
+  },
+  {
+    "objectID": "guias/guia8.html#ejercicio-2",
+    "href": "guias/guia8.html#ejercicio-2",
+    "title": "Guía 8: Clasificación",
+    "section": "Ejercicio 2",
+    "text": "Ejercicio 2\nRepetir los pasos del ejercicio 1 utilizando esta vez sólo la variable largo de la aleta. Comparar la capacidad predictiva de este modelo con el encontrado en el ejercicio 1. ¿Era previsible el resultado en base a lo visto exploratoriamente en el ejercicio 0?"
+  },
+  {
+    "objectID": "guias/guia8.html#ejercicio-3",
+    "href": "guias/guia8.html#ejercicio-3",
+    "title": "Guía 8: Clasificación",
+    "section": "Ejercicio 3",
+    "text": "Ejercicio 3\nCrear un árbol de decisión para predecir el sexo de los pinguinos en función del peso y el largo de la aleta. Evaluar la perfomance del modelo usando la matriz de confusión y “accuracy”. Realizar visualizaciones pertinentes."
+  },
+  {
+    "objectID": "guias/guia8.html#ejercicio-4",
+    "href": "guias/guia8.html#ejercicio-4",
+    "title": "Guía 8: Clasificación",
+    "section": "Ejercicio 4",
+    "text": "Ejercicio 4\nRepetir el ejercicio 3 para otras 1000 particiones train-test. Para cada una guardar el “accuracy” en el grupo de test. Con esos datos hacer una visualización del “accuracy”. ¿Qué se puede decir del accuracy del modelo (por ejemplo, en qué rango se encuentra)?"
+  },
+  {
+    "objectID": "guias/guia8.html#ejercicio-5",
+    "href": "guias/guia8.html#ejercicio-5",
+    "title": "Guía 8: Clasificación",
+    "section": "Ejercicio 5",
+    "text": "Ejercicio 5\nA partir de lo hecho en el ejercicio 4, explorar diferentes parámetros de los árboles de decisión para encontrar la mejor configuración en términos de mejorar la predicción en el grupo de test. Si se aumenta el número de particiones del árbol, ¿qué es esperable que ocurra con el error de predicción dentro del dataset de entrenamiento y en el de test?"
+  },
+  {
+    "objectID": "guias/guia8.html#ejercicio-6",
+    "href": "guias/guia8.html#ejercicio-6",
+    "title": "Guía 8: Clasificación",
+    "section": "Ejercicio 6",
+    "text": "Ejercicio 6\nImplementar un clasificador de k-NN que prediga el sexo de los pinguinos utilizando como variables a el largo del pico y el largo de la aleta. Hacerlo para diferentes valores de k (impares) y evaluar el error de predicción en cada caso. ¿Cómo elegiría el valor de k óptimo? Comparar con el modelo de árboles de decisión de la parte 1."
+  },
+  {
+    "objectID": "guias/guia8.html#ejercicio-7",
+    "href": "guias/guia8.html#ejercicio-7",
+    "title": "Guía 8: Clasificación",
+    "section": "Ejercicio 7",
+    "text": "Ejercicio 7\nImplementar un clasificador de k-NN que prediga el sexo de los pinguinos. Determinar el valor óptimo de k y la performance del modelo. Comparar con el método de árboles de decisión."
+  },
+  {
+    "objectID": "guias/guia8.html#ejercicio-0",
+    "href": "guias/guia8.html#ejercicio-0",
+    "title": "Guía 8: Clasificación",
+    "section": "Ejercicio 0",
+    "text": "Ejercicio 0\nRealizar visualizaciones adecuada para explorar si es esperable que las variables largo del pico y largo de la aleta serán útiles para clasificar a los pinguinos en machos y hembras. Evaluar cada variable por separado y las dos juntas."
+  },
+  {
+    "objectID": "guias/guia8.html#ejercicio-8",
+    "href": "guias/guia8.html#ejercicio-8",
+    "title": "Guía 8: Clasificación",
+    "section": "Ejercicio 8",
+    "text": "Ejercicio 8\nPara los métodos realizados en los ejercicios anteriores, efectuar visualizaciones acorde de la matriz de confusión, la performance y los árboles de decisión."
+  },
+  {
+    "objectID": "guias/guia8.html#ejercicio-9",
+    "href": "guias/guia8.html#ejercicio-9",
+    "title": "Guía 8: Clasificación",
+    "section": "Ejercicio 9",
+    "text": "Ejercicio 9\nAhora otro ejercicio para predecir la especie… 3 categorías."
+  },
+  {
+    "objectID": "tps/TP2.html",
+    "href": "tps/TP2.html",
+    "title": "TP-2",
+    "section": "",
+    "text": "Los datos para hacer este TP están en el archivo tp2.RData que pueden cargar en R con el comando load(\"tp2.RData\")."
+  },
+  {
+    "objectID": "tps/TP2.html#section",
+    "href": "tps/TP2.html#section",
+    "title": "TP-2",
+    "section": "1",
+    "text": "1\nRealizar visualizaciones apropiadas para convencerse de que las variables predictoras podrían servir para clasificar las noticias en “reales” vs. “fake-news”."
+  },
+  {
+    "objectID": "tps/TP2.html#section-1",
+    "href": "tps/TP2.html#section-1",
+    "title": "TP-2",
+    "section": "2",
+    "text": "2\nSeparar el dataset en un conjunto de entrenamiento y uno de prueba. Construir dos clasificadores (uno con k-NN y otro con un árbol de decisión) usando las tres variables mencionadas en 1. Justificar la elección de los parámetros del modelo (por ejemplo, el valor de k en k-NN). Reportar las matrices de confusión y accuracy de los modelos."
+  },
+  {
+    "objectID": "tps/TP2.html#section-2",
+    "href": "tps/TP2.html#section-2",
+    "title": "TP-2",
+    "section": "3",
+    "text": "3\nSupongamos que se publica un nuevo artículo que tiene un título de 15 palabras sin signos de exclamación y el 6% de sus palabras tienen connotaciones negativas. Calcular la probabilidad de que el artículo sea “fake-news”."
+  },
+  {
+    "objectID": "tps/TP2.html#section-3",
+    "href": "tps/TP2.html#section-3",
+    "title": "TP-2",
+    "section": "4",
+    "text": "4\nConsiderar ahora un modelo en el que las variables explicativas son la longitud del título de un artículo (title_words), el porcentaje de palabras en el artículo que tienen un sentimiento negativo y la presencia de signo de exclamación.\n\nBasándose en estas tres características, crear un clasificador de que el artículo sea real."
+  },
+  {
+    "objectID": "tps/TP2.html#section-4",
+    "href": "tps/TP2.html#section-4",
+    "title": "TP-2",
+    "section": "5",
+    "text": "5\nEvaluar y comparar el rendimiento de estos cuatro modelos.\n\nnews_model_1 type ~ title_has_excl\nnews_model_2 type ~ title_words\nnews_model_3 type ~ title_words + negative\nnews_model_4 type ~ title_words + negative + title_has_excl\n\n¿Cuál de los cuatro modelos deberíamos usar si el objetivo es detectar mejor cuando un artículo es falso?"
   }
 ]

@@ -5,6 +5,7 @@ editor: source
 ---
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(fontawesome)
 library(googlesheets4)
 library(gt)
 library(gtExtras)

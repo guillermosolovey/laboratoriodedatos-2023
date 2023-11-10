@@ -12,3 +12,5 @@ editor: source
 - [TP-1](./tps/TP1.html)
 - [Guía 6](./guias/guia6.html)
 - [Guía 7](./guias/guia7.html)
+- [Guía 8](./guias/guia8.html)
+- [TP-2](./tps/TP2.html)
